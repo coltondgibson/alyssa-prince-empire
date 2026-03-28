@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroImage from "@/assets/hero-portrait.jpg";
+import heroImage from "@/assets/alyssa-selfie.png";
 
 const HeroSection = () => {
   const panelRef = useRef<HTMLDivElement>(null);
