@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import portraitImage from "@/assets/alyssa-orange-portrait.png";
 
 const WhoIsAlyssa = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   const quoteRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
