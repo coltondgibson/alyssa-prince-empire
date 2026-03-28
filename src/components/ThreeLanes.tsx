@@ -55,7 +55,7 @@ const Lane = ({ eyebrow, heading, copy, ctaText, ctaStyle, image, imageAlt, imag
     <div ref={ref} className="opacity-0 max-w-7xl mx-auto px-6 lg:px-10 py-20 md:py-28">
       <div className={`flex flex-col ${isLeft ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-12 lg:gap-20`}>
         <div className="flex-shrink-0 md:w-[42%]">
-          <img src={image} alt={imageAlt} className="w-full max-w-md object-contain" loading="lazy" />
+          <img src={image} alt={imageAlt} className="w-full max-w-md object-cover aspect-[4/5] rounded-sm" loading="lazy" />
         </div>
         <div className="flex-1">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-blush mb-4">{eyebrow}</p>
