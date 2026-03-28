@@ -25,7 +25,7 @@ const HeroSection = () => {
       <img
         src={heroImage}
         alt="Alyssa Prince"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
         width={1920}
         height={1280}
       />

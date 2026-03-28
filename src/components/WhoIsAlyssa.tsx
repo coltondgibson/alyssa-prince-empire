@@ -52,7 +52,7 @@ const WhoIsAlyssa = () => {
           <img
             src={portraitImage}
             alt="Alyssa Prince portrait"
-            className="w-full max-w-md object-contain"
+            className="w-full max-w-sm md:max-w-md object-cover rounded-sm aspect-[3/4]"
             loading="lazy"
           />
         </div>
