@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroBg from "@/assets/hero-inspiring-bg.jpg";
-import alyssaPortrait from "@/assets/alyssa-orange-portrait.png";
+import heroImage from "@/assets/alyssa-orange-hero-wide.jpg";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -21,46 +20,39 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-[75vh] w-full overflow-hidden">
-      {/* Background layer */}
-      <img
-        src={heroBg}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover"
-        width={1920}
-        height={1080}
-      />
+    <section className="relative min-h-[88vh] w-full overflow-hidden bg-background">
+      <div className="absolute left-[-10%] top-[12%] h-72 w-72 rounded-full bg-primary/35 blur-3xl md:h-[28rem] md:w-[28rem]" />
+      <div className="absolute inset-y-0 right-0 hidden w-[48%] md:block">
+        <div className="absolute inset-x-0 bottom-0 top-24 overflow-hidden">
+          <img
+            src={heroImage}
+            alt="Alyssa Prince smiling in an editorial portrait"
+            className="h-full w-full object-cover object-[76%_35%]"
+            width={1376}
+            height={768}
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background" />
+        </div>
+      </div>
 
-      {/* Alyssa — positioned independently */}
-      <img
-        src={alyssaPortrait}
-        alt="Alyssa Prince"
-        className="pointer-events-none absolute bottom-0 right-[4%] z-[1] h-[88%] w-auto object-contain md:right-[12%] md:h-[95%]"
-        width={960}
-        height={960}
-      />
-
-      {/* Left gradient for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent" />
-
-      <div className="relative z-10 h-full flex items-center">
-        <div className="w-full max-w-7xl mx-auto px-6 lg:px-10">
-          <div ref={contentRef} className="max-w-xl">
-            <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4 md:mb-6">
+      <div className="relative z-10 flex min-h-[88vh] items-center">
+        <div className="mx-auto w-full max-w-7xl px-6 pb-16 pt-28 lg:px-10 lg:pt-32">
+          <div ref={contentRef} className="max-w-[36rem]">
+            <p className="mb-4 font-body text-xs tracking-[0.3em] uppercase text-primary md:mb-6">
               Entrepreneur · Realtor · Empire Builder
             </p>
 
-            <h1 className="font-heading text-6xl md:text-[80px] lg:text-[96px] leading-[0.95] text-white mb-4 md:mb-6">
+            <h1 className="mb-4 font-heading text-[4.5rem] leading-[0.88] text-foreground md:mb-6 md:text-[6.5rem] lg:text-[8rem]">
               Alyssa
               <br />
               Prince
             </h1>
 
-            <p className="font-body font-light italic text-[20px] text-white/80 mb-8 md:mb-10">
+            <p className="mb-8 max-w-lg font-body text-lg font-light italic text-foreground/70 md:mb-10 md:text-[1.45rem]">
               Helping women build the life they actually want.
             </p>
 
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-wrap gap-4">
               <a
                 href="#"
                 className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300"
@@ -69,7 +61,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="#"
-                className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300"
+                className="inline-block bg-brand-black text-background font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300"
               >
                 Join My Team
               </a>
@@ -78,8 +70,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-scroll-hint">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" opacity="0.5">
+      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-scroll-hint">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.5" className="text-foreground">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </div>
