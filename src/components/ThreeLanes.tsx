@@ -27,7 +27,7 @@ const ThreeLanes = () => {
       {/* Lane 1 — Wellness: photo left, text right */}
       <div ref={ref1} className="opacity-0 flex flex-col md:flex-row w-full" style={{ minHeight: 480 }}>
         <div className="md:w-1/2 h-64 md:h-auto">
-          <img src={kitchenPhoto} alt="Alyssa in the kitchen" className="w-full h-full object-cover" loading="lazy" />
+          <img src={kitchenPhoto} alt="Alyssa in the kitchen" className="w-full h-full object-cover object-[center_22%] md:object-center" loading="lazy" />
         </div>
         <div className="md:w-1/2 bg-background flex items-center px-8 lg:px-16 py-16">
           <div className="max-w-lg">
@@ -48,7 +48,7 @@ const ThreeLanes = () => {
       {/* Lane 2 — Business: text left, couch photo right */}
       <div ref={ref2} className="opacity-0 flex flex-col md:flex-row-reverse w-full" style={{ minHeight: 480 }}>
         <div className="md:w-1/2 h-64 md:h-auto">
-          <img src={teamCouchPhoto} alt="Alyssa and partners on couch" className="w-full h-full object-cover" loading="lazy" />
+          <img src={teamCouchPhoto} alt="Alyssa and partners on couch" className="w-full h-full object-cover object-[center_30%] md:object-[center_35%]" loading="lazy" />
         </div>
         <div className="md:w-1/2 bg-card flex items-center px-8 lg:px-16 py-16">
           <div className="max-w-lg">
