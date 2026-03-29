@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroImage from "@/assets/alyssa-orange-hero-wide.jpg";
+import heroImage from "@/assets/alyssa-hero-centered.jpg";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -24,8 +24,8 @@ const HeroSection = () => {
       <img
         src={heroImage}
         alt="Alyssa Prince"
-        className="absolute inset-0 h-full w-full object-cover object-[65%_center] md:object-[65%_center]"
-        style={{ objectFit: 'cover', objectPosition: '65% center' }}
+        className="absolute inset-0 h-full w-full object-cover object-[70%_center] md:object-[68%_center]"
+        style={{ objectFit: 'cover', objectPosition: '68% center' }}
         width={1920}
         height={1280}
       />
