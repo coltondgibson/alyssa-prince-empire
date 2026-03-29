@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroImage from "@/assets/hero-cute-background.jpg";
+import heroImage from "@/assets/hero-cute-background-v2.jpg";
 import alyssaImage from "@/assets/alyssa-orange-portrait.png";
 
 const HeroSection = () => {
@@ -24,7 +24,7 @@ const HeroSection = () => {
     <section className="relative h-[75vh] w-full overflow-hidden">
       <img
         src={heroImage}
-        alt="Soft blush-toned lifestyle interior"
+        alt="Cute blush-toned lifestyle interior"
         className="absolute inset-0 h-full w-full object-cover"
         style={{ objectFit: 'cover', objectPosition: 'center center' }}
         width={1536}
@@ -34,13 +34,13 @@ const HeroSection = () => {
       <img
         src={alyssaImage}
         alt="Alyssa Prince"
-        className="absolute bottom-0 left-[64%] z-[1] h-[82%] w-auto -translate-x-1/2 object-contain md:left-[62%] md:h-[88%]"
+        className="pointer-events-none absolute bottom-0 left-[56%] z-[1] h-[72%] w-auto -translate-x-1/2 object-contain md:left-[55%] md:h-[82%]"
         width={960}
         height={960}
       />
 
       {/* Strong left-to-right gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/36 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/68 via-black/28 to-transparent" />
 
       <div className="relative z-10 h-full flex items-center">
         <div className="w-full max-w-7xl mx-auto px-6 lg:px-10">
