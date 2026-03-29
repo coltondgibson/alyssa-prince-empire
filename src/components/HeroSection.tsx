@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-import heroImage from "@/assets/alyssa-hero-fixed.jpg";
+import heroBg from "@/assets/hero-inspiring-bg.jpg";
+import alyssaPortrait from "@/assets/alyssa-orange-portrait.png";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -21,16 +22,26 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-[75vh] w-full overflow-hidden">
+      {/* Background layer */}
       <img
-        src={heroImage}
-        alt="Alyssa Prince in a soft blush lifestyle setting"
-        className="absolute left-[54%] top-1/2 h-auto w-[122%] max-w-none -translate-x-1/2 -translate-y-1/2"
-        width={1536}
-        height={864}
+        src={heroBg}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+        width={1920}
+        height={1080}
       />
 
-      {/* Strong left-to-right gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/68 via-black/24 to-transparent" />
+      {/* Alyssa — positioned independently */}
+      <img
+        src={alyssaPortrait}
+        alt="Alyssa Prince"
+        className="pointer-events-none absolute bottom-0 right-[4%] z-[1] h-[88%] w-auto object-contain md:right-[12%] md:h-[95%]"
+        width={960}
+        height={960}
+      />
+
+      {/* Left gradient for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent" />
 
       <div className="relative z-10 h-full flex items-center">
         <div className="w-full max-w-7xl mx-auto px-6 lg:px-10">
