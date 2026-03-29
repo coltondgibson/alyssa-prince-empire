@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroImage from "@/assets/hero-cute-background-v2.jpg";
-import alyssaImage from "@/assets/alyssa-orange-portrait.png";
+import heroImage from "@/assets/alyssa-hero-fixed.jpg";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -24,23 +23,15 @@ const HeroSection = () => {
     <section className="relative h-[75vh] w-full overflow-hidden">
       <img
         src={heroImage}
-        alt="Cute blush-toned lifestyle interior"
-        className="absolute inset-0 h-full w-full object-cover"
-        style={{ objectFit: 'cover', objectPosition: 'center center' }}
+        alt="Alyssa Prince in a soft blush lifestyle setting"
+        className="absolute inset-0 h-full w-full object-cover object-[52%_center]"
+        style={{ objectFit: 'cover', objectPosition: '52% center' }}
         width={1536}
         height={864}
       />
 
-      <img
-        src={alyssaImage}
-        alt="Alyssa Prince"
-        className="pointer-events-none absolute bottom-0 left-[56%] z-[1] h-[72%] w-auto -translate-x-1/2 object-contain md:left-[55%] md:h-[82%]"
-        width={960}
-        height={960}
-      />
-
       {/* Strong left-to-right gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/68 via-black/28 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/68 via-black/24 to-transparent" />
 
       <div className="relative z-10 h-full flex items-center">
         <div className="w-full max-w-7xl mx-auto px-6 lg:px-10">
