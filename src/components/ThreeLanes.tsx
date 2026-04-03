@@ -87,7 +87,7 @@ const ThreeLanes = () => {
             <p className="font-body text-[15px] leading-relaxed text-foreground mb-8">
               I've been in this industry for 15 years. I know what a great opportunity looks like — and this is it. Products you believe in, a team that supports you, and income that grows with you.
             </p>
-            <a href="#" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+            <a href="#connect" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
               Learn About the Opportunity
             </a>
           </div>
