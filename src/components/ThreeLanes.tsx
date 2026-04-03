@@ -38,7 +38,7 @@ const ThreeLanes = () => {
             <p className="font-body text-[15px] leading-relaxed text-foreground mb-8">
               Products backed by science and real results — that I use every single day. From energy to metabolism to gut health, I've found what works and I want to share it with you.
             </p>
-            <a href="#" className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+            <a href="#connect" className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
               See What I Use
             </a>
           </div>
