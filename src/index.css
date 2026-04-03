@@ -49,6 +49,10 @@
     --blush: 346 62% 87%;
     --cream: 40 33% 98%;
     --brand-black: 0 0% 4%;
+    --gold: 38 80% 55%;
+    --gold-foreground: 0 0% 100%;
+    --navy: 220 40% 13%;
+    --navy-foreground: 0 0% 100%;
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;

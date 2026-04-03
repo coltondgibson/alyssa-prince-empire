@@ -45,6 +45,34 @@ const ThreeLanes = () => {
         </div>
       </div>
 
+      {/* Product Cards */}
+      <div className="bg-background px-6 lg:px-10 py-16 md:py-20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            {
+              name: "Daily Health System",
+              description: "My daily non-negotiable. Activate + Transform — designed to support energy, metabolism, and the way your body processes what you eat. This is where I start everyone.",
+            },
+            {
+              name: "Glow-M",
+              description: "Marine collagen that works from the inside out. Skin, hair, nails — this one surprised me most. I noticed a difference within weeks.",
+            },
+            {
+              name: "For Her",
+              description: "Built specifically for women navigating hormonal changes. Energy, mood, balance — this one is for the women who feel like something shifted and want it back.",
+            },
+          ].map((product) => (
+            <div key={product.name} className="bg-card p-8 rounded-sm text-center">
+              <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
+              <p className="font-body text-sm leading-relaxed text-foreground/75 mb-6">{product.description}</p>
+              <a href="#quiz" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
+                Learn More →
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Lane 2 — Business: text left, couch photo right */}
       <div ref={ref2} className="opacity-0 flex flex-col md:flex-row-reverse w-full" style={{ minHeight: 480 }}>
         <div className="md:w-1/2 h-64 md:h-auto">

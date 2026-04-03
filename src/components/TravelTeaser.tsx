@@ -1,0 +1,38 @@
+import { useEffect, useRef } from "react";
+
+const TravelTeaser = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { el.classList.add("animate-fade-up"); obs.disconnect(); } },
+      { threshold: 0.2 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <section id="travel" className="bg-background py-24 md:py-32">
+      <div ref={ref} className="opacity-0 max-w-2xl mx-auto px-6 text-center">
+        <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">Coming Soon</p>
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-6">
+          The next chapter is travel.
+        </h2>
+        <p className="font-body text-[15px] md:text-base leading-relaxed text-foreground/80 mb-10 max-w-xl mx-auto">
+          I've always believed that real freedom means choosing where you go, when you go, and how you get there. Something exciting is coming for those of you who love to travel. Stay tuned.
+        </p>
+        <a
+          href="#connect"
+          className="inline-block bg-brand-black text-card font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300"
+        >
+          Notify Me →
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default TravelTeaser;

@@ -30,12 +30,10 @@ const PartnersStory = () => {
           The Journey
         </p>
         <h2 className="font-heading italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-card mb-8">
-          "2+ years. We never quit."
+          "15 years. Every lesson earned."
         </h2>
         <p className="font-body text-base md:text-lg leading-relaxed text-card/85 max-w-2xl mx-auto">
-          My partners and I spent over two years building our greens formula. We hit walls. We
-          almost quit. We kept going because the product was changing lives. When we found the right
-          home for it — everything clicked. The right product. The right people. The right time.
+          I didn't stumble into success. I built it — deal by deal, client by client, decision by decision. When I found Tranont, I wasn't looking for another opportunity. I was looking for something I could actually believe in. I found both — and I brought everything I'd learned in 15 years with me.
         </p>
       </div>
     </section>
