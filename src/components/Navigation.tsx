@@ -5,6 +5,7 @@ const navLinks = [
   { label: "Wellness", href: "#wellness" },
   { label: "Business", href: "#business" },
   { label: "Real Estate", href: "#realestate" },
+  { label: "Travel", href: "#travel" },
   { label: "Connect", href: "#connect" },
 ];
 

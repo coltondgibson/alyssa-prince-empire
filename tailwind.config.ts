@@ -26,6 +26,14 @@ export default {
         blush: "hsl(var(--blush))",
         cream: "hsl(var(--cream))",
         "brand-black": "hsl(var(--brand-black))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          foreground: "hsl(var(--gold-foreground))",
+        },
+        navy: {
+          DEFAULT: "hsl(var(--navy))",
+          foreground: "hsl(var(--navy-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
