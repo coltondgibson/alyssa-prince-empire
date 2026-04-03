@@ -104,7 +104,7 @@ const ThreeLanes = () => {
           <p className="font-body text-[15px] leading-relaxed text-primary-foreground mb-8">
             Licensed realtor serving Florida. I bring the same energy to real estate that I bring to everything — all in, every time.
           </p>
-          <a href="#" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+          <a href="#connect" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
             Let's Talk Real Estate
           </a>
         </div>

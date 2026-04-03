@@ -26,7 +26,7 @@ const CommunitySection = () => {
         <p className="font-body text-base md:text-lg text-card/80 mb-10">
           This is my community. You're invited.
         </p>
-        <a href="#" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3 rounded-sm border border-blush text-blush hover:bg-blush hover:text-primary-foreground transition-all duration-300">
+        <a href="#connect" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3 rounded-sm border border-blush text-blush hover:bg-blush hover:text-primary-foreground transition-all duration-300">
           Join Us
         </a>
       </div>

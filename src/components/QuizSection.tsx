@@ -24,7 +24,7 @@ const QuizSection = () => {
           Answer 3 quick questions and I'll show you exactly where I'd begin if I were you.
         </p>
         <a
-          href="#quiz-form"
+          href="#connect"
           className="inline-block bg-gold text-gold-foreground font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm hover:opacity-90 transition-opacity duration-300 mb-8"
         >
           Take the 2-Minute Quiz →
