@@ -46,7 +46,7 @@ const OriginStory = () => {
         </div>
 
         <a
-          href="#"
+          href="#connect"
           className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm hover:opacity-90 transition-opacity duration-300"
         >
           I'm Ready For Better

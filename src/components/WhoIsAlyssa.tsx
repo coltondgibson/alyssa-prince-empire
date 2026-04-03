@@ -23,23 +23,26 @@ const WhoIsAlyssa = () => {
   }, []);
 
   return (
-    <section id="story" className="bg-cream">
+    <section id="story" className="relative bg-foreground overflow-hidden">
+      {/* Subtle background gradient matching the hero */}
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground via-foreground/95 to-foreground" />
+
       {/* Two-column content */}
       <div
         ref={sectionRef}
-        className="opacity-0 max-w-7xl mx-auto px-6 lg:px-10 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12 lg:gap-20"
+        className="opacity-0 relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12 lg:gap-20"
       >
         {/* Left text */}
         <div className="flex-1 md:max-w-[55%]">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-blush mb-4">
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
             Who Is Alyssa Prince
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-foreground mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-background mb-6">
             Builder. Dreamer.
             <br />
             The real deal.
           </h2>
-          <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
+          <p className="font-body text-base md:text-lg leading-relaxed text-background/70 max-w-xl">
             I've spent 15 years building businesses, closing real estate deals, earning 7 figures,
             and winning top ranks in an industry I love. I've also burned out and walked away — and
             came back when something real finally pulled me in again. My passion for helping women
@@ -61,9 +64,9 @@ const WhoIsAlyssa = () => {
       {/* Pull quote */}
       <div
         ref={quoteRef}
-        className="opacity-0 pb-20 md:pb-28 px-6"
+        className="opacity-0 relative z-10 pb-20 md:pb-28 px-6"
       >
-        <p className="font-heading italic text-2xl md:text-3xl lg:text-4xl text-center text-blush max-w-4xl mx-auto leading-snug">
+        <p className="font-heading italic text-2xl md:text-3xl lg:text-4xl text-center text-primary max-w-4xl mx-auto leading-snug">
           "You don't need full clarity to start. Confidence comes after you move."
         </p>
       </div>

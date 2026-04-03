@@ -38,7 +38,7 @@ const ThreeLanes = () => {
             <p className="font-body text-[15px] leading-relaxed text-foreground mb-8">
               Products backed by science and real results — that I use every single day. From energy to metabolism to gut health, I've found what works and I want to share it with you.
             </p>
-            <a href="#" className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+            <a href="#connect" className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
               See What I Use
             </a>
           </div>
@@ -87,7 +87,7 @@ const ThreeLanes = () => {
             <p className="font-body text-[15px] leading-relaxed text-foreground mb-8">
               I've been in this industry for 15 years. I know what a great opportunity looks like — and this is it. Products you believe in, a team that supports you, and income that grows with you.
             </p>
-            <a href="#" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+            <a href="#connect" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
               Learn About the Opportunity
             </a>
           </div>
@@ -104,7 +104,7 @@ const ThreeLanes = () => {
           <p className="font-body text-[15px] leading-relaxed text-primary-foreground mb-8">
             Licensed realtor serving Florida. I bring the same energy to real estate that I bring to everything — all in, every time.
           </p>
-          <a href="#" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+          <a href="#connect" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
             Let's Talk Real Estate
           </a>
         </div>
