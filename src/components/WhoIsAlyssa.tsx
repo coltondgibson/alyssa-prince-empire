@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import portraitImage from "@/assets/alyssa-orange-portrait.png";
+import kitchenImage from "@/assets/alyssa-kitchen.png";
 
 const WhoIsAlyssa = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -24,10 +24,8 @@ const WhoIsAlyssa = () => {
 
   return (
     <section id="story" className="relative bg-foreground overflow-hidden">
-      {/* Subtle background gradient matching the hero */}
       <div className="absolute inset-0 bg-gradient-to-b from-foreground via-foreground/95 to-foreground" />
 
-      {/* Two-column content */}
       <div
         ref={sectionRef}
         className="opacity-0 relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12 lg:gap-20"
@@ -50,11 +48,11 @@ const WhoIsAlyssa = () => {
           </p>
         </div>
 
-        {/* Right image */}
+        {/* Right image — kitchen photo */}
         <div className="flex-shrink-0 md:max-w-[40%]">
           <img
-            src={portraitImage}
-            alt="Alyssa Prince portrait"
+            src={kitchenImage}
+            alt="Alyssa Prince in her kitchen"
             className="w-full max-w-sm md:max-w-md object-cover rounded-sm aspect-[3/4]"
             loading="lazy"
           />
