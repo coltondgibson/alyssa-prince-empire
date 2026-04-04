@@ -29,13 +29,13 @@ const HeroSection = () => {
               Entrepreneur · Realtor · Empire Builder
             </p>
 
-            <h1 className="mb-5 font-heading text-[5.5rem] leading-[0.85] text-foreground md:mb-7 md:text-[7.5rem] lg:text-[9.5rem]">
+            <h1 className="mb-5 font-heading text-[6.5rem] leading-[0.82] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem]">
               Alyssa
               <br />
               Prince
             </h1>
 
-            <p className="mb-10 max-w-lg font-body text-xl font-light italic text-muted-foreground md:mb-12 md:text-2xl">
+            <p className="mb-10 max-w-lg font-body text-xl font-light italic text-muted-foreground md:mb-12 md:text-[1.65rem] lg:text-[1.8rem]">
               Helping women build the life they actually want.
             </p>
 
@@ -56,11 +56,11 @@ const HeroSection = () => {
           </div>
 
           {/* Right — portrait, full height */}
-          <div className="hidden md:flex md:w-[48%] lg:w-[45%] self-stretch items-end justify-center">
+          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-end justify-center overflow-hidden">
             <img
               src={portraitImage}
               alt="Alyssa Prince portrait"
-              className="h-[85vh] max-h-[900px] w-auto object-contain object-bottom"
+              className="h-screen max-h-[1000px] w-auto object-contain object-bottom"
             />
           </div>
         </div>

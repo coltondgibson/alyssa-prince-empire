@@ -23,8 +23,8 @@ const WhoIsAlyssa = () => {
   }, []);
 
   return (
-    <section id="story" className="relative bg-foreground overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground via-foreground/95 to-foreground" />
+    <section id="story" className="relative bg-cream overflow-hidden">
+      <div className="absolute inset-0 bg-cream" />
 
       <div
         ref={sectionRef}
@@ -35,12 +35,12 @@ const WhoIsAlyssa = () => {
           <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
             Who Is Alyssa Prince
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-background mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-foreground mb-6">
             Builder. Dreamer.
             <br />
             The real deal.
           </h2>
-          <p className="font-body text-base md:text-lg leading-relaxed text-background/70 max-w-xl">
+          <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
             I've spent 15 years building businesses, closing real estate deals, earning 7 figures,
             and winning top ranks in an industry I love. I've also burned out and walked away — and
             came back when something real finally pulled me in again. My passion for helping women
