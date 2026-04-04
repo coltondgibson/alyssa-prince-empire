@@ -1,4 +1,7 @@
 import { useEffect, useRef } from "react";
+import businessPhoto from "@/assets/alyssa-business.jpg";
+import tranontPhoto from "@/assets/alyssa-tranont.jpg";
+import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
 import kitchenPhoto from "@/assets/alyssa-kitchen.png";
 import teamCouchPhoto from "@/assets/alyssa-team-couch.png";
 
@@ -76,7 +79,7 @@ const ThreeLanes = () => {
       {/* Lane 2 — Business: text left, couch photo right */}
       <div ref={ref2} className="opacity-0 flex flex-col md:flex-row-reverse w-full" style={{ minHeight: 480 }}>
         <div className="md:w-1/2 h-64 md:h-auto">
-          <img src={teamCouchPhoto} alt="Alyssa and partners on couch" className="w-full h-full object-cover object-[center_30%] md:object-[center_35%]" loading="lazy" />
+          <img src={businessPhoto} alt="Alyssa working on her business" className="w-full h-full object-cover object-[center_30%] md:object-[center_35%]" loading="lazy" />
         </div>
         <div className="md:w-1/2 bg-card flex items-center px-8 lg:px-16 py-16">
           <div className="max-w-lg">
@@ -90,6 +93,20 @@ const ThreeLanes = () => {
             <a href="#connect" className="inline-block bg-brand-black text-white font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
               Learn About the Opportunity
             </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Business Photo Grid — Tranont & Nashville */}
+      <div className="bg-card px-6 lg:px-10 py-16 md:py-20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="overflow-hidden rounded-sm">
+            <img src={tranontPhoto} alt="Alyssa with Tranont leadership — Our mission is to impact 1 billion lives" className="w-full h-80 md:h-96 object-cover" loading="lazy" />
+            <p className="font-body text-sm text-muted-foreground mt-4 text-center italic">Why she chose Tranont — "Our mission is to impact 1 billion lives"</p>
+          </div>
+          <div className="overflow-hidden rounded-sm">
+            <img src={nashvillePhoto} alt="Alyssa at 7 Star Director recognition in Nashville" className="w-full h-80 md:h-96 object-cover" loading="lazy" />
+            <p className="font-body text-sm text-muted-foreground mt-4 text-center italic">7 Star Director — Nashville recognition</p>
           </div>
         </div>
       </div>

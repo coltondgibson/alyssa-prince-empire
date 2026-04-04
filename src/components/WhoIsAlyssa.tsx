@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import kitchenImage from "@/assets/alyssa-kitchen.png";
+import familyImage from "@/assets/alyssa-family.jpg";
 
 const WhoIsAlyssa = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -51,8 +51,8 @@ const WhoIsAlyssa = () => {
         {/* Right image — kitchen photo */}
         <div className="flex-shrink-0 md:max-w-[40%]">
           <img
-            src={kitchenImage}
-            alt="Alyssa Prince in her kitchen"
+            src={familyImage}
+            alt="Alyssa Prince and her family"
             className="w-full max-w-sm md:max-w-md object-cover rounded-sm aspect-[3/4]"
             loading="lazy"
           />
