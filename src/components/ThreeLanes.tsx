@@ -1,4 +1,7 @@
 import { useEffect, useRef } from "react";
+import businessPhoto from "@/assets/alyssa-business.jpg";
+import tranontPhoto from "@/assets/alyssa-tranont.jpg";
+import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
 import kitchenPhoto from "@/assets/alyssa-kitchen.png";
 import teamCouchPhoto from "@/assets/alyssa-team-couch.png";
 
