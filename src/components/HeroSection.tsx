@@ -35,7 +35,7 @@ const HeroSection = () => {
               Prince
             </h1>
 
-            <p className="mb-10 max-w-lg font-body text-xl font-light italic text-muted-foreground md:mb-12 md:text-2xl">
+            <p className="mb-10 max-w-lg font-body text-xl font-light italic text-muted-foreground md:mb-12 md:text-[1.65rem] lg:text-[1.8rem]">
               Helping women build the life they actually want.
             </p>
 
