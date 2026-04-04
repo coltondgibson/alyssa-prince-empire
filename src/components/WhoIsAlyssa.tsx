@@ -40,7 +40,7 @@ const WhoIsAlyssa = () => {
             <br />
             The real deal.
           </h2>
-          <p className="font-body text-base md:text-lg leading-relaxed text-background/70 max-w-xl">
+          <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
             I've spent 15 years building businesses, closing real estate deals, earning 7 figures,
             and winning top ranks in an industry I love. I've also burned out and walked away — and
             came back when something real finally pulled me in again. My passion for helping women

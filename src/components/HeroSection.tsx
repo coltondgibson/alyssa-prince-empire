@@ -56,11 +56,11 @@ const HeroSection = () => {
           </div>
 
           {/* Right — portrait, full height */}
-          <div className="hidden md:flex md:w-[48%] lg:w-[45%] self-stretch items-end justify-center">
+          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-end justify-center overflow-hidden">
             <img
               src={portraitImage}
               alt="Alyssa Prince portrait"
-              className="h-[85vh] max-h-[900px] w-auto object-contain object-bottom"
+              className="h-screen max-h-[1000px] w-auto object-contain object-bottom"
             />
           </div>
         </div>
