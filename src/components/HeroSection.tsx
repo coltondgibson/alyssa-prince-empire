@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import portraitImage from "@/assets/alyssa-orange-portrait.png";
-import kitchenImage from "@/assets/alyssa-kitchen.png";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -21,21 +20,11 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[90vh] w-full overflow-hidden bg-background">
-      <img
-        src={kitchenImage}
-        alt="Alyssa Prince lifestyle"
-        className="absolute inset-0 h-full w-full object-cover object-[70%_30%] md:object-[62%_24%]"
-        width={1440}
-        height={1440}
-      />
-
-      <div className="absolute inset-0 bg-gradient-to-r from-foreground/85 via-foreground/60 to-foreground/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-foreground/10" />
-
+    <section className="relative min-h-[90vh] w-full overflow-hidden bg-foreground">
       <div className="relative z-10 flex min-h-[90vh] items-center">
-        <div className="mx-auto w-full max-w-7xl px-6 pb-16 pt-28 lg:px-10 lg:pt-32 flex flex-col md:flex-row items-center gap-10 lg:gap-16">
-          <div ref={contentRef} className="flex-1 max-w-[34rem]">
+        <div className="mx-auto w-full max-w-7xl px-6 lg:px-10 flex flex-col md:flex-row items-center gap-10 lg:gap-16">
+          {/* Left — text */}
+          <div ref={contentRef} className="flex-1 max-w-[34rem] py-20">
             <p className="mb-4 font-body text-xs tracking-[0.3em] uppercase text-primary md:mb-6">
               Entrepreneur · Realtor · Empire Builder
             </p>
@@ -59,19 +48,19 @@ const HeroSection = () => {
               </a>
               <a
                 href="#connect"
-                className="inline-block bg-brand-black text-background font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300"
+                className="inline-block bg-brand-black text-background font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300 border border-background/20"
               >
                 Join My Team
               </a>
             </div>
           </div>
 
-          {/* Portrait */}
-          <div className="hidden md:block flex-shrink-0">
+          {/* Right — portrait */}
+          <div className="hidden md:flex flex-shrink-0 items-end self-end">
             <img
               src={portraitImage}
               alt="Alyssa Prince portrait"
-              className="w-[320px] lg:w-[380px] object-cover rounded-sm aspect-[3/4]"
+              className="w-[340px] lg:w-[420px] xl:w-[460px] object-cover rounded-sm"
             />
           </div>
         </div>
