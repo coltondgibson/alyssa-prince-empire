@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import portraitImage from "@/assets/alyssa-orange-portrait.png";
+import portraitImage from "@/assets/alyssa-smiling2.jpg";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import girlsNight from "@/assets/girls-night.jpg";
+import womenPhoto from "@/assets/alyssa-women.jpg";
 
 const CommunitySection = () => {
   const ref = useRef<HTMLDivElement>(null);
