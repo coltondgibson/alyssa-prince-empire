@@ -17,7 +17,7 @@ const CommunitySection = () => {
 
   return (
     <section className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden">
-      <img src={girlsNight} alt="Community of women" className="absolute inset-0 w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+      <img src={womenPhoto} alt="Community of women" className="absolute inset-0 w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
       <div className="absolute inset-0 bg-brand-black/60" />
       <div ref={ref} className="opacity-0 relative z-10 text-center px-6 py-24 md:py-32 max-w-3xl mx-auto">
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-card mb-6">
