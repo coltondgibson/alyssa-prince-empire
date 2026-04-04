@@ -35,7 +35,7 @@ const WhoIsAlyssa = () => {
           <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
             Who Is Alyssa Prince
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-background mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-foreground mb-6">
             Builder. Dreamer.
             <br />
             The real deal.
