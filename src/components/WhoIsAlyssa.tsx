@@ -23,8 +23,8 @@ const WhoIsAlyssa = () => {
   }, []);
 
   return (
-    <section id="story" className="relative bg-foreground overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground via-foreground/95 to-foreground" />
+    <section id="story" className="relative bg-cream overflow-hidden">
+      <div className="absolute inset-0 bg-cream" />
 
       <div
         ref={sectionRef}
