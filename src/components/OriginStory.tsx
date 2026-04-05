@@ -22,10 +22,10 @@ const OriginStory = () => {
       <div ref={ref} className="opacity-0 max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
+          <p className="font-body tracking-[0.3em] uppercase text-primary mb-4 text-xl">
             The Real Story
           </p>
-          <p className="font-script text-lg text-muted-foreground mb-8">
+          <p className="font-script text-muted-foreground mb-8 text-xl">
             the chapter no one expected ✨
           </p>
 
@@ -34,23 +34,23 @@ const OriginStory = () => {
           </h2>
 
           <div className="font-body text-[15px] leading-[2] text-muted-foreground space-y-6 mb-14">
-            <p>
+            <p className="text-2xl">
               I was a single mom with two kids at 20. I've waited tables. Scrubbed toilets. Used food
               stamps and Medicaid. Lived in government housing. Had business partners lie to me, betray
               me, and steal what I earned. Had businesses fail. Been so heartbroken I was literally
               paralyzed.
             </p>
-            <p>I didn't get a college degree. They wrote me off.</p>
-            <p>
+            <p className="text-2xl">I didn't get a college degree. They wrote me off.</p>
+            <p className="text-2xl">
               A lot of you see where I am now — the relationship, the business, the life — and say
               "must be nice" or "she's so lucky."
             </p>
-            <p>You didn't see the hell I went through to get here.</p>
-            <p>
+            <p className="text-2xl">You didn't see the hell I went through to get here.</p>
+            <p className="text-2xl">
               I share this because I want you to know — no matter what you've been through, you can be
               better, do better, want better, and achieve better.
             </p>
-            <p>It's not too late.</p>
+            <p className="text-2xl">It's not too late.</p>
           </div>
 
           <a
