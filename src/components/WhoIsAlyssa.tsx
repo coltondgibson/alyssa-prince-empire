@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import familyImage from "@/assets/alyssa-family.jpg";
+import selfieImage from "@/assets/alyssa-selfie.png";
 
 const WhoIsAlyssa = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,22 +41,39 @@ const WhoIsAlyssa = () => {
             <br />
             The real deal.
           </h2>
-          <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
+          <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl mb-6">
             I've spent 15 years building businesses, closing real estate deals, earning 7 figures,
             and winning top ranks in an industry I love. I've also burned out and walked away — and
             came back when something real finally pulled me in again. My passion for helping women
             win has never been stronger. And I want to bring you with me.
           </p>
+          <p className="font-script text-xl text-primary">— xo, Alyssa</p>
         </div>
 
-        {/* Right image — kitchen photo */}
-        <div className="flex-shrink-0 md:max-w-[40%]">
-          <img
-            src={familyImage}
-            alt="Alyssa Prince and her family"
-            className="w-full max-w-sm md:max-w-md object-cover rounded-sm aspect-[3/4]"
-            loading="lazy"
-          />
+        {/* Right — stacked photos with slight rotation */}
+        <div className="flex-shrink-0 md:max-w-[40%] relative">
+          <div className="polaroid" style={{ transform: "rotate(2deg)" }}>
+            <img
+              src={familyImage}
+              alt="Alyssa Prince and her family"
+              className="w-full max-w-sm md:max-w-md object-cover aspect-[3/4]"
+              loading="lazy"
+            />
+            <p className="polaroid-caption">My crew 💛</p>
+          </div>
+          {/* Small inset polaroid */}
+          <div
+            className="polaroid absolute -bottom-6 -left-8 w-28 md:w-36 hidden md:block"
+            style={{ transform: "rotate(-5deg)", zIndex: 10 }}
+          >
+            <img
+              src={selfieImage}
+              alt="Alyssa selfie"
+              className="w-full aspect-square object-cover"
+              loading="lazy"
+            />
+            <p className="polaroid-caption text-xs">hi! 👋</p>
+          </div>
         </div>
       </div>
 

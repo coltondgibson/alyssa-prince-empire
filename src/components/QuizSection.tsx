@@ -17,6 +17,7 @@ const QuizSection = () => {
   return (
     <section id="quiz" className="bg-navy py-24 md:py-32">
       <div ref={ref} className="opacity-0 max-w-2xl mx-auto px-6 text-center">
+        <p className="font-script text-xl md:text-2xl text-primary mb-4">find your path</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-navy-foreground mb-4">
           Not sure where to start?
         </h2>

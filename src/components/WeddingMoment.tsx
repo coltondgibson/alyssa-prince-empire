@@ -16,12 +16,22 @@ const WeddingMoment = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[70vh] flex items-end justify-center overflow-hidden">
-      <img src={couplePhoto} alt="Alyssa and Chase" className="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" />
-      <div className="absolute inset-0 bg-brand-black/20" />
-      <div ref={ref} className="opacity-0 relative z-10 text-center px-6 pb-16 md:pb-24">
-        <p className="font-heading italic text-lg md:text-xl lg:text-2xl text-card drop-shadow-lg">
-          March 6, 2026 — Said yes to the best adventure yet.
+    <section className="bg-cream py-20 md:py-28">
+      <div ref={ref} className="opacity-0 max-w-4xl mx-auto px-6 text-center">
+        <p className="font-script text-2xl md:text-3xl text-primary mb-8">our love story</p>
+        <div className="polaroid mx-auto max-w-lg" style={{ transform: "rotate(-1deg)" }}>
+          <img
+            src={couplePhoto}
+            alt="Alyssa and Chase"
+            className="w-full aspect-[4/3] object-cover"
+            loading="lazy"
+          />
+          <p className="polaroid-caption text-base md:text-lg">
+            March 6, 2026 — Said yes to the best adventure yet 💍
+          </p>
+        </div>
+        <p className="mt-10 font-heading italic text-xl md:text-2xl text-muted-foreground">
+          "Every love story is beautiful, but ours is my favorite."
         </p>
       </div>
     </section>
