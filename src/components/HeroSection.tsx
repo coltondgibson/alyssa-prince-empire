@@ -29,10 +29,6 @@ const HeroSection = () => {
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-10 flex flex-col md:flex-row items-center">
           {/* Left — text */}
           <div ref={contentRef} className="flex-1 py-24 md:py-0 md:pr-12 lg:pr-20">
-            <p className="mb-5 font-body text-xs tracking-[0.3em] uppercase text-primary font-medium md:mb-7">
-              Entrepreneur · Realtor · Empire Builder
-            </p>
-
             <h1 className="mb-5 md:mb-7">
               <span
                 className="block font-heading text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] leading-[0.88] tracking-tight text-foreground font-semibold"
@@ -53,7 +49,7 @@ const HeroSection = () => {
             </p>
 
             <p className="mb-10 font-script text-lg text-primary md:mb-12 md:text-xl">
-              dream big, hustle harder 💕
+              your income, your freedom, your terms 💕
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -72,12 +68,19 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right — portrait */}
-          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-end justify-center overflow-hidden">
+          {/* Right — portrait with gradient blend */}
+          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-end justify-center overflow-hidden relative">
             <img
               src={portraitImage}
               alt="Alyssa Prince portrait"
               className="h-screen max-h-[1000px] w-auto object-contain object-bottom"
+            />
+            {/* Gradient overlay to blend orange photo edge into cream background */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: "linear-gradient(to right, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 10%, transparent 30%)",
+              }}
             />
           </div>
         </div>
