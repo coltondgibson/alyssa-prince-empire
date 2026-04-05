@@ -20,7 +20,7 @@ const PartnersStory = () => {
       <img
         src={teamPhoto}
         alt="Alyssa and her business partners"
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
         loading="lazy"
       />
       <div className="absolute inset-0 bg-brand-black/65" />
