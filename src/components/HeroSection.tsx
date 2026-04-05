@@ -30,7 +30,7 @@ const HeroSection = () => {
             </p>
 
             <h1
-              className="mb-5 text-[6.5rem] leading-[0.82] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem] font-black tracking-tight"
+              className="mb-5 text-[6.5rem] leading-[0.82] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem] font-black tracking-tight drop-shadow-sm"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Alyssa
