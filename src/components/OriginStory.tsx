@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Heart } from "lucide-react";
 import birthdayPhoto from "@/assets/alyssa-birthday.jpg";
 import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
+import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
 
 const OriginStory = () => {
   const ref = useRef<HTMLDivElement>(null);
