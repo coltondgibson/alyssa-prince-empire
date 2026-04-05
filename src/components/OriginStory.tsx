@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Heart } from "lucide-react";
+import { Heart, Quote } from "lucide-react";
 import glamPortrait from "@/assets/alyssa-glam-portrait.jpg";
 import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
 import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
