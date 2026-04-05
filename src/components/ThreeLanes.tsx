@@ -49,7 +49,7 @@ const ThreeLanes = () => {
       </div>
 
       {/* Product Cards */}
-      <div className="bg-background px-6 lg:px-10 py-16 md:py-20">
+      <div className="bg-background px-6 lg:px-10 py-12 md:py-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
@@ -98,7 +98,7 @@ const ThreeLanes = () => {
       </div>
 
       {/* Business Photo Grid — Tranont & Nashville */}
-      <div className="bg-card px-6 lg:px-10 py-16 md:py-20">
+      <div className="bg-card px-6 lg:px-10 py-12 md:py-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="overflow-hidden rounded-sm">
             <img src={tranontPhoto} alt="Alyssa with Tranont leadership — Our mission is to impact 1 billion lives" className="w-full h-80 md:h-96 object-cover" loading="lazy" />

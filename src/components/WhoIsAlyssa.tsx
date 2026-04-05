@@ -29,7 +29,7 @@ const WhoIsAlyssa = () => {
 
       <div
         ref={sectionRef}
-        className="opacity-0 relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12 lg:gap-20"
+        className="opacity-0 relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-14 md:py-20 flex flex-col md:flex-row items-center gap-10 lg:gap-16"
       >
         {/* Left text */}
         <div className="flex-1 md:max-w-[55%]">
@@ -80,7 +80,7 @@ const WhoIsAlyssa = () => {
       {/* Pull quote */}
       <div
         ref={quoteRef}
-        className="opacity-0 relative z-10 pb-20 md:pb-28 px-6"
+        className="opacity-0 relative z-10 pb-14 md:pb-20 px-6"
       >
         <p className="font-heading italic text-2xl md:text-3xl lg:text-4xl text-center text-primary max-w-4xl mx-auto leading-snug">
           "You don't need full clarity to start. Confidence comes after you move."

@@ -26,7 +26,7 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <section className="relative overflow-hidden py-24 md:py-32 bg-cream">
+      <section className="relative overflow-hidden py-16 md:py-20 bg-cream">
 
         <div ref={ref} className="opacity-0 relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
           {/* Label */}

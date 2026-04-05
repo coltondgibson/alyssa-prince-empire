@@ -16,7 +16,7 @@ const WeddingMoment = () => {
   }, []);
 
   return (
-    <section className="bg-cream py-20 md:py-28">
+    <section className="bg-cream py-14 md:py-20">
       <div ref={ref} className="opacity-0 max-w-4xl mx-auto px-6 text-center">
         <p className="font-script text-2xl md:text-3xl text-primary mb-8">our love story</p>
         <div className="polaroid mx-auto max-w-lg" style={{ transform: "rotate(-1deg)" }}>

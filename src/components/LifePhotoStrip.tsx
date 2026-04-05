@@ -28,7 +28,7 @@ const LifePhotoStrip = () => {
   }, []);
 
   return (
-    <section className="bg-cream py-20 md:py-28 overflow-hidden">
+    <section className="bg-cream py-14 md:py-20 overflow-hidden">
       <div className="text-center mb-12">
         <p className="font-script text-2xl md:text-3xl text-primary">a little peek into my life</p>
       </div>
