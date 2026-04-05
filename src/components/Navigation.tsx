@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Story", href: "#story" },
-  { label: "Wellness", href: "#wellness" },
-  { label: "Business", href: "#business" },
-  { label: "Real Estate", href: "#realestate" },
-  { label: "Travel", href: "#travel" },
+  { label: "About", href: "#story" },
+  { label: "Work With Me", href: "#wellness" },
   { label: "Connect", href: "#connect" },
 ];
 
@@ -39,7 +36,7 @@ const Navigation = () => {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-7 lg:gap-9">
+        <div className="hidden md:flex items-center gap-8 lg:gap-10">
           {navLinks.map((link) => (
             <a
               key={link.label}
