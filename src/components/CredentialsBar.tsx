@@ -19,20 +19,20 @@ const CredentialsBar = () => {
         <div className="flex animate-marquee whitespace-nowrap">
           {items.map((item, i) => (
             <span key={i} className="flex items-center mx-6 md:mx-10">
-              <span className="font-body text-[11px] md:text-xs tracking-[0.25em] uppercase text-background/90 font-light">
+              <span className="font-body text-[11px] md:text-xs tracking-[0.25em] uppercase text-primary-foreground/90 font-light">
                 {item}
               </span>
-              <span className="ml-6 md:ml-10 text-primary text-sm">✦</span>
+              <span className="ml-6 md:ml-10 text-primary-foreground text-sm">✦</span>
             </span>
           ))}
         </div>
         <div className="flex animate-marquee2 whitespace-nowrap absolute top-0">
           {items.map((item, i) => (
             <span key={i} className="flex items-center mx-6 md:mx-10">
-              <span className="font-body text-[11px] md:text-xs tracking-[0.25em] uppercase text-background/90 font-light">
+              <span className="font-body text-[11px] md:text-xs tracking-[0.25em] uppercase text-primary-foreground/90 font-light">
                 {item}
               </span>
-              <span className="ml-6 md:ml-10 text-primary text-sm">✦</span>
+              <span className="ml-6 md:ml-10 text-primary-foreground text-sm">✦</span>
             </span>
           ))}
         </div>
