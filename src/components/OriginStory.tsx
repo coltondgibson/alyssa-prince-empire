@@ -26,7 +26,7 @@ const OriginStory = () => {
           <p className="font-body tracking-[0.3em] uppercase text-primary mb-4 text-2xl">
             The Real Story
           </p>
-          <p className="font-script text-muted-foreground mb-8 text-xl">
+          <p className="font-script text-foreground/70 mb-8 text-xl">
             the chapter no one expected ✨
           </p>
 
@@ -34,7 +34,7 @@ const OriginStory = () => {
             "They wrote me off as a teen mom. They had no idea what was coming."
           </h2>
 
-          <div className="font-body text-[15px] leading-[2] text-muted-foreground space-y-6 mb-14">
+          <div className="font-body text-[15px] leading-[2] text-foreground/80 space-y-6 mb-14">
             <p className="text-2xl">
               I was a single mom with two kids at 20. I've waited tables. Scrubbed toilets. Used food
               stamps and Medicaid. Lived in government housing. Had business partners lie to me, betray
@@ -108,8 +108,8 @@ const OriginStory = () => {
 
           {/* Testimonial below photos */}
           <div className="mt-16 hidden md:block">
-            <Quote size={20} className="text-primary mb-2 opacity-60" />
-            <p className="font-script text-lg text-muted-foreground leading-relaxed mb-3">
+            <Quote size={20} className="text-primary mb-2" />
+            <p className="font-script text-lg text-foreground/70 leading-relaxed mb-3">
               "Alyssa showed me that my past doesn't define my future. She's the real deal — she lived it."
             </p>
             <p className="font-body text-xs tracking-[0.2em] uppercase text-primary">

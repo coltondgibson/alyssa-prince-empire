@@ -21,7 +21,7 @@ const TravelTeaser = () => {
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-6">
           The next chapter is travel.
         </h2>
-        <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-10 max-w-xl mx-auto">
+        <p className="font-body text-base md:text-lg leading-relaxed text-foreground/85 mb-10 max-w-xl mx-auto">
           I've always believed that real freedom means choosing where you go, when you go, and how you get there. Something exciting is coming for those of you who love to travel. Stay tuned.
         </p>
         <a
