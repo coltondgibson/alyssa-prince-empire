@@ -14,7 +14,7 @@ const CredentialsBar = () => {
   const items = [...credentials, ...credentials];
 
   return (
-    <section className="bg-foreground overflow-hidden py-4 md:py-5">
+    <section className="bg-primary overflow-hidden py-4 md:py-5">
       <div className="relative flex">
         <div className="flex animate-marquee whitespace-nowrap">
           {items.map((item, i) => (
