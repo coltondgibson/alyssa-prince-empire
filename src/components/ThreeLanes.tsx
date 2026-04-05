@@ -53,16 +53,16 @@ const ThreeLanes = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              name: "Daily Health System",
-              description: "My daily non-negotiable. Activate + Transform — designed to support energy, metabolism, and the way your body processes what you eat. This is where I start everyone.",
+              name: "Transform",
+              description: "The supplement that changed how I think about eating. It converts sugars into fiber, reducing glucose spikes, curbing cravings, and supporting metabolism all day. One of my daily non-negotiables.",
+            },
+            {
+              name: "Clear Protein",
+              description: "Clean protein without the bloat. 20g of clear whey protein that actually tastes good and digests clean. I use this daily and it's the first thing I recommend.",
             },
             {
               name: "Glow-M",
-              description: "Marine collagen that works from the inside out. Skin, hair, nails — this one surprised me most. I noticed a difference within weeks.",
-            },
-            {
-              name: "For Her",
-              description: "Built specifically for women navigating hormonal changes. Energy, mood, balance — this one is for the women who feel like something shifted and want it back.",
+              description: "Marine collagen that actually works. Peptides, hyaluronic acid, biotin — skin, hair, nails. I noticed a difference within weeks. This one speaks for itself.",
             },
           ].map((product) => (
             <div key={product.name} className="bg-card p-8 rounded-sm text-center">
