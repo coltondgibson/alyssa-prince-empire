@@ -49,7 +49,7 @@ const HeroSection = () => {
             </p>
 
             <p className="mb-10 font-script text-lg text-primary md:mb-12 md:text-xl">
-              your income, your freedom, your terms 💕
+              your income, your freedom, your terms
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -79,7 +79,7 @@ const HeroSection = () => {
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background: "linear-gradient(to right, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 10%, transparent 30%)",
+                background: "linear-gradient(to right, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.85) 15%, hsl(40 33% 98% / 0.5) 35%, hsl(40 33% 98% / 0.15) 55%, transparent 75%)",
               }}
             />
           </div>
