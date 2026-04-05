@@ -25,7 +25,7 @@ const HeroSection = () => {
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-10 flex flex-col md:flex-row items-center">
           {/* Left — text */}
           <div ref={contentRef} className="flex-1 py-24 md:py-0 md:pr-12 lg:pr-20">
-            <p className="mb-5 font-body text-xs tracking-[0.3em] uppercase text-blush md:mb-7">
+            <p className="mb-5 font-body text-xs tracking-[0.3em] uppercase text-primary md:mb-7">
               Entrepreneur · Realtor · Empire Builder
             </p>
 
@@ -35,8 +35,12 @@ const HeroSection = () => {
               Prince
             </h1>
 
-            <p className="mb-10 max-w-lg font-body text-xl font-light italic text-muted-foreground md:mb-12 md:text-[1.65rem] lg:text-[1.8rem]">
+            <p className="mb-4 font-body text-xl font-light italic text-muted-foreground md:text-[1.65rem] lg:text-[1.8rem]">
               Helping women build the life they actually want.
+            </p>
+
+            <p className="mb-10 font-script text-lg text-primary md:mb-12 md:text-xl">
+              dream big, hustle harder 💕
             </p>
 
             <div className="flex flex-wrap gap-4">

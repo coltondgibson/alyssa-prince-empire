@@ -17,7 +17,7 @@ const TravelTeaser = () => {
   return (
     <section id="travel" className="bg-background py-24 md:py-32">
       <div ref={ref} className="opacity-0 max-w-2xl mx-auto px-6 text-center">
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">Coming Soon</p>
+        <p className="font-script text-xl md:text-2xl text-primary mb-4">✈️ adventure awaits</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-6">
           The next chapter is travel.
         </h2>

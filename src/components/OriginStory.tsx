@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import birthdayPhoto from "@/assets/alyssa-birthday.jpg";
+import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
 
 const OriginStory = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -20,8 +21,11 @@ const OriginStory = () => {
       <div ref={ref} className="opacity-0 max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-blush mb-8">
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
             The Real Story
+          </p>
+          <p className="font-script text-lg text-muted-foreground mb-8">
+            the chapter no one expected ✨
           </p>
 
           <h2 className="font-heading italic text-3xl md:text-4xl lg:text-[52px] leading-[1.15] text-foreground mb-12">
@@ -56,14 +60,29 @@ const OriginStory = () => {
           </a>
         </div>
 
-        {/* Birthday Photo */}
-        <div className="flex-shrink-0 md:max-w-[38%]">
-          <img
-            src={birthdayPhoto}
-            alt="Alyssa celebrating — She Found Her Prince"
-            className="w-full max-w-sm object-cover rounded-sm aspect-[3/4]"
-            loading="lazy"
-          />
+        {/* Photos — stacked polaroids */}
+        <div className="flex-shrink-0 md:max-w-[38%] relative">
+          <div className="polaroid" style={{ transform: "rotate(-2deg)" }}>
+            <img
+              src={birthdayPhoto}
+              alt="Alyssa celebrating — She Found Her Prince"
+              className="w-full max-w-sm object-cover aspect-[3/4]"
+              loading="lazy"
+            />
+            <p className="polaroid-caption">She Found Her Prince 👑</p>
+          </div>
+          <div
+            className="polaroid absolute -bottom-8 -right-6 w-32 md:w-40 hidden md:block"
+            style={{ transform: "rotate(4deg)", zIndex: 10 }}
+          >
+            <img
+              src={carSelfiePhoto}
+              alt="Alyssa car selfie"
+              className="w-full aspect-square object-cover"
+              loading="lazy"
+            />
+            <p className="polaroid-caption text-xs">let's go! 🚗</p>
+          </div>
         </div>
       </div>
     </section>

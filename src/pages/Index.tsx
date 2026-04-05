@@ -4,6 +4,7 @@ import CredentialsBar from "@/components/CredentialsBar";
 import WhoIsAlyssa from "@/components/WhoIsAlyssa";
 import OriginStory from "@/components/OriginStory";
 import PartnersStory from "@/components/PartnersStory";
+import LifePhotoStrip from "@/components/LifePhotoStrip";
 import ThreeLanes from "@/components/ThreeLanes";
 import TravelTeaser from "@/components/TravelTeaser";
 import CommunitySection from "@/components/CommunitySection";
@@ -21,6 +22,7 @@ const Index = () => {
       <WhoIsAlyssa />
       <OriginStory />
       <PartnersStory />
+      <LifePhotoStrip />
       <ThreeLanes />
       <TravelTeaser />
       <CommunitySection />
