@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import CredentialsBar from "@/components/CredentialsBar";
@@ -13,26 +14,33 @@ import WeddingMoment from "@/components/WeddingMoment";
 import QuizSection from "@/components/QuizSection";
 import EmailOptIn from "@/components/EmailOptIn";
 import Footer from "@/components/Footer";
+import QuizModal from "@/components/QuizModal";
+import { QuizProvider } from "@/components/QuizContext";
 
 const Index = () => {
+  const [quizOpen, setQuizOpen] = useState(false);
+
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <CredentialsBar />
-      <WhoIsAlyssa />
-      <TeamSection />
-      <OriginStory />
-      <PartnersStory />
-      <LifePhotoStrip />
-      <ThreeLanes />
-      <TravelTeaser />
-      <CommunitySection />
-      <WeddingMoment />
-      <QuizSection />
-      <EmailOptIn />
-      <Footer />
-    </div>
+    <QuizProvider value={{ openQuiz: () => setQuizOpen(true) }}>
+      <div className="min-h-screen">
+        <Navigation />
+        <HeroSection />
+        <CredentialsBar />
+        <WhoIsAlyssa />
+        <TeamSection />
+        <OriginStory />
+        <PartnersStory />
+        <LifePhotoStrip />
+        <ThreeLanes />
+        <TravelTeaser />
+        <CommunitySection />
+        <WeddingMoment />
+        <QuizSection />
+        <EmailOptIn />
+        <Footer />
+      </div>
+      <QuizModal open={quizOpen} onClose={() => setQuizOpen(false)} />
+    </QuizProvider>
   );
 };
 

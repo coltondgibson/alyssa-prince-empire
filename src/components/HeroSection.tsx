@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
+import { useQuiz } from "@/components/QuizContext";
 import portraitImage from "@/assets/alyssa-hero.jpg";
 
 const HeroSection = () => {
+  const { openQuiz } = useQuiz();
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -64,12 +66,12 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#connect"
+              <button
+                onClick={openQuiz}
                 className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
               >
                 Take the Quiz
-              </a>
+              </button>
               <a
                 href="#connect"
                 className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:-translate-y-0.5"
