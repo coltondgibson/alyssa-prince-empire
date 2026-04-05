@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Instagram, Facebook, Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Story", href: "#story" },
@@ -28,7 +29,7 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10">
-        {/* Logo — elegant script monogram */}
+        {/* Logo */}
         <a href="#" className="flex flex-col items-center leading-none group">
           <span className="font-script text-3xl lg:text-4xl text-foreground group-hover:text-primary transition-colors duration-300">
             Alyssa Prince
@@ -52,28 +53,47 @@ const Navigation = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <a
-          href="#"
-          className="hidden md:inline-block bg-foreground text-background font-body text-xs font-medium tracking-[0.14em] uppercase px-6 py-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-        >
-          Take the Quiz
-        </a>
+        {/* Right side: social icons + CTA + hamburger */}
+        <div className="flex items-center gap-4">
+          {/* Social icons */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://instagram.com/alyssam_prince"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors duration-300"
+              aria-label="Instagram"
+            >
+              <Instagram size={18} strokeWidth={1.5} />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors duration-300"
+              aria-label="Facebook"
+            >
+              <Facebook size={18} strokeWidth={1.5} />
+            </a>
+          </div>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-foreground"
-          aria-label="Toggle menu"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            {mobileOpen ? (
-              <path d="M6 6l12 12M6 18L18 6" />
-            ) : (
-              <path d="M4 7h16M4 12h16M4 17h16" />
-            )}
-          </svg>
-        </button>
+          {/* CTA */}
+          <a
+            href="#quiz"
+            className="hidden md:inline-block bg-foreground text-background font-body text-xs font-medium tracking-[0.14em] uppercase px-6 py-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            Take the Quiz
+          </a>
+
+          {/* Mobile hamburger */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden text-foreground/80 hover:text-foreground transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={24} strokeWidth={1.5} /> : <Menu size={24} strokeWidth={1.5} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -89,8 +109,32 @@ const Navigation = () => {
               {link.label}
             </a>
           ))}
+
+          {/* Mobile social + CTA */}
+          <div className="flex items-center gap-5 mt-5">
+            <a
+              href="https://instagram.com/alyssam_prince"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} strokeWidth={1.5} />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} strokeWidth={1.5} />
+            </a>
+          </div>
+
           <a
-            href="#"
+            href="#quiz"
+            onClick={() => setMobileOpen(false)}
             className="inline-block mt-4 bg-foreground text-background font-body text-sm font-medium tracking-[0.12em] uppercase px-6 py-2.5 rounded-full"
           >
             Take the Quiz
