@@ -28,7 +28,7 @@ const PartnersStory = () => {
       <div ref={ref} className="opacity-0 relative z-10 max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
         <p className="font-script text-3xl md:text-4xl text-primary mb-4">the journey</p>
         <p className="font-body text-sm tracking-[0.3em] uppercase text-blush mb-6">
-          The Journey
+          ​
         </p>
         <h2 className="font-heading italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-card mb-8">
           "15 years. Every lesson earned."
