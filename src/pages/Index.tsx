@@ -21,6 +21,7 @@ const Index = () => {
       <HeroSection />
       <CredentialsBar />
       <WhoIsAlyssa />
+      <TeamSection />
       <OriginStory />
       <PartnersStory />
       <LifePhotoStrip />
