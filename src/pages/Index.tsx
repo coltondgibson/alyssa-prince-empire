@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import CredentialsBar from "@/components/CredentialsBar";
 import WhoIsAlyssa from "@/components/WhoIsAlyssa";
+import TeamSection from "@/components/TeamSection";
 import OriginStory from "@/components/OriginStory";
 import PartnersStory from "@/components/PartnersStory";
 import LifePhotoStrip from "@/components/LifePhotoStrip";
@@ -20,6 +21,7 @@ const Index = () => {
       <HeroSection />
       <CredentialsBar />
       <WhoIsAlyssa />
+      <TeamSection />
       <OriginStory />
       <PartnersStory />
       <LifePhotoStrip />
