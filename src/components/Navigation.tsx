@@ -56,12 +56,12 @@ const Navigation = () => {
         {/* Right side: social icons + CTA + hamburger */}
         <div className="flex items-center gap-4">
           {/* Social icons */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-5">
             <a
               href="https://instagram.com/alyssam_prince"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary transition-colors duration-300"
+              className="text-pink-500 hover:text-pink-600 transition-colors duration-300"
               aria-label="Instagram"
             >
               <Instagram size={18} strokeWidth={1.5} />
@@ -70,7 +70,7 @@ const Navigation = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary transition-colors duration-300"
+              className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
               aria-label="Facebook"
             >
               <Facebook size={18} strokeWidth={1.5} />
