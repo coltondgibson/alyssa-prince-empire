@@ -26,7 +26,7 @@ const PartnersStory = () => {
       <div className="absolute inset-0 bg-brand-black/65" />
 
       <div ref={ref} className="opacity-0 relative z-10 max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
-        <p className="font-script text-xl md:text-2xl text-primary mb-4">the journey</p>
+        <p className="font-script text-3xl md:text-4xl text-primary mb-4">the journey</p>
         <p className="font-body text-sm tracking-[0.3em] uppercase text-blush mb-6">
           The Journey
         </p>
