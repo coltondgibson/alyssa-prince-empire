@@ -45,7 +45,7 @@ const Navigation = () => {
             <a
               key={link.label}
               href={link.href}
-              className="relative font-body text-xs tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300 group py-1"
+              className="relative font-body text-sm tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300 group py-1"
             >
               {link.label}
               <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full rounded-full" />

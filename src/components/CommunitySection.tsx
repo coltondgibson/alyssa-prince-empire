@@ -27,7 +27,7 @@ const CommunitySection = () => {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-card mb-6">
             "The women around you either keep you stuck or push you forward."
           </h2>
-          <p className="font-body text-base md:text-lg text-card/80 mb-10">
+          <p className="font-body text-lg md:text-xl text-card/80 mb-10">
             This is my community. You're invited.
           </p>
           <a href="#connect" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3 rounded-sm border border-blush text-blush hover:bg-blush hover:text-primary-foreground transition-all duration-300">

@@ -31,13 +31,13 @@ const TeamSection = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(338_55%_65%/0.08),transparent_70%)]" />
 
         <div ref={ref} className="opacity-0 relative z-10 max-w-2xl mx-auto px-6 text-center">
-          <p className="font-body tracking-[0.3em] uppercase text-primary mb-3 text-xs">
+          <p className="font-body tracking-[0.3em] uppercase text-primary mb-3 text-sm">
             A New Chapter
           </p>
           <h2 className="font-heading text-3xl md:text-4xl leading-[1.2] text-primary-foreground mb-5">
             The right product.<br />The right people.<br />The right time.
           </h2>
-          <p className="font-body text-sm md:text-base leading-relaxed text-primary-foreground/70 max-w-lg mx-auto mb-6">
+          <p className="font-body text-base md:text-lg leading-relaxed text-primary-foreground/70 max-w-lg mx-auto mb-6">
             Alyssa and her team brought their greens formula and a massive network of partners and customers to Tranont, creating one of the most exciting launches in the company's history.
           </p>
 
