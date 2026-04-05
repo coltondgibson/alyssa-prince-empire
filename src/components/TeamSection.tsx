@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import teamPhoto from "@/assets/tranont-team.jpg";
+import teamPhoto from "@/assets/tranont-team-hq.png";
 
 const TeamSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -26,34 +26,57 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <section className="bg-foreground py-16 md:py-20 relative overflow-hidden">
-        {/* Subtle radial glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(338_55%_65%/0.08),transparent_70%)]" />
+      <section className="relative overflow-hidden py-24 md:py-32" style={{
+        background: "linear-gradient(165deg, hsl(338 55% 65% / 0.08) 0%, hsl(220 40% 13%) 35%, hsl(220 40% 10%) 100%)"
+      }}>
+        {/* Subtle decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+        <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/[0.04] blur-3xl pointer-events-none" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-primary/[0.03] blur-3xl pointer-events-none" />
 
-        <div ref={ref} className="opacity-0 relative z-10 max-w-2xl mx-auto px-6 text-center">
-          <p className="font-body tracking-[0.3em] uppercase text-primary mb-3 text-sm">
+        <div ref={ref} className="opacity-0 relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
+          {/* Label */}
+          <p className="font-body tracking-[0.3em] uppercase text-primary mb-4 text-sm text-center">
             A New Chapter
           </p>
-          <h2 className="font-heading text-3xl md:text-4xl leading-[1.2] text-primary-foreground mb-5">
+
+          {/* Headline */}
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.15] text-primary-foreground mb-6 text-center">
             The right product.<br />The right people.<br />The right time.
           </h2>
-          <p className="font-body text-base md:text-lg leading-relaxed text-primary-foreground/70 max-w-lg mx-auto mb-6">
+
+          {/* Description */}
+          <p className="font-body text-lg md:text-xl leading-relaxed text-primary-foreground/70 max-w-2xl mx-auto mb-12 text-center">
             Alyssa and her team brought their greens formula and a massive network of partners and customers to Tranont, creating one of the most exciting launches in the company's history.
           </p>
 
-          <img
-            src={teamPhoto}
-            alt="Alyssa with the Tranont leadership team"
-            className="w-full max-w-xs mx-auto rounded-sm mb-8"
-            loading="lazy"
-          />
+          {/* Large photo with elegant frame */}
+          <div className="max-w-3xl mx-auto mb-14">
+            <div className="relative rounded-sm overflow-hidden shadow-2xl">
+              <img
+                src={teamPhoto}
+                alt="Alyssa with the Tranont leadership team — Our mission is to impact 1 billion lives"
+                className="w-full aspect-[4/3] object-cover object-[center_30%]"
+                loading="lazy"
+              />
+              {/* Subtle gradient overlay at bottom */}
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
+            </div>
+            <p className="font-script text-lg text-primary/80 text-center mt-5">
+              "Our mission is to impact 1 billion lives" ✨
+            </p>
+          </div>
 
-          <a
-            href="#quiz"
-            className="inline-block font-body text-xs tracking-[0.2em] uppercase bg-primary text-foreground px-8 py-3 rounded-sm hover:bg-primary/90 transition-colors"
-          >
-            Find out if this is for you →
-          </a>
+          {/* CTA */}
+          <div className="text-center">
+            <a
+              href="#quiz"
+              className="inline-block font-body text-sm tracking-[0.2em] uppercase bg-primary text-primary-foreground px-10 py-4 rounded-sm hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+            >
+              Find out if this is for you →
+            </a>
+          </div>
         </div>
       </section>
     </>
