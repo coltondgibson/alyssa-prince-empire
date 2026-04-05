@@ -18,11 +18,11 @@ const TeamSection = () => {
   return (
     <section className="bg-cream py-14 md:py-20">
       <div ref={ref} className="opacity-0 max-w-3xl mx-auto px-6 text-center">
-        <p className="font-body tracking-[0.3em] uppercase text-primary mb-3 text-2xl">
+        <p className="font-body tracking-[0.3em] uppercase text-primary mb-3 text-lg">
           The Team
         </p>
         <h2 className="font-heading md:text-3xl leading-[1.2] text-foreground mb-4 text-5xl">
-          The right product. The right people. The right time.
+          The right product.<br />The right people.<br />The right time.
         </h2>
         <p className="font-body md:text-base leading-relaxed text-muted-foreground max-w-xl mx-auto mb-8 text-lg">
           Alyssa and her team brought their greens formula and a massive network of partners and customers to Tranont, creating one of the most exciting launches in the company's history.
