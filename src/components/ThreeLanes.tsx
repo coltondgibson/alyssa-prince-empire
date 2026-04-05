@@ -105,7 +105,7 @@ const ThreeLanes = () => {
             <p className="font-body text-sm text-muted-foreground mt-4 text-center italic">Why she chose Tranont — "Our mission is to impact 1 billion lives"</p>
           </div>
           <div className="overflow-hidden rounded-sm">
-            <img src={nashvillePhoto} alt="Alyssa at 7 Star Director recognition in Nashville" className="w-full h-80 md:h-96 object-cover" loading="lazy" />
+            <img src={nashvillePhoto} alt="Alyssa at 7 Star Director recognition in Nashville" className="w-full h-96 md:h-[28rem] object-cover object-top" loading="lazy" />
             <p className="font-body text-sm text-muted-foreground mt-4 text-center italic">7 Star Director — Nashville recognition</p>
           </div>
         </div>
