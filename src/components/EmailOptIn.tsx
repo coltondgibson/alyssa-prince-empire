@@ -25,7 +25,7 @@ const EmailOptIn = () => {
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
           Stay Connected With Alyssa
         </h2>
-        <p className="font-body text-sm md:text-base text-foreground/70 mb-10 leading-relaxed">
+        <p className="font-body text-base md:text-lg text-foreground/70 mb-10 leading-relaxed">
           Real talk, wellness tips, travel hacks, and opportunities — straight from Alyssa. No spam. Just value.
         </p>
         <div className="max-w-[480px] mx-auto space-y-4">

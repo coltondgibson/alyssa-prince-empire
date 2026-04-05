@@ -33,7 +33,7 @@ const WhoIsAlyssa = () => {
       >
         {/* Left text */}
         <div className="flex-1 md:max-w-[55%]">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
             Who Is Alyssa Prince
           </p>
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-foreground mb-6">
@@ -41,13 +41,13 @@ const WhoIsAlyssa = () => {
             <br />
             The real deal.
           </h2>
-          <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl mb-6">
+          <p className="font-body text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl mb-6">
             I've spent 15 years building businesses, closing real estate deals, earning 7 figures,
             and winning top ranks in an industry I love. I've also burned out and walked away — and
             came back when something real finally pulled me in again. My passion for helping women
             win has never been stronger. And I want to bring you with me.
           </p>
-          <p className="font-script text-xl text-primary">— xo, Alyssa</p>
+          <p className="font-script text-2xl text-primary">— xo, Alyssa</p>
         </div>
 
         {/* Right — stacked photos with slight rotation */}

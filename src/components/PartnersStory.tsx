@@ -27,13 +27,13 @@ const PartnersStory = () => {
 
       <div ref={ref} className="opacity-0 relative z-10 max-w-3xl mx-auto px-6 py-24 md:py-32 text-center">
         <p className="font-script text-xl md:text-2xl text-primary mb-4">the journey</p>
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-blush mb-6">
+        <p className="font-body text-sm tracking-[0.3em] uppercase text-blush mb-6">
           The Journey
         </p>
         <h2 className="font-heading italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-card mb-8">
           "15 years. Every lesson earned."
         </h2>
-        <p className="font-body text-base md:text-lg leading-relaxed text-card/85 max-w-2xl mx-auto">
+        <p className="font-body text-lg md:text-xl leading-relaxed text-card/85 max-w-2xl mx-auto">
           I didn't stumble into success. I built it — deal by deal, client by client, decision by decision. When I found Tranont, I wasn't looking for another opportunity. I was looking for something I could actually believe in. I found both — and I brought everything I'd learned in 15 years with me.
         </p>
       </div>

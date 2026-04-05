@@ -23,7 +23,7 @@ const OriginStory = () => {
       <div ref={ref} className="opacity-0 max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
-          <p className="font-body tracking-[0.3em] uppercase text-primary mb-4 text-xl">
+          <p className="font-body tracking-[0.3em] uppercase text-primary mb-4 text-2xl">
             The Real Story
           </p>
           <p className="font-script text-muted-foreground mb-8 text-xl">
