@@ -77,9 +77,9 @@ const ThreeLanes = () => {
       </div>
 
       {/* Lane 2 — Business: text left, couch photo right */}
-      <div ref={ref2} className="opacity-0 flex flex-col md:flex-row-reverse w-full" style={{ minHeight: 480 }}>
+      <div ref={ref2} className="opacity-0 flex flex-col md:flex-row-reverse w-full" style={{ minHeight: 320 }}>
         <div className="md:w-1/2 h-64 md:h-auto">
-          <img src={businessPhoto} alt="Alyssa working on her business" className="w-full h-full object-cover object-[center_30%] md:object-[center_35%]" loading="lazy" />
+          <img src={businessPhoto} alt="Alyssa working on her business" className="w-full h-full object-cover object-[center_30%] md:object-[center_35%] max-h-[360px] md:max-h-none" loading="lazy" />
         </div>
         <div className="md:w-1/2 bg-card flex items-center px-8 lg:px-16 py-16">
           <div className="max-w-lg">
@@ -105,7 +105,7 @@ const ThreeLanes = () => {
             <p className="font-body text-sm text-foreground/70 mt-4 text-center italic">Why she chose Tranont — "Our mission is to impact 1 billion lives"</p>
           </div>
           <div className="overflow-hidden rounded-sm">
-            <img src={nashvillePhoto} alt="Alyssa at 7 Star Director recognition in Nashville" className="w-full h-96 md:h-[28rem] object-cover object-top" loading="lazy" />
+            <img src={nashvillePhoto} alt="Alyssa at 7 Star Director recognition in Nashville" className="w-full h-80 md:h-96 object-cover object-top" loading="lazy" />
             <p className="font-body text-sm text-foreground/70 mt-4 text-center italic">7 Star Director — Nashville recognition</p>
           </div>
         </div>
