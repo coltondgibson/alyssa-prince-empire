@@ -1,40 +1,41 @@
-import { useEffect, useRef } from "react";
-
 const credentials = [
   "15+ Years in Business",
   "7-Figure Earner",
-  "Realtor",
+  "Top Rank Achiever",
+  "Licensed Realtor",
   "World Traveler",
   "Empire Builder",
+  "Keynote Speaker",
+  "Mom of Four",
 ];
 
 const CredentialsBar = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { el.classList.add("animate-fade-up"); obs.disconnect(); } },
-      { threshold: 0.3 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
+  // Duplicate items for seamless loop
+  const items = [...credentials, ...credentials];
 
   return (
-    <section ref={ref} className="bg-primary py-5 opacity-0">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-center gap-x-2 whitespace-nowrap">
-        {credentials.map((item, i) => (
-          <span key={item} className="flex items-center gap-2">
-            <span className="font-body text-[11px] md:text-xs tracking-[0.2em] uppercase text-primary-foreground">
-              {item}
+    <section className="bg-foreground overflow-hidden py-4 md:py-5">
+      <div className="relative flex">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {items.map((item, i) => (
+            <span key={i} className="flex items-center mx-6 md:mx-10">
+              <span className="font-body text-[11px] md:text-xs tracking-[0.25em] uppercase text-background/90 font-light">
+                {item}
+              </span>
+              <span className="ml-6 md:ml-10 text-primary text-sm">✦</span>
             </span>
-            {i < credentials.length - 1 && (
-              <span className="text-primary-foreground/60 text-[10px]">·</span>
-            )}
-          </span>
-        ))}
+          ))}
+        </div>
+        <div className="flex animate-marquee2 whitespace-nowrap absolute top-0">
+          {items.map((item, i) => (
+            <span key={i} className="flex items-center mx-6 md:mx-10">
+              <span className="font-body text-[11px] md:text-xs tracking-[0.25em] uppercase text-background/90 font-light">
+                {item}
+              </span>
+              <span className="ml-6 md:ml-10 text-primary text-sm">✦</span>
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
