@@ -91,9 +91,9 @@ const ThreeLanes = () => {
           <div className="group relative rounded-md text-center overflow-hidden transition-all duration-500 hover:-translate-y-1.5 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.25)] hover:shadow-[0_20px_60px_-12px_hsl(var(--primary)/0.4)] ring-2 ring-primary/20 hover:ring-primary/40">
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
             <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.04] to-primary/[0.08] pointer-events-none" />
-            <img src={greensPhoto} alt="Tranont Greens product" className="relative w-full h-72 md:h-[420px] object-cover object-top" loading="lazy" />
+            <img src={greensPhoto} alt="Tranont Greens product" className="relative w-full h-64 md:h-96 object-contain bg-background" loading="lazy" />
             <div className="relative p-10 md:p-12 bg-card">
-              <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-3">★ Most Popular</p>
+              <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-3">✦ Featured</p>
               <h4 className="font-heading text-3xl md:text-4xl text-foreground mb-4">Greens</h4>
               <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-8 max-w-2xl mx-auto">
                 My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
