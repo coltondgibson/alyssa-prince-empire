@@ -69,24 +69,14 @@ const HeroSection = () => {
           </div>
 
           {/* Right — portrait with gradient blend */}
-          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-center justify-center overflow-hidden relative">
-            <img
-              src={portraitImage}
-              alt="Alyssa Prince portrait"
-              className="h-[85vh] max-h-[900px] w-auto object-cover object-top rounded-sm"
-            />
-            {/* Gradient overlay to blend photo edges into cream background */}
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: `
-                  linear-gradient(to right, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 8%, transparent 25%),
-                  linear-gradient(to left, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 8%, transparent 25%),
-                  linear-gradient(to bottom, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.4) 5%, transparent 20%),
-                  linear-gradient(to top, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 8%, transparent 25%)
-                `,
-              }}
-            />
+          <div className="hidden md:flex md:w-[48%] lg:w-[44%] flex-none items-center justify-center py-12">
+            <div className="flex h-[78vh] max-h-[820px] w-full max-w-[560px] items-center justify-center">
+              <img
+                src={portraitImage}
+                alt="Alyssa Prince portrait"
+                className="h-full w-full object-contain object-center"
+              />
+            </div>
           </div>
         </div>
       </div>
