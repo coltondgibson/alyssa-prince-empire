@@ -48,7 +48,7 @@ const HeroSection = () => {
               Helping women build the life they actually want.
             </p>
 
-            <p className="mb-10 font-script text-primary md:mb-12 md:text-xl text-2xl">
+            <p className="mb-10 font-script text-primary md:mb-12 md:text-xl text-3xl">
               your income, your freedom, your terms
             </p>
 
