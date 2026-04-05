@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Heart } from "lucide-react";
-import birthdayPhoto from "@/assets/alyssa-birthday.jpg";
+import glamPortrait from "@/assets/alyssa-glam-portrait.jpg";
 import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
 import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
 
@@ -78,18 +78,18 @@ const OriginStory = () => {
             </div>
           </div>
 
-          {/* Small inset polaroid — birthday */}
+          {/* Small inset polaroid — glam portrait */}
           <div
             className="polaroid absolute -bottom-10 -left-6 w-28 md:w-36 hidden md:block"
             style={{ transform: "rotate(-4deg)", zIndex: 10 }}
           >
             <img
-              src={birthdayPhoto}
-              alt="Alyssa celebrating"
+              src={glamPortrait}
+              alt="Alyssa glam portrait"
               className="w-full aspect-square object-cover"
               loading="lazy"
             />
-            <p className="polaroid-caption text-xs">She Found Her Prince 👑</p>
+            <p className="polaroid-caption text-xs">Built from nothing 💪</p>
           </div>
 
           {/* Small inset polaroid — car selfie */}
