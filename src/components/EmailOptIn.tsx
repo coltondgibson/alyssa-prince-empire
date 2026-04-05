@@ -19,7 +19,7 @@ const EmailOptIn = () => {
   }, []);
 
   return (
-    <section id="connect" className="bg-primary py-20 md:py-28">
+    <section id="connect" className="bg-primary py-14 md:py-20">
       <div ref={ref} className="opacity-0 max-w-xl mx-auto px-6 text-center">
         <p className="font-script text-xl md:text-2xl text-foreground/85 mb-3">let's stay in touch 💌</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">

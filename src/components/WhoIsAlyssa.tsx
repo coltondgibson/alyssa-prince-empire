@@ -80,7 +80,7 @@ const WhoIsAlyssa = () => {
       {/* Pull quote */}
       <div
         ref={quoteRef}
-        className="opacity-0 relative z-10 pb-20 md:pb-28 px-6"
+        className="opacity-0 relative z-10 pb-14 md:pb-20 px-6"
       >
         <p className="font-heading italic text-2xl md:text-3xl lg:text-4xl text-center text-primary max-w-4xl mx-auto leading-snug">
           "You don't need full clarity to start. Confidence comes after you move."

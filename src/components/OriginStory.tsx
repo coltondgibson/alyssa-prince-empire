@@ -19,7 +19,7 @@ const OriginStory = () => {
   }, []);
 
   return (
-    <section className="bg-card py-24 md:py-32">
+    <section className="bg-card py-16 md:py-20">
       <div ref={ref} className="opacity-0 max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
         {/* Text */}
         <div className="flex-1 text-center md:text-left">
