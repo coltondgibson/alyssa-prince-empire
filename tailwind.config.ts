@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         heading: ["Cormorant Garamond", "serif"],
         body: ["Montserrat", "sans-serif"],
+        script: ["Dancing Script", "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
