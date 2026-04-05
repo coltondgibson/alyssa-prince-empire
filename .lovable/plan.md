@@ -1,20 +1,14 @@
 
 
-## Hero Section Mobile Layout Fix
+## Plan: Increase Wellness Section Image Height
 
-### Problem
-On mobile (428px wide), the hero content is displayed side-by-side (text left, image right) instead of stacking vertically. This makes both elements too small and leaves wasted space below.
+**What changes**: Make the "Feel better from the inside out" kitchen image taller so more of the photo is visible.
 
-### Root Cause
-The flex container uses `flex-col md:flex-row`, which should stack on mobile — but the image container has `flex w-full md:w-[48%]` which keeps it inline. The issue is likely that `flex-col` isn't being applied, or the content still flows horizontally due to sizing. Need to verify the exact current markup.
+**File**: `src/components/ThreeLanes.tsx`
 
-### Changes — `src/components/HeroSection.tsx`
+1. Increase mobile image height from `h-72` to `h-96`
+2. Remove the desktop max-height cap (`md:max-h-[480px]` → `md:max-h-[560px]`)
+3. Increase the container `minHeight` from `320` to `420`
 
-1. **Stack layout on mobile**: Ensure the outer flex container uses `flex-col md:flex-row` and that on mobile the image comes first (or after text) at full width.
-2. **Reorder for mobile**: On mobile, show the image above or below the text at full width, then switch to side-by-side on `md:` breakpoint.
-3. **Reduce heading size on mobile**: Scale down the "Alyssa" text size for small screens (e.g., `text-[4rem]` on mobile instead of `text-[5.5rem]`).
-4. **Reduce empty space**: Tighten vertical padding on mobile so the section doesn't have excessive blank area below the buttons.
-
-### Result
-On mobile: vertically stacked layout with full-width image and properly sized text. On desktop: unchanged side-by-side layout.
+This will make the image noticeably larger on both mobile and desktop, giving a clearer view of the scene.
 
