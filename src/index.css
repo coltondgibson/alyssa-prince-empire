@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 4%;
 
-    --primary: 346 55% 65%;
+    --primary: 338 66% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 40 33% 98%;
@@ -24,7 +24,7 @@
     --muted: 40 20% 95%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 346 55% 65%;
+    --accent: 338 66% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,7 +32,7 @@
 
     --border: 40 20% 90%;
     --input: 40 20% 90%;
-    --ring: 346 55% 65%;
+    --ring: 338 66% 55%;
 
     --radius: 0.25rem;
 
@@ -46,7 +46,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Brand tokens */
-    --blush: 346 55% 65%;
+    --blush: 338 66% 55%;
     --cream: 40 33% 98%;
     --brand-black: 0 0% 4%;
     --gold: 38 80% 55%;

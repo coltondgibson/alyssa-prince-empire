@@ -34,8 +34,8 @@ const HeroSection = () => {
             </p>
 
             <h1
-              className="mb-5 text-[6.5rem] leading-[0.85] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem] tracking-[-0.03em]"
-              style={{ fontFamily: "'Bodoni Moda', serif", fontWeight: 900, fontOpticalSizing: 'auto' }}
+              className="mb-5 text-[6rem] leading-[0.88] text-foreground md:mb-7 md:text-[8rem] lg:text-[10rem] tracking-tight drop-shadow-sm"
+              style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900 }}
             >
               <span className="block">Alyssa</span>
               <span className="block italic text-primary">Prince</span>
