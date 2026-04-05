@@ -29,7 +29,10 @@ const HeroSection = () => {
               Entrepreneur · Realtor · Empire Builder
             </p>
 
-            <h1 className="mb-5 font-heading text-[6.5rem] leading-[0.82] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem]">
+            <h1
+              className="mb-5 text-[6.5rem] leading-[0.82] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem] font-black tracking-tight"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
               Alyssa
               <br />
               Prince
