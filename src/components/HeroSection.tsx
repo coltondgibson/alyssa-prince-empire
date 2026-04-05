@@ -53,9 +53,9 @@ const HeroSection = () => {
               </span>
             </h1>
 
-            <div className="w-16 h-[2px] bg-primary/40 mb-5 md:mb-7" />
+            <div className="w-16 h-[2px] bg-primary/60 mb-5 md:mb-7" />
 
-            <p className="mb-4 font-body text-lg font-light italic text-muted-foreground md:text-[1.65rem] lg:text-[1.8rem]">
+            <p className="mb-4 font-body text-lg font-normal italic text-foreground/80 md:text-[1.65rem] lg:text-[1.8rem]">
               Helping women build the life they actually want.
             </p>
 
