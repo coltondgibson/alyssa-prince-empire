@@ -39,9 +39,10 @@ const Navigation = () => {
             <a
               key={link.label}
               href={link.href}
-              className="font-body text-sm tracking-[0.15em] uppercase text-foreground/70 hover:text-foreground transition-colors duration-300"
+              className="relative font-body text-sm tracking-[0.15em] uppercase text-foreground font-medium hover:text-primary transition-colors duration-300 group"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </div>
@@ -49,7 +50,7 @@ const Navigation = () => {
         {/* CTA */}
         <a
           href="#"
-          className="hidden md:inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-6 py-2.5 rounded-sm hover:opacity-90 transition-opacity duration-300"
+          className="hidden md:inline-block bg-primary text-primary-foreground font-body text-sm font-medium tracking-[0.12em] uppercase px-6 py-2.5 rounded-sm hover:opacity-90 transition-opacity duration-300"
         >
           Take the Quiz
         </a>
@@ -78,14 +79,14 @@ const Navigation = () => {
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 font-body text-sm tracking-[0.15em] uppercase text-foreground/70 hover:text-foreground transition-colors"
+              className="block py-3 font-body text-sm tracking-[0.15em] uppercase text-foreground font-medium hover:text-primary transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#"
-            className="inline-block mt-4 bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-6 py-2.5 rounded-sm"
+            className="inline-block mt-4 bg-primary text-primary-foreground font-body text-sm font-medium tracking-[0.12em] uppercase px-6 py-2.5 rounded-sm"
           >
             Take the Quiz
           </a>
