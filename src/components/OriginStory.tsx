@@ -105,6 +105,17 @@ const OriginStory = () => {
             />
             <p className="polaroid-caption text-xs">Living my best life ✨</p>
           </div>
+
+          {/* Testimonial below photos */}
+          <div className="mt-16 hidden md:block">
+            <Quote size={20} className="text-primary mb-2 opacity-60" />
+            <p className="font-script text-lg text-muted-foreground leading-relaxed mb-3">
+              "Alyssa showed me that my past doesn't define my future. She's the real deal — she lived it."
+            </p>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-primary">
+              — Community Member
+            </p>
+          </div>
         </div>
       </div>
     </section>
