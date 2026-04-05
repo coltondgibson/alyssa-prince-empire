@@ -20,9 +20,9 @@ const TeamSection = () => {
       {/* Decorative spacer */}
       <div className="bg-cream flex items-center justify-center py-6">
         <div className="flex items-center gap-4 max-w-xs w-full">
-          <div className="flex-1 h-px bg-primary/20" />
+          <div className="flex-1 h-px bg-primary/40" />
           <span className="font-script text-primary text-xl">✦</span>
-          <div className="flex-1 h-px bg-primary/20" />
+          <div className="flex-1 h-px bg-primary/40" />
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const TeamSection = () => {
           </h2>
 
           {/* Description */}
-          <p className="font-body text-lg md:text-xl leading-relaxed text-muted-foreground max-w-2xl mx-auto mb-12 text-center">
+          <p className="font-body text-lg md:text-xl leading-relaxed text-foreground/80 max-w-2xl mx-auto mb-12 text-center">
             Alyssa and her team brought their greens formula and a massive network of partners and customers to Tranont, creating one of the most exciting launches in the company's history.
           </p>
 
@@ -56,7 +56,7 @@ const TeamSection = () => {
               {/* Subtle gradient overlay at bottom */}
               <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
-            <p className="font-script text-lg text-primary/80 text-center mt-5">
+            <p className="font-script text-lg text-primary text-center mt-5">
               "Our mission is to impact 1 billion lives" ✨
             </p>
           </div>

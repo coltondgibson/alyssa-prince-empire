@@ -67,7 +67,7 @@ const ThreeLanes = () => {
           ].map((product) => (
             <div key={product.name} className="bg-card p-8 rounded-sm text-center">
               <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
-              <p className="font-body text-base leading-relaxed text-foreground/75 mb-6">{product.description}</p>
+              <p className="font-body text-base leading-relaxed text-foreground/85 mb-6">{product.description}</p>
               <a href="#quiz" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
                 Learn More →
               </a>
@@ -102,11 +102,11 @@ const ThreeLanes = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="overflow-hidden rounded-sm">
             <img src={tranontPhoto} alt="Alyssa with Tranont leadership — Our mission is to impact 1 billion lives" className="w-full h-80 md:h-96 object-cover" loading="lazy" />
-            <p className="font-body text-sm text-muted-foreground mt-4 text-center italic">Why she chose Tranont — "Our mission is to impact 1 billion lives"</p>
+            <p className="font-body text-sm text-foreground/70 mt-4 text-center italic">Why she chose Tranont — "Our mission is to impact 1 billion lives"</p>
           </div>
           <div className="overflow-hidden rounded-sm">
             <img src={nashvillePhoto} alt="Alyssa at 7 Star Director recognition in Nashville" className="w-full h-96 md:h-[28rem] object-cover object-top" loading="lazy" />
-            <p className="font-body text-sm text-muted-foreground mt-4 text-center italic">7 Star Director — Nashville recognition</p>
+            <p className="font-body text-sm text-foreground/70 mt-4 text-center italic">7 Star Director — Nashville recognition</p>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ const ThreeLanes = () => {
       {/* Lane 3 — Real Estate: no photo, blush pink bg, centered */}
       <div ref={ref3} className="opacity-0 w-full bg-primary flex items-center justify-center px-8 py-20" style={{ minHeight: 380 }}>
         <div className="max-w-xl text-center">
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary-foreground/70 mb-4">Real Estate</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary-foreground/85 mb-4">Real Estate</p>
           <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-primary-foreground mb-6">
             Let's find your home.
           </h3>

@@ -30,7 +30,7 @@ const WeddingMoment = () => {
             March 6, 2026 — Said yes to the best adventure yet 💍
           </p>
         </div>
-        <p className="mt-10 font-heading italic text-xl md:text-2xl text-muted-foreground">
+        <p className="mt-10 font-heading italic text-xl md:text-2xl text-foreground/70">
           "Every love story is beautiful, but ours is my favorite."
         </p>
       </div>

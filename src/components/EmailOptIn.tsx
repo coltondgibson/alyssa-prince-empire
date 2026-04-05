@@ -21,11 +21,11 @@ const EmailOptIn = () => {
   return (
     <section id="connect" className="bg-primary py-20 md:py-28">
       <div ref={ref} className="opacity-0 max-w-xl mx-auto px-6 text-center">
-        <p className="font-script text-xl md:text-2xl text-foreground/70 mb-3">let's stay in touch 💌</p>
+        <p className="font-script text-xl md:text-2xl text-foreground/85 mb-3">let's stay in touch 💌</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
           Stay Connected With Alyssa
         </h2>
-        <p className="font-body text-base md:text-lg text-foreground/70 mb-10 leading-relaxed">
+        <p className="font-body text-base md:text-lg text-foreground/85 mb-10 leading-relaxed">
           Real talk, wellness tips, travel hacks, and opportunities — straight from Alyssa. No spam. Just value.
         </p>
         <div className="max-w-[480px] mx-auto space-y-4">
