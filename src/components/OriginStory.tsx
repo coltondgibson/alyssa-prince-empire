@@ -80,7 +80,7 @@ const OriginStory = () => {
 
           {/* Small inset polaroid — glam portrait */}
           <div
-            className="polaroid absolute -bottom-64 left-20 w-32 md:w-44 hidden md:block"
+            className="polaroid absolute -bottom-64 -left-10 w-32 md:w-44 hidden md:block"
             style={{ transform: "rotate(-4deg)", zIndex: 10 }}
           >
             <img
