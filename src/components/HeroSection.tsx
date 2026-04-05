@@ -38,7 +38,7 @@ const HeroSection = () => {
               style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900 }}
             >
               <span className="block">Alyssa</span>
-              <span className="block italic text-primary">Prince</span>
+              <span className="block mt-1">Prince</span>
             </h1>
 
             <div className="w-16 h-[2px] bg-primary/40 mb-5 md:mb-7" />
