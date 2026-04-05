@@ -62,7 +62,7 @@ const EmailOptIn = () => {
             <option value="travel">Travel opportunities</option>
             <option value="all">All of the above</option>
           </select>
-          <button className="w-full bg-brand-black text-card font-body text-sm tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300">
+          <button className="w-full font-body text-sm tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-card shadow-md hover:shadow-lg hover:-translate-y-0.5">
             YES, I'M IN →
           </button>
         </div>

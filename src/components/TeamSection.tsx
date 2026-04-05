@@ -72,7 +72,7 @@ const TeamSection = () => {
           <div className="text-center">
             <a
               href="#quiz"
-              className="inline-block font-body text-sm tracking-[0.2em] uppercase bg-primary text-primary-foreground px-10 py-4 rounded-sm hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+              className="inline-block font-body text-sm tracking-[0.2em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/35 hover:-translate-y-0.5"
             >
               Find out if this is for you →
             </a>

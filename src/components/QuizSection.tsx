@@ -26,7 +26,7 @@ const QuizSection = () => {
         </p>
         <a
           href="#connect"
-          className="inline-block bg-gold text-gold-foreground font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm hover:opacity-90 transition-opacity duration-300 mb-8"
+          className="inline-block font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-gold to-gold/80 text-gold-foreground shadow-md shadow-gold/25 hover:shadow-lg hover:shadow-gold/35 hover:-translate-y-0.5 mb-8"
         >
           Take the 2-Minute Quiz →
         </a>

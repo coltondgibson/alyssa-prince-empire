@@ -26,7 +26,7 @@ const TravelTeaser = () => {
         </p>
         <a
           href="#connect"
-          className="inline-block bg-brand-black text-card font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm hover:opacity-90 transition-opacity duration-300"
+          className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-card shadow-md hover:shadow-lg hover:-translate-y-0.5"
         >
           Notify Me →
         </a>

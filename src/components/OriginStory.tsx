@@ -56,7 +56,7 @@ const OriginStory = () => {
 
           <a
             href="#connect"
-            className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm hover:opacity-90 transition-opacity duration-300"
+            className="inline-block font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
           >
             I'm Ready For Better
           </a>

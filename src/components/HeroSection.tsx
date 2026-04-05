@@ -55,13 +55,13 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#connect"
-                className="inline-block bg-primary text-primary-foreground font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300"
+                className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
               >
                 Take the Quiz
               </a>
               <a
                 href="#connect"
-                className="inline-block bg-brand-black text-background font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center hover:opacity-90 transition-opacity duration-300"
+                className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 Join My Team
               </a>
