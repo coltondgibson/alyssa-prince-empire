@@ -52,22 +52,8 @@ const ThreeLanes = () => {
       {/* Product Cards */}
       <div className="bg-background px-6 lg:px-10 py-12 md:py-16">
         <div className="max-w-6xl mx-auto">
-          {/* Featured Greens Card */}
-          <div className="bg-card rounded-sm text-center mb-8 overflow-hidden">
-            <img src={greensPhoto} alt="Tranont Greens product" className="w-full h-64 md:h-96 object-contain bg-background" loading="lazy" />
-            <div className="p-8">
-              <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">Greens</h4>
-              <p className="font-body text-base leading-relaxed text-foreground/85 mb-6 max-w-2xl mx-auto">
-                My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
-              </p>
-              <a href="#stay-connected" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
-                Learn More →
-              </a>
-            </div>
-          </div>
-
           {/* Three smaller product cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {[
               {
                 name: "Transform",
@@ -90,6 +76,20 @@ const ThreeLanes = () => {
                 </a>
               </div>
             ))}
+          </div>
+
+          {/* Featured Greens Card */}
+          <div className="bg-card rounded-sm text-center overflow-hidden">
+            <img src={greensPhoto} alt="Tranont Greens product" className="w-full h-64 md:h-96 object-contain bg-background" loading="lazy" />
+            <div className="p-8">
+              <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">Greens</h4>
+              <p className="font-body text-base leading-relaxed text-foreground/85 mb-6 max-w-2xl mx-auto">
+                My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
+              </p>
+              <a href="#stay-connected" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
+                Learn More →
+              </a>
+            </div>
           </div>
 
           {/* Quiz CTA */}
