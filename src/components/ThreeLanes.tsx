@@ -4,9 +4,7 @@ import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
 import kitchenPhoto from "@/assets/alyssa-kitchen.png";
 import teamCouchPhoto from "@/assets/alyssa-team-couch.png";
-
-// TODO: Replace with actual Greens product image once uploaded
-const greensPhoto = "/placeholder.svg";
+import greensPhoto from "@/assets/greens-product.png";
 
 const useFadeIn = () => {
   const ref = useRef<HTMLDivElement>(null);
