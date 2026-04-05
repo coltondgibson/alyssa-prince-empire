@@ -30,22 +30,22 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10">
         {/* Logo */}
-        <a href="#" className="flex flex-col items-center leading-none group">
-          <span className="font-script text-3xl lg:text-4xl text-foreground group-hover:text-primary transition-colors duration-300">
+        <a href="#" className="flex flex-col items-start leading-none group flex-shrink-0">
+          <span className="font-script text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors duration-300">
             Alyssa Prince
           </span>
-          <span className="font-body text-[0.55rem] tracking-[0.35em] uppercase text-muted-foreground mt-0.5">
+          <span className="font-body text-[0.5rem] tracking-[0.3em] uppercase text-muted-foreground mt-0.5 whitespace-nowrap">
             entrepreneur · realtor · empire builder
           </span>
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8 lg:gap-10">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="relative font-body text-sm tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300 group py-1"
+              className="relative font-body text-xs tracking-[0.15em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300 group py-1 whitespace-nowrap"
             >
               {link.label}
               <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full rounded-full" />
@@ -56,7 +56,7 @@ const Navigation = () => {
         {/* Right side: social icons + CTA + hamburger */}
         <div className="flex items-center gap-4">
           {/* Social icons */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <a
               href="https://instagram.com/alyssam_prince"
               target="_blank"
@@ -80,7 +80,7 @@ const Navigation = () => {
           {/* CTA */}
           <a
             href="#quiz"
-            className="hidden md:inline-block bg-foreground text-background font-body text-xs font-medium tracking-[0.14em] uppercase px-6 py-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            className="hidden lg:inline-block font-body text-xs font-medium tracking-[0.14em] uppercase px-6 py-2.5 rounded-full transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:from-primary hover:to-primary/85 hover:text-primary-foreground hover:-translate-y-0.5"
           >
             Take the Quiz
           </a>
@@ -88,7 +88,7 @@ const Navigation = () => {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-foreground/80 hover:text-foreground transition-colors"
+            className="lg:hidden text-foreground/80 hover:text-foreground transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={24} strokeWidth={1.5} /> : <Menu size={24} strokeWidth={1.5} />}
@@ -98,7 +98,7 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-card/98 backdrop-blur-md px-6 pb-6 pt-2 animate-fade-in">
+        <div className="lg:hidden bg-card/98 backdrop-blur-md px-6 pb-6 pt-2 animate-fade-in">
           {navLinks.map((link) => (
             <a
               key={link.label}
