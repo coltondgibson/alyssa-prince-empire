@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Heart } from "lucide-react";
 import birthdayPhoto from "@/assets/alyssa-birthday.jpg";
 import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
+import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
 
 const OriginStory = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -77,7 +78,7 @@ const OriginStory = () => {
             </div>
           </div>
 
-          {/* Small inset polaroid */}
+          {/* Small inset polaroid — birthday */}
           <div
             className="polaroid absolute -bottom-10 -left-6 w-28 md:w-36 hidden md:block"
             style={{ transform: "rotate(-4deg)", zIndex: 10 }}
@@ -89,6 +90,20 @@ const OriginStory = () => {
               loading="lazy"
             />
             <p className="polaroid-caption text-xs">She Found Her Prince 👑</p>
+          </div>
+
+          {/* Small inset polaroid — car selfie */}
+          <div
+            className="polaroid absolute -top-8 -left-8 w-24 md:w-32 hidden md:block"
+            style={{ transform: "rotate(3deg)", zIndex: 10 }}
+          >
+            <img
+              src={carSelfiePhoto}
+              alt="Alyssa car selfie"
+              className="w-full aspect-square object-cover"
+              loading="lazy"
+            />
+            <p className="polaroid-caption text-xs">Living my best life ✨</p>
           </div>
         </div>
       </div>
