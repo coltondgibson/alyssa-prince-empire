@@ -30,7 +30,7 @@ const TeamSection = () => {
         <img
           src={teamPhoto}
           alt="Alyssa with the Tranont leadership team"
-          className="w-full max-w-2xl rounded-lg my-0 mx-0 text-center border-2 border-dotted shadow-none"
+          className="w-full max-w-lg mx-auto rounded shadow-lg"
           loading="lazy"
         />
       </div>
