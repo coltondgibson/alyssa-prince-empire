@@ -34,7 +34,7 @@ const Navigation = () => {
             Alyssa Prince
           </span>
           <span className="font-body text-[0.55rem] tracking-[0.35em] uppercase text-muted-foreground mt-0.5">
-            entrepreneur · realtor · builder
+            entrepreneur · realtor · empire builder
           </span>
         </a>
 
