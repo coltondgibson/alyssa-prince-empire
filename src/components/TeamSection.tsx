@@ -26,14 +26,7 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <section className="relative overflow-hidden py-24 md:py-32" style={{
-        background: "linear-gradient(165deg, hsl(338 55% 65% / 0.08) 0%, hsl(220 40% 13%) 35%, hsl(220 40% 10%) 100%)"
-      }}>
-        {/* Subtle decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-        <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/[0.04] blur-3xl pointer-events-none" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-primary/[0.03] blur-3xl pointer-events-none" />
+      <section className="relative overflow-hidden py-24 md:py-32 bg-cream">
 
         <div ref={ref} className="opacity-0 relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
           {/* Label */}
@@ -42,12 +35,12 @@ const TeamSection = () => {
           </p>
 
           {/* Headline */}
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.15] text-primary-foreground mb-6 text-center">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.15] text-foreground mb-6 text-center">
             The right product.<br />The right people.<br />The right time.
           </h2>
 
           {/* Description */}
-          <p className="font-body text-lg md:text-xl leading-relaxed text-primary-foreground/70 max-w-2xl mx-auto mb-12 text-center">
+          <p className="font-body text-lg md:text-xl leading-relaxed text-muted-foreground max-w-2xl mx-auto mb-12 text-center">
             Alyssa and her team brought their greens formula and a massive network of partners and customers to Tranont, creating one of the most exciting launches in the company's history.
           </p>
 
