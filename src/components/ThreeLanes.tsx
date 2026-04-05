@@ -29,7 +29,7 @@ const ThreeLanes = () => {
   return (
     <section id="wellness" className="bg-card">
       {/* Lane 1 — Wellness: photo left, text right */}
-      <div ref={ref1} className="opacity-0 flex flex-col md:flex-row w-full" style={{ minHeight: 420 }}>
+      <div ref={ref1} className="opacity-0 flex flex-col md:flex-row w-full max-w-7xl mx-auto px-6 lg:px-10" style={{ minHeight: 420 }}>
         <div className="md:w-1/2 h-96 md:h-auto md:max-h-[560px]">
           <img src={kitchenPhoto} alt="Alyssa in the kitchen" className="w-full h-full object-cover object-[center_16%] md:object-[center_22%]" loading="lazy" />
         </div>
