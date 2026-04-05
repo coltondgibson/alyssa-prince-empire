@@ -19,7 +19,7 @@ const CommunitySection = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Main hero banner */}
-      <div className="relative min-h-[60vh] flex items-center justify-center">
+      <div className="relative min-h-[75vh] flex items-center justify-center">
         <img src={womenPhoto} alt="Community of women" className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" width={1920} height={1080} />
         <div className="absolute inset-0 bg-brand-black/60" />
         <div ref={ref} className="opacity-0 relative z-10 text-center px-6 py-16 md:py-20 max-w-3xl mx-auto">
