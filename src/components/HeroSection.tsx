@@ -27,16 +27,27 @@ const HeroSection = () => {
 
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-10 flex flex-col md:flex-row items-center">
-          {/* Left — text */}
-          <div ref={contentRef} className="flex-1 py-24 md:py-0 md:pr-12 lg:pr-20">
+          {/* Portrait — shown first on mobile, right side on desktop */}
+          <div className="order-1 md:order-2 w-full md:w-[48%] lg:w-[44%] flex-none flex items-center justify-center pt-24 pb-4 md:py-12">
+            <div className="flex h-[40vh] md:h-[78vh] max-h-[820px] w-full max-w-[280px] md:max-w-[560px] items-center justify-center">
+              <img
+                src={portraitImage}
+                alt="Alyssa Prince portrait"
+                className="h-full w-full object-contain object-center"
+              />
+            </div>
+          </div>
+
+          {/* Text — shown second on mobile, left side on desktop */}
+          <div ref={contentRef} className="order-2 md:order-1 flex-1 pb-16 md:py-0 md:pr-12 lg:pr-20">
             <h1 className="mb-5 md:mb-7">
               <span
-                className="block font-heading text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] leading-[0.88] tracking-tight text-foreground font-semibold"
+                className="block font-heading text-[4rem] md:text-[7.5rem] lg:text-[9.5rem] leading-[0.88] tracking-tight text-foreground font-semibold"
               >
                 Alyssa
               </span>
               <span
-                className="block font-script text-[3.5rem] md:text-[5rem] lg:text-[6.5rem] leading-[1] text-primary mt-1"
+                className="block font-script text-[2.5rem] md:text-[5rem] lg:text-[6.5rem] leading-[1] text-primary mt-1"
               >
                 &nbsp;Prince
               </span>
@@ -44,11 +55,11 @@ const HeroSection = () => {
 
             <div className="w-16 h-[2px] bg-primary/40 mb-5 md:mb-7" />
 
-            <p className="mb-4 font-body text-xl font-light italic text-muted-foreground md:text-[1.65rem] lg:text-[1.8rem]">
+            <p className="mb-4 font-body text-lg font-light italic text-muted-foreground md:text-[1.65rem] lg:text-[1.8rem]">
               Helping women build the life they actually want.
             </p>
 
-            <p className="mb-10 font-script text-primary md:mb-12 md:text-xl text-3xl">
+            <p className="mb-8 font-script text-primary md:mb-12 md:text-xl text-2xl">
               your income, your freedom, your terms
             </p>
 
@@ -65,17 +76,6 @@ const HeroSection = () => {
               >
                 Join My Team
               </a>
-            </div>
-          </div>
-
-          {/* Right — portrait with gradient blend */}
-          <div className="flex w-full md:w-[48%] lg:w-[44%] flex-none items-center justify-center py-6 md:py-12">
-            <div className="flex h-[50vh] md:h-[78vh] max-h-[820px] w-full max-w-[360px] md:max-w-[560px] items-center justify-center">
-              <img
-                src={portraitImage}
-                alt="Alyssa Prince portrait"
-                className="h-full w-full object-contain object-center"
-              />
             </div>
           </div>
         </div>
