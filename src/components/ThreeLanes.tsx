@@ -88,16 +88,17 @@ const ThreeLanes = () => {
           </div>
 
           {/* Featured Greens Card */}
-          <div className="group relative bg-card rounded-md text-center overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-[0_4px_30px_-8px_hsl(var(--primary)/0.15)] hover:shadow-[0_16px_50px_-12px_hsl(var(--primary)/0.3)]">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/40 via-primary to-primary/40" />
-            <img src={greensPhoto} alt="Tranont Greens product" className="w-full h-64 md:h-96 object-contain bg-background" loading="lazy" />
-            <div className="p-10">
-              <span className="inline-block text-primary text-2xl mb-4">✦</span>
-              <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">Greens</h4>
-              <p className="font-body text-base leading-relaxed text-foreground/80 mb-6 max-w-2xl mx-auto">
+          <div className="group relative rounded-md text-center overflow-hidden transition-all duration-500 hover:-translate-y-1.5 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.25)] hover:shadow-[0_20px_60px_-12px_hsl(var(--primary)/0.4)] ring-2 ring-primary/20 hover:ring-primary/40">
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.04] to-primary/[0.08] pointer-events-none" />
+            <img src={greensPhoto} alt="Tranont Greens product" className="relative w-full h-72 md:h-[420px] object-cover object-top" loading="lazy" />
+            <div className="relative p-10 md:p-12 bg-card">
+              <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-3">★ Most Popular</p>
+              <h4 className="font-heading text-3xl md:text-4xl text-foreground mb-4">Greens</h4>
+              <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-8 max-w-2xl mx-auto">
                 My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
               </p>
-              <a href="#stay-connected" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300 group-hover:tracking-[0.18em]">
+              <a href="#stay-connected" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
                 Learn More →
               </a>
             </div>
