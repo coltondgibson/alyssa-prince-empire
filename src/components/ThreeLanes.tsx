@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useQuiz } from "@/components/QuizContext";
 import businessPhoto from "@/assets/alyssa-business.jpg";
 import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
@@ -22,6 +23,7 @@ const useFadeIn = () => {
 };
 
 const ThreeLanes = () => {
+  const { openQuiz } = useQuiz();
   const ref1 = useFadeIn();
   const ref2 = useFadeIn();
   const ref3 = useFadeIn();
@@ -107,9 +109,9 @@ const ThreeLanes = () => {
           {/* Quiz CTA */}
           <div className="text-center mt-12">
             <p className="font-script text-xl md:text-2xl text-primary mb-4">Not sure which is right for you?</p>
-            <a href="#quiz" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
+            <button onClick={openQuiz} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
               Take the Quiz →
-            </a>
+            </button>
           </div>
         </div>
       </div>
