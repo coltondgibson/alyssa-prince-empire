@@ -21,22 +21,27 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-cream">
+      {/* Decorative blush circle */}
+      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-primary/[0.07] blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/[0.05] blur-3xl pointer-events-none" />
+
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-10 flex flex-col md:flex-row items-center">
           {/* Left — text */}
           <div ref={contentRef} className="flex-1 py-24 md:py-0 md:pr-12 lg:pr-20">
-            <p className="mb-5 font-body text-xs tracking-[0.3em] uppercase text-primary md:mb-7">
+            <p className="mb-5 font-body text-xs tracking-[0.3em] uppercase text-primary font-medium md:mb-7">
               Entrepreneur · Realtor · Empire Builder
             </p>
 
             <h1
-              className="mb-5 text-[6.5rem] leading-[0.82] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem] font-black tracking-tight drop-shadow-sm"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              className="mb-5 text-[6.5rem] leading-[0.85] text-foreground md:mb-7 md:text-[9rem] lg:text-[11rem] tracking-[-0.03em]"
+              style={{ fontFamily: "'Bodoni Moda', serif", fontWeight: 900, fontOpticalSizing: 'auto' }}
             >
-              Alyssa
-              <br />
-              Prince
+              <span className="block">Alyssa</span>
+              <span className="block italic text-primary">Prince</span>
             </h1>
+
+            <div className="w-16 h-[2px] bg-primary/40 mb-5 md:mb-7" />
 
             <p className="mb-4 font-body text-xl font-light italic text-muted-foreground md:text-[1.65rem] lg:text-[1.8rem]">
               Helping women build the life they actually want.
@@ -62,7 +67,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right — portrait, full height */}
+          {/* Right — portrait */}
           <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-end justify-center overflow-hidden">
             <img
               src={portraitImage}
