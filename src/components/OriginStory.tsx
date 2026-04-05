@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
+import { Heart } from "lucide-react";
 import birthdayPhoto from "@/assets/alyssa-birthday.jpg";
-import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
+import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
 
 const OriginStory = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -60,28 +61,34 @@ const OriginStory = () => {
           </a>
         </div>
 
-        {/* Photos — stacked polaroids */}
+        {/* Photos — confident Alyssa as hero + small birthday polaroid */}
         <div className="flex-shrink-0 md:max-w-[38%] relative">
-          <div className="polaroid" style={{ transform: "rotate(-2deg)" }}>
+          {/* Main confident photo */}
+          <div className="relative">
             <img
-              src={birthdayPhoto}
-              alt="Alyssa celebrating — She Found Her Prince"
-              className="w-full max-w-sm object-cover aspect-[3/4]"
+              src={confidentAlyssa}
+              alt="Alyssa Prince on stage — look at her now"
+              className="w-full max-w-sm rounded-sm object-cover aspect-[3/4] shadow-lg"
               loading="lazy"
             />
-            <p className="polaroid-caption">She Found Her Prince 👑</p>
+            {/* Heart accent */}
+            <div className="absolute -bottom-4 -right-4 bg-primary rounded-full p-3 shadow-md">
+              <Heart size={22} className="text-primary-foreground fill-primary-foreground" strokeWidth={1.5} />
+            </div>
           </div>
+
+          {/* Small inset polaroid */}
           <div
-            className="polaroid absolute -bottom-8 -right-6 w-32 md:w-40 hidden md:block"
-            style={{ transform: "rotate(4deg)", zIndex: 10 }}
+            className="polaroid absolute -bottom-10 -left-6 w-28 md:w-36 hidden md:block"
+            style={{ transform: "rotate(-4deg)", zIndex: 10 }}
           >
             <img
-              src={carSelfiePhoto}
-              alt="Alyssa car selfie"
+              src={birthdayPhoto}
+              alt="Alyssa celebrating"
               className="w-full aspect-square object-cover"
               loading="lazy"
             />
-            <p className="polaroid-caption text-xs">let's go! 🚗</p>
+            <p className="polaroid-caption text-xs">She Found Her Prince 👑</p>
           </div>
         </div>
       </div>
