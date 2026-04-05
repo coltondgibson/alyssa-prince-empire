@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import portraitImage from "@/assets/alyssa-orange-portrait.png";
+import portraitImage from "@/assets/alyssa-hero.jpg";
 
 const HeroSection = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -69,17 +69,22 @@ const HeroSection = () => {
           </div>
 
           {/* Right — portrait with gradient blend */}
-          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-end justify-center overflow-hidden relative">
+          <div className="hidden md:flex md:w-[50%] lg:w-[48%] self-stretch items-center justify-center overflow-hidden relative">
             <img
               src={portraitImage}
               alt="Alyssa Prince portrait"
-              className="h-screen max-h-[1000px] w-auto object-contain object-bottom"
+              className="h-[85vh] max-h-[900px] w-auto object-cover object-top rounded-sm"
             />
-            {/* Gradient overlay to blend orange photo edge into cream background */}
+            {/* Gradient overlay to blend photo edges into cream background */}
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background: "linear-gradient(to right, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.85) 15%, hsl(40 33% 98% / 0.5) 35%, hsl(40 33% 98% / 0.15) 55%, transparent 75%)",
+                background: `
+                  linear-gradient(to right, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 8%, transparent 25%),
+                  linear-gradient(to left, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 8%, transparent 25%),
+                  linear-gradient(to bottom, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.4) 5%, transparent 20%),
+                  linear-gradient(to top, hsl(40 33% 98%) 0%, hsl(40 33% 98% / 0.6) 8%, transparent 25%)
+                `,
               }}
             />
           </div>
