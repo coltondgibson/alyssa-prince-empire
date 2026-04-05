@@ -5,6 +5,9 @@ import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
 import kitchenPhoto from "@/assets/alyssa-kitchen.png";
 import teamCouchPhoto from "@/assets/alyssa-team-couch.png";
 
+// TODO: Replace with actual Greens product image once uploaded
+const greensPhoto = "/placeholder.svg";
+
 const useFadeIn = () => {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -50,29 +53,54 @@ const ThreeLanes = () => {
 
       {/* Product Cards */}
       <div className="bg-background px-6 lg:px-10 py-12 md:py-16">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Transform",
-              description: "The supplement that changed how I think about eating. It converts sugars into fiber, reducing glucose spikes, curbing cravings, and supporting metabolism all day. One of my daily non-negotiables.",
-            },
-            {
-              name: "Clear Protein",
-              description: "Clean protein without the bloat. 20g of clear whey protein that actually tastes good and digests clean. I use this daily and it's the first thing I recommend.",
-            },
-            {
-              name: "Glow-M",
-              description: "Marine collagen that actually works. Peptides, hyaluronic acid, biotin — skin, hair, nails. I noticed a difference within weeks. This one speaks for itself.",
-            },
-          ].map((product) => (
-            <div key={product.name} className="bg-card p-8 rounded-sm text-center">
-              <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
-              <p className="font-body text-base leading-relaxed text-foreground/85 mb-6">{product.description}</p>
-              <a href="#quiz" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
+        <div className="max-w-6xl mx-auto">
+          {/* Featured Greens Card */}
+          <div className="bg-card rounded-sm text-center mb-8 overflow-hidden">
+            <img src={greensPhoto} alt="Tranont Greens product" className="w-full h-64 md:h-96 object-contain bg-background" loading="lazy" />
+            <div className="p-8">
+              <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">Greens</h4>
+              <p className="font-body text-base leading-relaxed text-foreground/85 mb-6 max-w-2xl mx-auto">
+                My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
+              </p>
+              <a href="#stay-connected" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
                 Learn More →
               </a>
             </div>
-          ))}
+          </div>
+
+          {/* Three smaller product cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Transform",
+                description: "The supplement that changed how I think about eating. It converts sugars into fiber — reducing glucose spikes, curbing cravings, and supporting metabolism all day. Non-negotiable.",
+              },
+              {
+                name: "Clear Protein",
+                description: "Clean protein without the bloat. 20g of clear whey protein that actually tastes good and digests clean. I use this daily.",
+              },
+              {
+                name: "Glow-M",
+                description: "Marine collagen for skin, hair, and nails. I noticed a difference within weeks.",
+              },
+            ].map((product) => (
+              <div key={product.name} className="bg-card p-8 rounded-sm text-center">
+                <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
+                <p className="font-body text-base leading-relaxed text-foreground/85 mb-6">{product.description}</p>
+                <a href="#stay-connected" className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300">
+                  Learn More →
+                </a>
+              </div>
+            ))}
+          </div>
+
+          {/* Quiz CTA */}
+          <div className="text-center mt-12">
+            <p className="font-script text-xl md:text-2xl text-primary mb-4">Not sure which is right for you?</p>
+            <a href="#quiz" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
+              Take the Quiz →
+            </a>
+          </div>
         </div>
       </div>
 
