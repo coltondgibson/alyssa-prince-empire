@@ -33,12 +33,17 @@ const HeroSection = () => {
               Entrepreneur · Realtor · Empire Builder
             </p>
 
-            <h1
-              className="mb-5 text-[6rem] leading-[0.88] text-foreground md:mb-7 md:text-[8rem] lg:text-[10rem] tracking-tight drop-shadow-sm"
-              style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900 }}
-            >
-              <span className="block">Alyssa</span>
-              <span className="block mt-1">&nbsp;Prince</span>
+            <h1 className="mb-5 md:mb-7">
+              <span
+                className="block font-heading text-[5.5rem] md:text-[7.5rem] lg:text-[9.5rem] leading-[0.88] tracking-tight text-foreground font-semibold"
+              >
+                Alyssa
+              </span>
+              <span
+                className="block font-script text-[3.5rem] md:text-[5rem] lg:text-[6.5rem] leading-[1] text-primary mt-1"
+              >
+                &nbsp;Prince
+              </span>
             </h1>
 
             <div className="w-16 h-[2px] bg-primary/40 mb-5 md:mb-7" />
