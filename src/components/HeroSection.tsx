@@ -69,8 +69,8 @@ const HeroSection = () => {
           </div>
 
           {/* Right — portrait with gradient blend */}
-          <div className="hidden md:flex md:w-[48%] lg:w-[44%] flex-none items-center justify-center py-12">
-            <div className="flex h-[78vh] max-h-[820px] w-full max-w-[560px] items-center justify-center">
+          <div className="flex w-full md:w-[48%] lg:w-[44%] flex-none items-center justify-center py-6 md:py-12">
+            <div className="flex h-[50vh] md:h-[78vh] max-h-[820px] w-full max-w-[360px] md:max-w-[560px] items-center justify-center">
               <img
                 src={portraitImage}
                 alt="Alyssa Prince portrait"
