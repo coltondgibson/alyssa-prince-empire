@@ -55,7 +55,7 @@ const Navigation = () => {
           ))}
           <a
             href="#book-a-call"
-            className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap ml-1 xl:ml-2"
+            className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2 bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap ml-1 xl:ml-2 rounded-3xl"
           >
             Book a Call
           </a>
