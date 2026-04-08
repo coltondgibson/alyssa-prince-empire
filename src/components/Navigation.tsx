@@ -50,7 +50,7 @@ const Navigation = () => {
               href={link.href}
               className={`relative font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300 py-1 whitespace-nowrap ${
                 link.highlight
-                  ? "border border-primary/40 text-primary px-4 py-1.5 rounded-full hover:bg-primary hover:text-primary-foreground"
+                  ? "bg-primary text-primary-foreground px-5 py-2 rounded-full hover:bg-primary/85 shadow-sm"
                   : "text-foreground/80 hover:text-foreground group"
               }`}
             >
