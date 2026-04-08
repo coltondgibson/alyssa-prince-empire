@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Instagram, Facebook, Menu, X } from "lucide-react";
+import { useQuiz } from "@/components/QuizContext";
 
 const navLinks = [
   { label: "Story", href: "#story" },
@@ -11,6 +12,7 @@ const navLinks = [
 ];
 
 const Navigation = () => {
+  const { openQuiz } = useQuiz();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -78,13 +80,12 @@ const Navigation = () => {
           </div>
 
           {/* CTA */}
-          <a
-            href="#quiz"
-            onClick={(e) => { e.preventDefault(); document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }); }}
+          <button
+            onClick={() => { openQuiz(); }}
             className="hidden lg:inline-block font-body text-xs font-medium tracking-[0.14em] uppercase px-6 py-2.5 rounded-full transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:from-primary hover:to-primary/85 hover:text-primary-foreground hover:-translate-y-0.5"
           >
             Take the Quiz
-          </a>
+          </button>
 
           {/* Mobile hamburger */}
           <button
@@ -133,13 +134,12 @@ const Navigation = () => {
             </a>
           </div>
 
-          <a
-            href="#quiz"
-            onClick={(e) => { e.preventDefault(); setMobileOpen(false); document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }); }}
+          <button
+            onClick={() => { setMobileOpen(false); openQuiz(); }}
             className="inline-block mt-4 bg-foreground text-background font-body text-sm font-medium tracking-[0.12em] uppercase px-6 py-2.5 rounded-full"
           >
             Take the Quiz
-          </a>
+          </button>
         </div>
       )}
     </nav>

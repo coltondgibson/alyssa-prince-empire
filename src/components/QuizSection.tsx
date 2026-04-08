@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
+import { useQuiz } from "@/components/QuizContext";
 
 const QuizSection = () => {
+  const { openQuiz } = useQuiz();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,13 +26,12 @@ const QuizSection = () => {
         <p className="font-body text-lg md:text-xl text-navy-foreground/85 mb-12 leading-relaxed">
           Answer 3 quick questions and I'll show you exactly where I'd begin if I were you.
         </p>
-        <a
-          href="#quiz"
-          onClick={(e) => { e.preventDefault(); document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }); }}
+        <button
+          onClick={openQuiz}
           className="inline-block font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5 mb-8"
         >
           Take the 2-Minute Quiz →
-        </a>
+        </button>
         <p className="font-body text-xs tracking-[0.2em] uppercase text-navy-foreground/70">
           Health · Business · Real Estate · Travel
         </p>
