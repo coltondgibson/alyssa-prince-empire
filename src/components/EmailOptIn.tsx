@@ -11,6 +11,13 @@ const CONTEXT_URLS: Record<string, string | null> = {
   travel: "https://tranont.link/srCSRIX",
 };
 
+const RADIO_URLS: Record<string, string | null> = {
+  wellness: "https://www.tranont.com/amp",
+  business: "https://tranont.link/sAs4KVu",
+  realestate: null,
+  travel: "https://tranont.link/srCSRIX",
+};
+
 const EmailOptIn = () => {
   const { selectedProduct, setSelectedProduct } = useQuiz();
   const [submitted, setSubmitted] = useState(false);
@@ -19,6 +26,7 @@ const EmailOptIn = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [isRealEstateOnly, setIsRealEstateOnly] = useState(false);
+  const [radioSelection, setRadioSelection] = useState<string | null>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -35,6 +43,7 @@ const EmailOptIn = () => {
     const context = selectedProduct;
     setSelectedProduct(null);
 
+    // Button context takes priority
     if (context && context in CONTEXT_URLS) {
       const url = CONTEXT_URLS[context];
       if (url) {
@@ -44,7 +53,18 @@ const EmailOptIn = () => {
         setSubmitted(true);
         return;
       }
+    } else if (radioSelection && radioSelection in RADIO_URLS) {
+      // Radio selection is secondary
+      const url = RADIO_URLS[radioSelection];
+      if (url) {
+        window.open(url, "_blank", "noopener,noreferrer");
+      } else {
+        setIsRealEstateOnly(true);
+        setSubmitted(true);
+        return;
+      }
     } else {
+      // Default fallback
       window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
     }
     setSubmitted(true);
@@ -99,6 +119,40 @@ const EmailOptIn = () => {
             placeholder="Phone"
             className="w-full px-5 py-3.5 bg-card text-foreground font-body text-sm rounded-sm outline-none placeholder:text-muted-foreground"
           />
+          <div className="text-left pt-2 pb-1">
+            <p className="font-heading text-lg md:text-xl text-foreground mb-3">What brought you here today?</p>
+            <div className="space-y-2.5">
+              {[
+                { value: "wellness", label: "I want to feel better" },
+                { value: "business", label: "I want to build a business" },
+                { value: "realestate", label: "I'm curious about real estate" },
+                { value: "travel", label: "I'm curious about travel" },
+              ].map((opt) => (
+                <label key={opt.value} className="flex items-center gap-3 cursor-pointer group">
+                  <span
+                    className={`w-4 h-4 rounded-full border flex-shrink-0 flex items-center justify-center transition-colors ${
+                      radioSelection === opt.value
+                        ? "border-foreground"
+                        : "border-foreground/40 group-hover:border-foreground/70"
+                    }`}
+                  >
+                    {radioSelection === opt.value && (
+                      <span className="w-2 h-2 rounded-full bg-foreground" />
+                    )}
+                  </span>
+                  <input
+                    type="radio"
+                    name="interest"
+                    value={opt.value}
+                    checked={radioSelection === opt.value}
+                    onChange={() => setRadioSelection(opt.value)}
+                    className="sr-only"
+                  />
+                  <span className="font-body text-sm text-foreground/85">{opt.label}</span>
+                </label>
+              ))}
+            </div>
+          </div>
           <button
             type="button"
             onClick={handleFormSubmit}
