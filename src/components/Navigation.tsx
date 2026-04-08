@@ -36,7 +36,7 @@ const Navigation = () => {
           <span className="font-script text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors duration-300">
             Alyssa Prince
           </span>
-          <span className="font-body text-[0.5rem] tracking-[0.3em] uppercase text-muted-foreground mt-0.5 whitespace-nowrap">
+          <span className="font-body text-[0.55rem] font-medium tracking-[0.3em] uppercase text-foreground/70 mt-0.5 whitespace-nowrap">
             entrepreneur · realtor · empire builder
           </span>
         </a>
