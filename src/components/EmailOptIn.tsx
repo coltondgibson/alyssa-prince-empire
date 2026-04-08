@@ -1,12 +1,22 @@
 import { useEffect, useRef, useState } from "react";
+import { useQuiz } from "@/components/QuizContext";
+
+const PRODUCT_URLS: Record<string, string> = {
+  greens: "https://tranont.link/QUGk7sp",
+  transform: "https://tranont.link/2no6UIh",
+  protein: "https://tranont.link/oPFjEOY",
+  glow: "https://tranont.link/by4KlLt",
+};
 
 const EmailOptIn = () => {
+  const { selectedProduct, setSelectedProduct } = useQuiz();
   const [submitted, setSubmitted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [interests, setInterests] = useState<string[]>([]);
+  const [isRealEstateOnly, setIsRealEstateOnly] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -33,15 +43,28 @@ const EmailOptIn = () => {
   ];
 
   const handleFormSubmit = () => {
-    if (interests.includes("realestate") && interests.length === 1) {
+    // Priority 1: Product variable from Learn More button
+    if (selectedProduct && PRODUCT_URLS[selectedProduct]) {
+      window.open(PRODUCT_URLS[selectedProduct], "_blank", "noopener,noreferrer");
+      setSelectedProduct(null);
       setSubmitted(true);
       return;
     }
+    setSelectedProduct(null);
+
+    // Priority 2: Checkbox selection (Business > Travel > Health > Real Estate)
     if (interests.includes("business")) {
       window.open("https://tranont.link/sAs4KVu", "_blank", "noopener,noreferrer");
     } else if (interests.includes("travel")) {
       window.open("https://tranont.link/srCSRIX", "_blank", "noopener,noreferrer");
+    } else if (interests.includes("health")) {
+      window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
+    } else if (interests.includes("realestate") && interests.length >= 1) {
+      setIsRealEstateOnly(true);
+      setSubmitted(true);
+      return;
     } else {
+      // No checkbox selected — default
       window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
     }
     setSubmitted(true);
