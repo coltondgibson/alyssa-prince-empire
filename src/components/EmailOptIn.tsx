@@ -11,6 +11,13 @@ const CONTEXT_URLS: Record<string, string | null> = {
   travel: "https://tranont.link/srCSRIX",
 };
 
+const RADIO_URLS: Record<string, string | null> = {
+  wellness: "https://www.tranont.com/amp",
+  business: "https://tranont.link/sAs4KVu",
+  realestate: null,
+  travel: "https://tranont.link/srCSRIX",
+};
+
 const EmailOptIn = () => {
   const { selectedProduct, setSelectedProduct } = useQuiz();
   const [submitted, setSubmitted] = useState(false);
@@ -19,6 +26,7 @@ const EmailOptIn = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [isRealEstateOnly, setIsRealEstateOnly] = useState(false);
+  const [radioSelection, setRadioSelection] = useState<string | null>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -35,6 +43,7 @@ const EmailOptIn = () => {
     const context = selectedProduct;
     setSelectedProduct(null);
 
+    // Button context takes priority
     if (context && context in CONTEXT_URLS) {
       const url = CONTEXT_URLS[context];
       if (url) {
@@ -44,7 +53,18 @@ const EmailOptIn = () => {
         setSubmitted(true);
         return;
       }
+    } else if (radioSelection && radioSelection in RADIO_URLS) {
+      // Radio selection is secondary
+      const url = RADIO_URLS[radioSelection];
+      if (url) {
+        window.open(url, "_blank", "noopener,noreferrer");
+      } else {
+        setIsRealEstateOnly(true);
+        setSubmitted(true);
+        return;
+      }
     } else {
+      // Default fallback
       window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
     }
     setSubmitted(true);
