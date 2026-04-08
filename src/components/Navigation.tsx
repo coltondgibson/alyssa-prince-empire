@@ -55,9 +55,14 @@ const Navigation = () => {
           ))}
         </div>
 
-        {/* Right side: social icons + CTA + hamburger */}
-        <div className="flex items-center gap-4 ml-auto">
-          {/* Social icons */}
+        <div className="flex items-center gap-3 ml-auto">
+          {/* Book a Call - small pill */}
+          <a
+            href="#book-a-call"
+            className="hidden lg:inline-block font-body text-[0.65rem] tracking-[0.12em] uppercase px-3.5 py-1.5 bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap rounded-3xl"
+          >
+            Book a Call
+          </a>
           <div className="hidden lg:flex items-center gap-5">
             <a
               href="https://instagram.com/alyssam_prince"
