@@ -249,7 +249,7 @@ const QuizModal = ({ open, onClose }: QuizModalProps) => {
                     Thank you! 🏡
                   </p>
                   <p className="font-body text-foreground/80 text-base mb-8">
-                    Alyssa will be in touch with you shortly about real estate.
+                    Alyssa will be in touch with you shortly about real estate opportunities in Florida.
                   </p>
                 </>
               ) : (
