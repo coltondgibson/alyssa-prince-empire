@@ -13,7 +13,7 @@ const Footer = () => {
               @alyssam_prince
             </a>
             <span className="text-card/40">·</span>
-            <a href="#" className="font-body text-xs tracking-wide text-card/75 hover:text-blush transition-colors">
+            <a href="https://www.facebook.com/alyssa.adkins.10" target="_blank" rel="noopener noreferrer" className="font-body text-xs tracking-wide text-card/75 hover:text-blush transition-colors">
               Facebook
             </a>
           </div>
