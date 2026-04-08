@@ -58,7 +58,7 @@ const TeamSection = () => {
               {/* Subtle gradient overlay at bottom */}
               <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
-            <p className="font-script text-lg text-primary text-center mt-5">
+            <p className="font-script text-primary text-center mt-5 text-2xl">
               "Our mission is to impact 1 billion lives" ✨
             </p>
           </div>
