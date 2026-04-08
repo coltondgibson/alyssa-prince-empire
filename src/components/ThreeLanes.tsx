@@ -23,7 +23,6 @@ const useFadeIn = () => {
 };
 
 const ThreeLanes = () => {
-  const { openQuiz } = useQuiz();
   const ref1 = useFadeIn();
   const ref2 = useFadeIn();
   const ref3 = useFadeIn();
