@@ -65,6 +65,7 @@ const ThreeLanes = () => {
   const ref3 = useFadeIn();
 
   return (
+    <>
     <section id="wellness" className="bg-card">
       {/* Lane 1 — Wellness: photo left, text right */}
       <div ref={ref1} className="opacity-0 flex flex-col md:flex-row w-full max-w-7xl mx-auto px-6 lg:px-10" style={{ minHeight: 420 }}>
