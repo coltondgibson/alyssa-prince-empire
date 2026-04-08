@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useQuiz } from "@/components/QuizContext";
+import ProductModal from "@/components/ProductModal";
 import businessPhoto from "@/assets/alyssa-business.jpg";
 import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
