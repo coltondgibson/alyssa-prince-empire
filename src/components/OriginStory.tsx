@@ -6,6 +6,7 @@ import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
 import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
 
 const OriginStory = () => {
+  const { openQuiz } = useQuiz();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -55,13 +56,12 @@ const OriginStory = () => {
             <p className="text-2xl">It's not too late.</p>
           </div>
 
-          <a
-            href="#quiz"
-            onClick={(e) => { e.preventDefault(); document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }); }}
+          <button
+            onClick={openQuiz}
             className="inline-block font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
           >
             I'm Ready For Better
-          </a>
+          </button>
         </div>
 
         {/* Photos — confident Alyssa as hero + small birthday polaroid */}
