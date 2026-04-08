@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
+import { useQuiz } from "@/components/QuizContext";
 
 const TravelTeaser = () => {
+  const { setSelectedProduct } = useQuiz();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -14,6 +16,12 @@ const TravelTeaser = () => {
     return () => obs.disconnect();
   }, []);
 
+  const handleNotifyMe = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setSelectedProduct("travel");
+    document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="travel" className="bg-background py-16 md:py-20">
       <div ref={ref} className="opacity-0 max-w-2xl mx-auto px-6 text-center">
@@ -26,7 +34,7 @@ const TravelTeaser = () => {
         </p>
         <a
           href="#connect"
-          onClick={(e) => { e.preventDefault(); document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' }); }}
+          onClick={handleNotifyMe}
           className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-card shadow-md hover:shadow-lg hover:-translate-y-0.5"
         >
           Notify Me →
