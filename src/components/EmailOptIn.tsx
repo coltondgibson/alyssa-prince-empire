@@ -32,6 +32,38 @@ const EmailOptIn = () => {
     { value: "travel", label: "Travel" },
   ];
 
+  const handleFormSubmit = () => {
+    if (interests.includes("realestate") && interests.length === 1) {
+      setSubmitted(true);
+      return;
+    }
+    if (interests.includes("business")) {
+      window.open("https://tranont.link/sAs4KVu", "_blank", "noopener,noreferrer");
+    } else if (interests.includes("travel")) {
+      window.open("https://tranont.link/srCSRIX", "_blank", "noopener,noreferrer");
+    } else {
+      window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
+    }
+    setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <section id="connect" className="bg-primary py-14 md:py-20">
+        <div className="max-w-xl mx-auto px-6 text-center">
+          <p className="font-script text-3xl md:text-4xl text-foreground mb-4">
+            {interests.includes("realestate") && interests.length === 1 ? "Thank you! 🏡" : "You're in! 🎉"}
+          </p>
+          <p className="font-body text-foreground/85 text-base">
+            {interests.includes("realestate") && interests.length === 1
+              ? "Alyssa will be in touch with you shortly about real estate."
+              : "Check your phone — I just sent you something 📱"}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="connect" className="bg-primary py-14 md:py-20">
       <div ref={ref} className="opacity-0 max-w-xl mx-auto px-6 text-center">
