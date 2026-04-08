@@ -119,31 +119,6 @@ const EmailOptIn = () => {
             placeholder="Phone"
             className="w-full px-5 py-3.5 bg-card text-foreground font-body text-sm rounded-sm outline-none placeholder:text-muted-foreground"
           />
-          <div className="bg-card rounded-sm px-5 py-4 text-left space-y-3">
-            <p className="font-body text-sm text-muted-foreground">What interests you most?</p>
-            {interestOptions.map((option) => (
-              <label
-                key={option.value}
-                className="flex items-center gap-3 cursor-pointer group"
-              >
-                <div
-                  onClick={() => toggleInterest(option.value)}
-                  className={`w-4 h-4 rounded-sm border flex-shrink-0 flex items-center justify-center transition-colors duration-200 ${
-                    interests.includes(option.value)
-                      ? "bg-primary border-primary"
-                      : "border-muted-foreground/40 bg-background"
-                  }`}
-                >
-                  {interests.includes(option.value) && (
-                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" className="text-primary-foreground">
-                      <path d="M1 4L3.5 6.5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  )}
-                </div>
-                <span className="font-body text-sm text-foreground">{option.label}</span>
-              </label>
-            ))}
-          </div>
           <button
             type="button"
             onClick={handleFormSubmit}
