@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useQuiz } from "@/components/QuizContext";
+
 import businessPhoto from "@/assets/alyssa-business.jpg";
 import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";

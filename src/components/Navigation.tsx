@@ -11,7 +11,6 @@ const navLinks = [
 ];
 
 const Navigation = () => {
-  const { openQuiz } = useQuiz();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 

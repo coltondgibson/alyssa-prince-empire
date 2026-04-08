@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import portraitImage from "@/assets/alyssa-hero.jpg";
 
 const HeroSection = () => {
-  const { openQuiz } = useQuiz();
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
