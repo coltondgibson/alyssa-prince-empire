@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Instagram, Facebook, Menu, X } from "lucide-react";
-import { useQuiz } from "@/components/QuizContext";
 
 const navLinks = [
   { label: "Story", href: "#story" },

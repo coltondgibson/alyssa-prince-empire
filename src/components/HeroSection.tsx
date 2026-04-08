@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { useQuiz } from "@/components/QuizContext";
 import portraitImage from "@/assets/alyssa-hero.jpg";
 
 const HeroSection = () => {
