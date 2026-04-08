@@ -15,12 +15,12 @@ interface Particle {
 }
 
 const COLORS = [
-  "rgba(242,196,206,", // blush pink
-  "rgba(255,215,200,", // rose gold
-  "rgba(255,255,255,", // white
-  "rgba(240,228,214,", // champagne
-  "rgba(255,182,193,", // light pink
-  "rgba(212,175,155,", // soft gold
+  "rgba(200,140,160,", // deeper blush pink
+  "rgba(190,140,120,", // bronze rose gold
+  "rgba(180,160,140,", // warm champagne
+  "rgba(170,130,150,", // mauve pink
+  "rgba(160,120,100,", // copper
+  "rgba(195,155,135,", // antique gold
 ];
 
 const GlitterEffect = () => {
@@ -144,7 +144,7 @@ const GlitterEffect = () => {
     <canvas
       ref={canvasRef}
       className="pointer-events-none fixed inset-0 z-50"
-      style={{ mixBlendMode: "screen" }}
+      style={{ mixBlendMode: "multiply" }}
     />
   );
 };
