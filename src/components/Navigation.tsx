@@ -42,7 +42,7 @@ const Navigation = () => {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8 ml-8 xl:ml-10">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8 ml-4 xl:ml-6">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -55,7 +55,7 @@ const Navigation = () => {
           ))}
           <a
             href="#book-a-call"
-            className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2 bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap ml-0 xl:ml-0 rounded-3xl"
+            className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2 bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap -ml-3 xl:-ml-4 rounded-3xl"
           >
             Book a Call
           </a>
