@@ -206,6 +206,16 @@ const ThreeLanes = () => {
         </div>
       </div>
     </section>
+    {activeModal && PRODUCT_MODALS[activeModal] && (
+      <ProductModal
+        open={true}
+        onClose={() => setActiveModal(null)}
+        headline={PRODUCT_MODALS[activeModal].headline}
+        subtext={PRODUCT_MODALS[activeModal].subtext}
+        submitUrl={PRODUCT_MODALS[activeModal].submitUrl}
+      />
+    )}
+    </>
   );
 };
 
