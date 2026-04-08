@@ -121,7 +121,7 @@ const ThreeLanes = () => {
                 <span className="inline-block text-primary text-2xl mb-4 group-hover:scale-110 transition-transform duration-300">{product.emoji}</span>
                 <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
                 <p className="font-body text-base leading-relaxed text-foreground/80 mb-6">{product.description}</p>
-                <a href="#connect" onClick={scrollToConnect(product.context)} className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300 group-hover:tracking-[0.18em]">
+                <a href="#" onClick={openProductModal(product.context)} className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300 group-hover:tracking-[0.18em]">
                   Learn More →
                 </a>
               </div>
@@ -139,7 +139,7 @@ const ThreeLanes = () => {
               <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-8 max-w-2xl mx-auto">
                 My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
               </p>
-              <a href="#connect" onClick={scrollToConnect("greens")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
+              <a href="#" onClick={openProductModal("greens")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
                 Learn More →
               </a>
             </div>
