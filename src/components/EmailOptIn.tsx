@@ -56,7 +56,7 @@ const EmailOptIn = () => {
           </p>
           <p className="font-body text-foreground/85 text-base">
             {interests.includes("realestate") && interests.length === 1
-              ? "Alyssa will be in touch with you shortly about real estate."
+              ? "Alyssa will be in touch with you shortly."
               : "Check your phone — I just sent you something 📱"}
           </p>
         </div>
