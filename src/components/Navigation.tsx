@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Real Estate", href: "#realestate" },
   { label: "Travel", href: "#travel" },
   { label: "Connect", href: "#connect" },
-  { label: "Book a Call", href: "#book-a-call", highlight: true },
 ];
 
 const Navigation = () => {
