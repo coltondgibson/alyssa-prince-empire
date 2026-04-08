@@ -15,12 +15,10 @@ const links = [
 const Links = () => {
   return (
     <div className="min-h-screen bg-cream flex flex-col items-center px-5 py-12 md:py-16">
-      {/* Avatar */}
-      <img
-        src={alyssaPhoto}
-        alt="Alyssa Prince"
-        className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-md mb-5"
-      />
+      {/* Avatar initial */}
+      <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary/15 flex items-center justify-center shadow-md mb-5">
+        <span className="font-heading italic text-3xl md:text-4xl text-primary">AP</span>
+      </div>
 
       {/* Name */}
       <h1 className="font-heading text-2xl md:text-3xl text-foreground tracking-wide mb-1">
