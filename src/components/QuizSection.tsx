@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
+import { useQuiz } from "@/components/QuizContext";
 
 const QuizSection = () => {
+  const { openQuiz } = useQuiz();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
