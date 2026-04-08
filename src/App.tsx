@@ -8,6 +8,7 @@ import Greens from "./pages/Greens.tsx";
 import Business from "./pages/Business.tsx";
 import RealEstate from "./pages/RealEstate.tsx";
 import Travel from "./pages/Travel.tsx";
+import Links from "./pages/Links.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();

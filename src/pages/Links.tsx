@@ -1,5 +1,3 @@
-import alyssaPhoto from "@/assets/alyssa-headshot.jpg";
-
 const links = [
   { label: "Take the Quiz ✨", href: "/#quiz" },
   { label: "Shop My Favorites", href: "/greens" },
