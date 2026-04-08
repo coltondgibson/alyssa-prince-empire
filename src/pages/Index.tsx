@@ -25,6 +25,7 @@ const Index = () => {
 
   return (
     <QuizProvider value={{ openQuiz: () => setQuizOpen(true), selectedProduct, setSelectedProduct }}>
+      <GlitterEffect />
       <div className="min-h-screen">
         <Navigation />
         <HeroSection />
