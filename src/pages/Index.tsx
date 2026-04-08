@@ -12,6 +12,7 @@ import TravelTeaser from "@/components/TravelTeaser";
 import CommunitySection from "@/components/CommunitySection";
 import WeddingMoment from "@/components/WeddingMoment";
 import QuizSection from "@/components/QuizSection";
+import BookACall from "@/components/BookACall";
 import EmailOptIn from "@/components/EmailOptIn";
 import Footer from "@/components/Footer";
 import QuizModal from "@/components/QuizModal";
@@ -36,6 +37,7 @@ const Index = () => {
         <CommunitySection />
         <WeddingMoment />
         <QuizSection />
+        <BookACall />
         <EmailOptIn />
         <Footer />
       </div>
