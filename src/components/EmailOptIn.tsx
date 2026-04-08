@@ -75,11 +75,11 @@ const EmailOptIn = () => {
       <section id="connect" className="bg-primary py-14 md:py-20">
         <div className="max-w-xl mx-auto px-6 text-center">
           <p className="font-script text-3xl md:text-4xl text-foreground mb-4">
-            {interests.includes("realestate") && interests.length === 1 ? "Thank you! 🏡" : "You're in! 🎉"}
+            {isRealEstateOnly ? "Thank you! 🏡" : "You're in! 🎉"}
           </p>
           <p className="font-body text-foreground/85 text-base">
-            {interests.includes("realestate") && interests.length === 1
-              ? "Alyssa will be in touch with you shortly."
+            {isRealEstateOnly
+              ? "Alyssa will be in touch with you shortly about real estate opportunities in Florida."
               : "Check your phone — I just sent you something 📱"}
           </p>
         </div>
