@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GlitterEffect from "@/components/GlitterEffect";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import CredentialsBar from "@/components/CredentialsBar";
