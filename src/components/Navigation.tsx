@@ -80,12 +80,13 @@ const Navigation = () => {
           </div>
 
           {/* CTA */}
-          <button
-            onClick={() => { openQuiz(); }}
+          <a
+            href="#quiz"
+            onClick={(e) => { e.preventDefault(); document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }); }}
             className="hidden lg:inline-block font-body text-xs font-medium tracking-[0.14em] uppercase px-6 py-2.5 rounded-full transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:from-primary hover:to-primary/85 hover:text-primary-foreground hover:-translate-y-0.5"
           >
             Take the Quiz
-          </button>
+          </a>
 
           {/* Mobile hamburger */}
           <button
@@ -134,12 +135,13 @@ const Navigation = () => {
             </a>
           </div>
 
-          <button
-            onClick={() => { setMobileOpen(false); openQuiz(); }}
+          <a
+            href="#quiz"
+            onClick={(e) => { e.preventDefault(); setMobileOpen(false); document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }); }}
             className="inline-block mt-4 bg-foreground text-background font-body text-sm font-medium tracking-[0.12em] uppercase px-6 py-2.5 rounded-full"
           >
             Take the Quiz
-          </button>
+          </a>
         </div>
       )}
     </nav>

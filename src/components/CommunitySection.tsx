@@ -30,7 +30,7 @@ const CommunitySection = () => {
           <p className="font-body text-lg md:text-xl text-card mb-10">
             This is my community. You're invited.
           </p>
-          <a href="#connect" className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3 rounded-sm transition-all duration-300 border border-blush text-blush hover:bg-gradient-to-b hover:from-blush hover:to-primary/80 hover:text-primary-foreground hover:border-transparent hover:-translate-y-0.5 shadow-md shadow-transparent hover:shadow-primary/20">
+          <a href="#connect" onClick={(e) => { e.preventDefault(); document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' }); }} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3 rounded-sm transition-all duration-300 border border-blush text-blush hover:bg-gradient-to-b hover:from-blush hover:to-primary/80 hover:text-primary-foreground hover:border-transparent hover:-translate-y-0.5 shadow-md shadow-transparent hover:shadow-primary/20">
             Join Us
           </a>
         </div>
