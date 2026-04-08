@@ -20,9 +20,10 @@ import { QuizProvider } from "@/components/QuizContext";
 
 const Index = () => {
   const [quizOpen, setQuizOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
 
   return (
-    <QuizProvider value={{ openQuiz: () => setQuizOpen(true) }}>
+    <QuizProvider value={{ openQuiz: () => setQuizOpen(true), selectedProduct, setSelectedProduct }}>
       <div className="min-h-screen">
         <Navigation />
         <HeroSection />
