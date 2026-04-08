@@ -109,9 +109,20 @@ const QuizModal = ({ open, onClose }: QuizModalProps) => {
   const category = answers.length === 3 ? getResult(answers) : "wellness";
   const result = results[category];
 
+  const REDIRECT_URLS: Record<Category, string | null> = {
+    wellness: "https://www.tranont.com/amp",
+    business: "https://tranont.link/sAs4KVu",
+    travel: "https://tranont.link/srCSRIX",
+    realestate: null,
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStep("done");
+    const url = REDIRECT_URLS[category];
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
   };
 
   const qIndex = step === "q1" ? 0 : step === "q2" ? 1 : 2;
@@ -232,12 +243,25 @@ const QuizModal = ({ open, onClose }: QuizModalProps) => {
           {/* Done */}
           {step === "done" && (
             <div className="animate-fade-in text-center py-8">
-              <p className="font-script text-3xl md:text-4xl text-primary mb-4">
-                You're in! 🎉
-              </p>
-              <p className="font-body text-foreground/80 text-base mb-8">
-                Check your phone — I just sent you something 📱
-              </p>
+              {category === "realestate" ? (
+                <>
+                  <p className="font-script text-3xl md:text-4xl text-primary mb-4">
+                    Thank you! 🏡
+                  </p>
+                  <p className="font-body text-foreground/80 text-base mb-8">
+                    Alyssa will be in touch with you shortly about real estate.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="font-script text-3xl md:text-4xl text-primary mb-4">
+                    You're in! 🎉
+                  </p>
+                  <p className="font-body text-foreground/80 text-base mb-8">
+                    Check your phone — I just sent you something 📱
+                  </p>
+                </>
+              )}
               <button
                 onClick={onClose}
                 className="font-body text-sm tracking-[0.12em] uppercase px-8 py-3 rounded-sm bg-foreground text-background hover:bg-foreground/85 transition-colors"
