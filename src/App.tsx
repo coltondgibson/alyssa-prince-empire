@@ -8,6 +8,7 @@ import Greens from "./pages/Greens.tsx";
 import Business from "./pages/Business.tsx";
 import RealEstate from "./pages/RealEstate.tsx";
 import Travel from "./pages/Travel.tsx";
+import Links from "./pages/Links.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/business" element={<Business />} />
           <Route path="/realestate" element={<RealEstate />} />
           <Route path="/travel" element={<Travel />} />
+          <Route path="/links" element={<Links />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
