@@ -3,7 +3,7 @@ import { useQuiz } from "@/components/QuizContext";
 import portraitImage from "@/assets/alyssa-hero.jpg";
 
 const HeroSection = () => {
-  const { openQuiz } = useQuiz();
+  const { openQuiz, setSelectedProduct } = useQuiz();
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -20,6 +20,12 @@ const HeroSection = () => {
       });
     }
   }, []);
+
+  const handleJoinMyTeam = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setSelectedProduct("business");
+    document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-cream">
@@ -74,7 +80,7 @@ const HeroSection = () => {
               </button>
               <a
                 href="#connect"
-                onClick={(e) => { e.preventDefault(); document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' }); }}
+                onClick={handleJoinMyTeam}
                 className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 Join My Team
