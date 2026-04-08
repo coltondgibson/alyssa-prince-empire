@@ -15,7 +15,7 @@ const BookACall = () => {
   }, []);
 
   return (
-    <section className="bg-cream py-16 md:py-20">
+    <section id="book-a-call" className="bg-cream py-16 md:py-20">
       <div ref={ref} className="opacity-0 max-w-2xl mx-auto px-6 text-center">
         <p className="font-script text-xl md:text-2xl text-primary mb-4">ready when you are ✨</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">

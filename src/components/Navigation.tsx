@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Real Estate", href: "#realestate" },
   { label: "Travel", href: "#travel" },
   { label: "Connect", href: "#connect" },
+  { label: "Book a Call", href: "#book-a-call", highlight: true },
 ];
 
 const Navigation = () => {
@@ -47,10 +48,16 @@ const Navigation = () => {
             <a
               key={link.label}
               href={link.href}
-              className="relative font-body text-xs tracking-[0.15em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300 group py-1 whitespace-nowrap"
+              className={`relative font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300 py-1 whitespace-nowrap ${
+                link.highlight
+                  ? "border border-primary/40 text-primary px-4 py-1.5 rounded-full hover:bg-primary hover:text-primary-foreground"
+                  : "text-foreground/80 hover:text-foreground group"
+              }`}
             >
               {link.label}
-              <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full rounded-full" />
+              {!link.highlight && (
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full rounded-full" />
+              )}
             </a>
           ))}
         </div>
