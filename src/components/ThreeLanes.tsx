@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useQuiz } from "@/components/QuizContext";
+import ProductModal from "@/components/ProductModal";
 import businessPhoto from "@/assets/alyssa-business.jpg";
 import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
@@ -22,8 +23,37 @@ const useFadeIn = () => {
   return ref;
 };
 
+const PRODUCT_MODALS: Record<string, { headline: string; subtext: string; submitUrl: string }> = {
+  greens: {
+    headline: "Start with what Alyssa drinks every morning.",
+    subtext: "Enter your info and she'll send you everything you need to know about Greens.",
+    submitUrl: "https://tranont.link/QUGk7sp",
+  },
+  transform: {
+    headline: "The supplement that changed how Alyssa thinks about eating.",
+    subtext: "Enter your info and she'll send you the full breakdown on Transform.",
+    submitUrl: "https://tranont.link/2no6UIh",
+  },
+  protein: {
+    headline: "Clean protein. No bloat. Actually tastes good.",
+    subtext: "Enter your info and Alyssa will send you everything about Clear Protein.",
+    submitUrl: "https://tranont.link/oPFjEOY",
+  },
+  glow: {
+    headline: "Marine collagen that actually works.",
+    subtext: "Enter your info and Alyssa will send you the full story on Glow-M.",
+    submitUrl: "https://tranont.link/by4KlLt",
+  },
+};
+
 const ThreeLanes = () => {
   const { openQuiz, setSelectedProduct } = useQuiz();
+  const [activeModal, setActiveModal] = useState<string | null>(null);
+
+  const openProductModal = (context: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    setActiveModal(context);
+  };
 
   const scrollToConnect = (context?: string) => (e: React.MouseEvent) => {
     e.preventDefault();
@@ -35,6 +65,7 @@ const ThreeLanes = () => {
   const ref3 = useFadeIn();
 
   return (
+    <>
     <section id="wellness" className="bg-card">
       {/* Lane 1 — Wellness: photo left, text right */}
       <div ref={ref1} className="opacity-0 flex flex-col md:flex-row w-full max-w-7xl mx-auto px-6 lg:px-10" style={{ minHeight: 420 }}>
@@ -91,7 +122,7 @@ const ThreeLanes = () => {
                 <span className="inline-block text-primary text-2xl mb-4 group-hover:scale-110 transition-transform duration-300">{product.emoji}</span>
                 <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
                 <p className="font-body text-base leading-relaxed text-foreground/80 mb-6">{product.description}</p>
-                <a href="#connect" onClick={scrollToConnect(product.context)} className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300 group-hover:tracking-[0.18em]">
+                <a href="#" onClick={openProductModal(product.context)} className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300 group-hover:tracking-[0.18em]">
                   Learn More →
                 </a>
               </div>
@@ -109,7 +140,7 @@ const ThreeLanes = () => {
               <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-8 max-w-2xl mx-auto">
                 My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
               </p>
-              <a href="#connect" onClick={scrollToConnect("greens")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
+              <a href="#" onClick={openProductModal("greens")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
                 Learn More →
               </a>
             </div>
@@ -176,6 +207,16 @@ const ThreeLanes = () => {
         </div>
       </div>
     </section>
+    {activeModal && PRODUCT_MODALS[activeModal] && (
+      <ProductModal
+        open={true}
+        onClose={() => setActiveModal(null)}
+        headline={PRODUCT_MODALS[activeModal].headline}
+        subtext={PRODUCT_MODALS[activeModal].subtext}
+        submitUrl={PRODUCT_MODALS[activeModal].submitUrl}
+      />
+    )}
+    </>
   );
 };
 
