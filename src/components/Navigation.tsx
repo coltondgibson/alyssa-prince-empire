@@ -30,7 +30,7 @@ const Navigation = () => {
           : "bg-transparent py-4"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto flex items-center px-6 lg:px-10">
         {/* Logo */}
         <a href="#" className="flex flex-col items-start leading-none group flex-shrink-0">
           <span className="font-script text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors duration-300">
@@ -42,7 +42,7 @@ const Navigation = () => {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8 ml-12 xl:ml-16">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -55,14 +55,14 @@ const Navigation = () => {
           ))}
           <a
             href="#book-a-call"
-            className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap"
+            className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/85 shadow-sm transition-all duration-300 whitespace-nowrap ml-1 xl:ml-2"
           >
             Book a Call
           </a>
         </div>
 
         {/* Right side: social icons + CTA + hamburger */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 ml-auto">
           {/* Social icons */}
           <div className="hidden lg:flex items-center gap-5">
             <a
