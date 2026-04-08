@@ -69,7 +69,7 @@ const Navigation = () => {
               <Instagram size={18} strokeWidth={1.5} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/alyssa.adkins.10"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-700 transition-colors duration-300"
@@ -124,7 +124,7 @@ const Navigation = () => {
               <Instagram size={20} strokeWidth={1.5} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/alyssa.adkins.10"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary transition-colors"
