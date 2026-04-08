@@ -120,7 +120,7 @@ const EmailOptIn = () => {
             className="w-full px-5 py-3.5 bg-card text-foreground font-body text-sm rounded-sm outline-none placeholder:text-muted-foreground"
           />
           <div className="text-left pt-2 pb-1">
-            <p className="font-script text-xl md:text-2xl text-foreground mb-3">What brought you here today?</p>
+            <p className="font-heading text-lg md:text-xl text-foreground mb-3">What brought you here today?</p>
             <div className="space-y-2.5">
               {[
                 { value: "wellness", label: "I want to feel better" },
