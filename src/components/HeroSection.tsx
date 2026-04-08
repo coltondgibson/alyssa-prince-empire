@@ -85,6 +85,12 @@ const HeroSection = () => {
               >
                 Join My Team
               </a>
+              <a
+                href="#book-a-call"
+                className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm text-center transition-all duration-300 border border-primary/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:shadow-md hover:-translate-y-0.5"
+              >
+                Book a Call With Alyssa →
+              </a>
             </div>
           </div>
         </div>
