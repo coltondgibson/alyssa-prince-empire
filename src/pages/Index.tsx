@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GlitterEffect from "@/components/GlitterEffect";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import CredentialsBar from "@/components/CredentialsBar";
@@ -24,6 +25,7 @@ const Index = () => {
 
   return (
     <QuizProvider value={{ openQuiz: () => setQuizOpen(true), selectedProduct, setSelectedProduct }}>
+      <GlitterEffect />
       <div className="min-h-screen">
         <Navigation />
         <HeroSection />
