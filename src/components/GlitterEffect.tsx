@@ -32,15 +32,15 @@ const GlitterEffect = () => {
     resizeObserver.observe(document.documentElement);
     resize();
 
-    const COUNT = Math.min(Math.floor(window.innerWidth / 25), 55);
+    const COUNT = Math.min(Math.floor(window.innerWidth / 14), 90);
 
     const create = (y?: number): Particle => ({
       x: Math.random() * canvas.width,
       y: y ?? Math.random() * canvas.height,
-      size: Math.random() * 6 + 4,
-      speedY: Math.random() * 0.35 + 0.1,
+      size: Math.random() * 8 + 5,
+      speedY: Math.random() * 0.4 + 0.15,
       speedX: Math.random() * 0.2 - 0.1,
-      opacity: Math.random() * 0.18 + 0.04,
+      opacity: Math.random() * 0.35 + 0.15,
       fadeDir: Math.random() > 0.5 ? 1 : -1,
       rotation: Math.random() * 360,
       rotationSpeed: (Math.random() - 0.5) * 1.2,
@@ -68,10 +68,10 @@ const GlitterEffect = () => {
 
       // Soft pink fill with gradient
       const grad = ctx.createLinearGradient(-s, -s * 1.6, s, s * 1.6);
-      grad.addColorStop(0, "rgba(242, 196, 206, 0.6)");
-      grad.addColorStop(0.4, "rgba(255, 220, 230, 0.4)");
-      grad.addColorStop(0.7, "rgba(240, 200, 210, 0.5)");
-      grad.addColorStop(1, "rgba(220, 170, 185, 0.3)");
+      grad.addColorStop(0, "rgba(235, 160, 180, 0.85)");
+      grad.addColorStop(0.4, "rgba(245, 190, 205, 0.65)");
+      grad.addColorStop(0.7, "rgba(230, 170, 190, 0.75)");
+      grad.addColorStop(1, "rgba(210, 140, 165, 0.55)");
       ctx.fillStyle = grad;
       ctx.fill();
 
@@ -105,9 +105,9 @@ const GlitterEffect = () => {
         p.y += p.speedY;
         p.x += p.speedX + Math.sin(p.y * 0.005) * 0.15;
         p.rotation += p.rotationSpeed;
-        p.opacity += p.fadeDir * 0.003;
-        if (p.opacity >= 0.22) p.fadeDir = -1;
-        if (p.opacity <= 0.03) p.fadeDir = 1;
+        p.opacity += p.fadeDir * 0.005;
+        if (p.opacity >= 0.5) p.fadeDir = -1;
+        if (p.opacity <= 0.1) p.fadeDir = 1;
         if (p.y > canvas.height + 20) Object.assign(p, create(-20));
         drawCrystal(p);
       }
