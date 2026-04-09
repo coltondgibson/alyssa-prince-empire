@@ -123,7 +123,7 @@ const Greens = () => {
               For years I was running on caffeine and willpower.
             </p>
             <p className="font-heading text-xl md:text-2xl text-foreground italic pt-1">
-              Until I found something that actually worked.
+              Until I helped build something that actually worked.
             </p>
           </div>
         </section>
