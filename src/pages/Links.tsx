@@ -42,13 +42,8 @@ const links = [
 const Links = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center">
-      {/* Full-page background image */}
-      <div
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${alyssaPhoto})` }}
-      />
-      {/* Dark overlay */}
-      <div className="fixed inset-0 bg-black/60" />
+      {/* Clean background */}
+      <div className="fixed inset-0 bg-cream" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-md mx-auto px-5 py-10 md:py-14">
