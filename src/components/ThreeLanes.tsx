@@ -43,9 +43,12 @@ const ThreeLanes = () => {
         <div className="md:w-1/2 bg-background flex items-center px-8 lg:px-16 py-16">
           <div className="max-w-lg">
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">Wellness</p>
-            <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-foreground mb-6">
-              These are the four products I refuse to go a day without.
+            <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-foreground mb-4">
+              Feel better from the inside out.
             </h3>
+            <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80">
+              These are the four products I refuse to go a day without.
+            </p>
           </div>
         </div>
       </div>
