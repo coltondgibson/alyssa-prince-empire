@@ -145,7 +145,7 @@ const ThreeLanes = () => {
               <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-8 max-w-2xl mx-auto">
                 My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
               </p>
-              <a href="#" onClick={openProductModal("greens")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
+              <a href="#" onClick={openProductModal("greens")} className="inline-block font-body text-xs tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md">
                 Learn More →
               </a>
             </div>
