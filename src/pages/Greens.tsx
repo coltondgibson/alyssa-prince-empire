@@ -10,6 +10,7 @@ import {
 import ProductModal from "@/components/ProductModal";
 import alyssaPhoto from "@/assets/alyssa-greens-kitchen.png";
 import greensMixing from "@/assets/greens-mixing.png";
+import greensProduct from "@/assets/greens-product.png";
 
 const SHOP_URL = "https://tranont.link/QUGk7sp";
 
@@ -44,43 +45,74 @@ const Greens = () => {
     setOptSubmitted(true);
   };
 
+  const ShopButton = ({ className = "" }: { className?: string }) => (
+    <div className={`text-center ${className}`}>
+      <button
+        onClick={() => setModalOpen(true)}
+        className="w-full sm:w-auto font-body text-base md:text-lg tracking-[0.14em] uppercase px-16 py-5 rounded-sm transition-all duration-300 bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:-translate-y-1"
+      >
+        Shop Now →
+      </button>
+      <p className="font-body text-xs tracking-wide text-foreground/40 mt-3 uppercase">
+        30 Day Money Back Guarantee
+      </p>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-background">
+      {/* Sticky top bar */}
+      <div className="sticky top-0 z-50 bg-primary text-primary-foreground py-2.5 px-4 text-center">
+        <p className="font-body text-xs md:text-sm tracking-wide">
+          Free shipping on your first order · 30 Day Money Back Guarantee · Ships within 24 hours
+        </p>
+      </div>
+
       {/* Header */}
-      <header className="py-5 px-6 md:px-10 flex items-center gap-4">
+      <header className="bg-foreground py-4 px-6 md:px-10 flex items-center gap-4">
         <Link
           to="/"
-          className="flex items-center gap-2 font-body text-sm tracking-wide text-foreground/60 hover:text-foreground transition-colors"
+          className="flex items-center gap-2 font-body text-sm tracking-wide text-background/60 hover:text-background transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back</span>
         </Link>
         <div className="flex-1 text-center pr-16">
-          <span className="font-heading text-lg md:text-xl tracking-wide text-foreground">
+          <span className="font-heading text-lg md:text-xl tracking-wide text-background">
             Alyssa Prince
           </span>
         </div>
       </header>
 
       <main>
-        {/* 1 — Hero: Headline + Subheadline */}
+        {/* 1 — Dark Hero: Headline + Product image + Shop button */}
         <section
           ref={heroRef}
-          className="opacity-0 bg-secondary py-20 md:py-28 lg:py-32 px-6 md:px-10"
+          className="opacity-0 bg-foreground py-12 md:py-16 lg:py-20 px-6 md:px-10"
         >
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foreground leading-[1.1] mb-6 md:mb-8">
-              The One Thing I Drink Every Single Morning — No Matter What.
-            </h1>
-            <p className="font-body text-base md:text-lg lg:text-xl text-foreground/60 leading-relaxed max-w-xl mx-auto">
-              How a simple daily habit gave me back my energy, cleared my brain fog, and became the foundation everything else is built on.
-            </p>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div>
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-background leading-[1.1] mb-4 md:mb-6">
+                The One Thing I Drink Every Single Morning — No Matter What.
+              </h1>
+              <p className="font-body text-sm md:text-base lg:text-lg text-background/60 leading-relaxed mb-6 md:mb-8 max-w-lg">
+                How a simple daily habit gave me back my energy, cleared my brain fog, and became the foundation everything else is built on.
+              </p>
+              <ShopButton />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={greensProduct}
+                alt="Tranont Greens"
+                className="w-full max-w-sm md:max-w-md drop-shadow-2xl"
+              />
+            </div>
           </div>
         </section>
 
-        {/* 3 — Hook */}
-        <section className="bg-background py-16 md:py-24 px-6 md:px-10">
-          <div className="max-w-xl mx-auto text-center space-y-5">
+        {/* Hook */}
+        <section className="bg-background py-10 md:py-14 px-6 md:px-10">
+          <div className="max-w-xl mx-auto text-center space-y-4">
             <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
               I've built businesses, closed real estate deals, raised kids, and earned 7&nbsp;figures.
             </p>
@@ -90,44 +122,42 @@ const Greens = () => {
             <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
               For years I was running on caffeine and willpower.
             </p>
-            <p className="font-heading text-2xl md:text-3xl text-foreground italic pt-2">
+            <p className="font-heading text-xl md:text-2xl text-foreground italic pt-1">
               Until I found something that actually worked.
             </p>
           </div>
         </section>
 
-        {/* 4 — Photo + Story side by side */}
-        <section className="bg-secondary py-16 md:py-24 px-6 md:px-10">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-start">
-            {/* Photo */}
+        {/* Photo + Story side by side */}
+        <section className="bg-foreground py-10 md:py-14 px-6 md:px-10">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <div>
               <img
                 src={alyssaPhoto}
-                alt="Alyssa Prince"
+                alt="Alyssa Prince with Greens"
                 className="w-full rounded-sm shadow-xl"
               />
             </div>
-            {/* Story */}
-            <div className="space-y-5">
-              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+            <div className="space-y-4">
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
                 I'm not someone who struggles with weight. I never have. But energy? Focus? Showing up as my best self every single day? That's a different story.
               </p>
-              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
                 Running multiple businesses, managing a real estate portfolio, building a team, being present for my family — it takes everything. I needed something that worked as hard as I&nbsp;do.
               </p>
-              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
                 I tried everything. Vitamins. Powders. Routines. None of it moved the needle the way I needed.
               </p>
-              <p className="font-heading text-xl md:text-2xl text-foreground italic">
+              <p className="font-heading text-xl md:text-2xl text-background italic">
                 Then I found Greens.
               </p>
-              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
                 35+ fruits and vegetables. Prebiotics. Probiotics. Digestive enzymes. All in one scoop. One scoop. Thirty seconds. Every single morning.
               </p>
-              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
                 Within weeks I noticed:
               </p>
-              <ul className="space-y-2.5">
+              <ul className="space-y-2">
                 {[
                   "More consistent energy throughout the day",
                   "Less bloating and digestive discomfort",
@@ -136,55 +166,55 @@ const Greens = () => {
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="text-primary mt-0.5 text-lg leading-none">→</span>
-                    <span className="font-body text-sm md:text-base text-foreground/80">{item}</span>
+                    <span className="font-body text-sm md:text-base text-background/80">{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="font-heading text-lg md:text-xl text-foreground italic pt-2">
+              <p className="font-heading text-lg md:text-xl text-background italic pt-1">
                 I've never missed a day since.
               </p>
             </div>
           </div>
         </section>
 
-        {/* 5 — What's In It — 2x2 cards */}
-        <section className="bg-background py-16 md:py-24 px-6 md:px-10">
+        {/* What's In It — 2x2 cards */}
+        <section className="bg-background py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-3xl md:text-4xl text-foreground text-center mb-4">
+            <h2 className="font-heading text-2xl md:text-3xl text-foreground text-center mb-3">
               What's In It
             </h2>
-            <p className="font-body text-sm md:text-base text-foreground/60 text-center mb-10 md:mb-14">
+            <p className="font-body text-sm text-foreground/60 text-center mb-8">
               This isn't just a greens powder.
             </p>
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4">
               {[
                 {
-                  icon: <Leaf className="w-7 h-7 text-primary" />,
+                  icon: <Leaf className="w-6 h-6 text-primary" />,
                   title: "35+ Fruits & Vegetables",
                   desc: "More nutrition in one scoop than most people get all day",
                 },
                 {
-                  icon: <Heart className="w-7 h-7 text-primary" />,
+                  icon: <Heart className="w-6 h-6 text-primary" />,
                   title: "Prebiotics & Probiotics",
                   desc: "Your gut health affects everything — energy, mood, immunity, digestion",
                 },
                 {
-                  icon: <Sparkles className="w-7 h-7 text-primary" />,
+                  icon: <Sparkles className="w-6 h-6 text-primary" />,
                   title: "Digestive Enzymes",
                   desc: "Actually absorb the nutrients you're putting in your body",
                 },
                 {
-                  icon: <ShieldCheck className="w-7 h-7 text-primary" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-primary" />,
                   title: "Clean Formula",
                   desc: "No artificial flavors. No fillers. No compromise.",
                 },
               ].map((card, i) => (
                 <div
                   key={i}
-                  className="bg-secondary rounded-sm p-6 md:p-8 text-center space-y-3"
+                  className="bg-secondary rounded-sm p-5 md:p-6 text-center space-y-2"
                 >
                   <div className="flex justify-center">{card.icon}</div>
-                  <p className="font-heading text-lg md:text-xl text-foreground">{card.title}</p>
+                  <p className="font-heading text-lg text-foreground">{card.title}</p>
                   <p className="font-body text-sm text-foreground/60 leading-relaxed">{card.desc}</p>
                 </div>
               ))}
@@ -192,13 +222,13 @@ const Greens = () => {
           </div>
         </section>
 
-        {/* 6 — What To Expect — 3 horizontal cards */}
-        <section className="bg-secondary py-16 md:py-24 px-6 md:px-10">
+        {/* What To Expect — 3 horizontal cards */}
+        <section className="bg-foreground py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-heading text-3xl md:text-4xl text-foreground text-center mb-10 md:mb-14">
+            <h2 className="font-heading text-2xl md:text-3xl text-background text-center mb-8">
               What You Can Expect
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-4">
               {[
                 {
                   label: "Week 1",
@@ -215,14 +245,14 @@ const Greens = () => {
               ].map((block, i) => (
                 <div
                   key={i}
-                  className="bg-background rounded-sm p-6 md:p-8 space-y-4"
+                  className="bg-background/10 rounded-sm p-5 md:p-6 space-y-3"
                 >
-                  <p className="font-heading text-xl md:text-2xl text-foreground">{block.label}</p>
-                  <ul className="space-y-2.5">
+                  <p className="font-heading text-xl text-background">{block.label}</p>
+                  <ul className="space-y-2">
                     {block.items.map((item, j) => (
-                      <li key={j} className="flex items-start gap-3">
+                      <li key={j} className="flex items-start gap-2">
                         <span className="text-primary mt-0.5 leading-none">→</span>
-                        <span className="font-body text-sm text-foreground/75">{item}</span>
+                        <span className="font-body text-sm text-background/75">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -232,21 +262,19 @@ const Greens = () => {
           </div>
         </section>
 
-        {/* Lifestyle photo break */}
+        {/* Lifestyle photo */}
         <section className="bg-background py-0">
-          <div className="max-w-4xl mx-auto px-6 md:px-10 py-12 md:py-16">
-            <img
-              src={greensMixing}
-              alt="Mixing Tranont Greens"
-              className="w-full rounded-sm shadow-lg"
-            />
-          </div>
+          <img
+            src={greensMixing}
+            alt="Mixing Tranont Greens"
+            className="w-full max-h-[400px] object-cover"
+          />
         </section>
 
-        {/* 7 — Testimonials — 3 cards in a row */}
-        <section className="bg-background py-16 md:py-24 px-6 md:px-10">
+        {/* Testimonials — pink background */}
+        <section className="bg-primary/10 py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-4">
               {[
                 "I was skeptical at first. One scoop of greens every morning sounded too simple. But within two weeks I noticed I wasn't reaching for coffee at 2pm anymore. This is a staple now.",
                 "I've tried every greens powder out there. This is the only one I've actually stuck with. The difference is real.",
@@ -254,15 +282,15 @@ const Greens = () => {
               ].map((quote, i) => (
                 <div
                   key={i}
-                  className="bg-secondary rounded-sm p-6 md:p-8 flex flex-col justify-between"
+                  className="bg-background rounded-sm p-5 md:p-6 flex flex-col justify-between shadow-sm"
                 >
                   <div>
-                    <span className="font-heading text-5xl text-primary/30 leading-none">"</span>
-                    <p className="font-body text-sm text-foreground/75 italic leading-relaxed -mt-4 mb-4">
+                    <span className="font-heading text-4xl text-primary/40 leading-none">"</span>
+                    <p className="font-body text-sm text-foreground/75 italic leading-relaxed -mt-3 mb-3">
                       {quote}
                     </p>
                   </div>
-                  <cite className="font-body text-xs text-foreground/50 not-italic tracking-wide uppercase">
+                  <cite className="font-body text-xs text-foreground/45 not-italic tracking-wide uppercase">
                     — Community Member
                   </cite>
                 </div>
@@ -271,39 +299,33 @@ const Greens = () => {
           </div>
         </section>
 
-        {/* 8 — Primary Shop Button */}
-        <section className="bg-secondary py-16 md:py-24 px-6 md:px-10 text-center">
+        {/* Primary Shop Button */}
+        <section className="bg-foreground py-10 md:py-14 px-6 md:px-10 text-center">
           <div className="max-w-2xl mx-auto">
-            <p className="font-heading text-3xl md:text-4xl text-foreground mb-3">Greens</p>
-            <p className="font-body text-sm md:text-base text-foreground/55 mb-8 max-w-md mx-auto leading-relaxed">
+            <p className="font-body text-sm text-background/50 mb-6 max-w-md mx-auto leading-relaxed">
               One scoop every morning. 35+ fruits and vegetables. Prebiotics. Probiotics. Digestive enzymes. The easiest healthy habit you'll ever build.
             </p>
-            <button
-              onClick={() => setModalOpen(true)}
-              className="font-body text-base md:text-lg tracking-[0.14em] uppercase px-14 py-5 rounded-sm transition-all duration-300 bg-foreground text-background shadow-lg hover:shadow-xl hover:-translate-y-1"
-            >
-              Shop Now →
-            </button>
+            <ShopButton />
           </div>
         </section>
 
-        {/* 9 — Opt-in */}
-        <section className="bg-background py-16 md:py-24 px-6 md:px-10">
+        {/* Opt-in */}
+        <section className="bg-background py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-md mx-auto text-center">
             <p className="font-heading text-xl md:text-2xl text-foreground mb-1">Not ready to buy yet?</p>
-            <p className="font-body text-sm text-foreground/55 mb-8">
+            <p className="font-body text-sm text-foreground/55 mb-6">
               Let Alyssa personally follow up with you.
             </p>
 
             {optSubmitted ? (
-              <div className="py-8">
+              <div className="py-6">
                 <p className="font-script text-2xl md:text-3xl text-foreground mb-3">Perfect! 💌</p>
                 <p className="font-body text-sm text-foreground/70">
                   Alyssa will be in touch with you personally. No spam ever.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleOptSubmit} className="space-y-3.5 text-left">
+              <form onSubmit={handleOptSubmit} className="space-y-3 text-left">
                 <input
                   type="text"
                   required
@@ -342,7 +364,7 @@ const Greens = () => {
                 >
                   Yes, Follow Up With Me →
                 </button>
-                <p className="text-center font-body text-xs text-foreground/45 mt-3">
+                <p className="text-center font-body text-xs text-foreground/45 mt-2">
                   You'll hear from Alyssa personally. No spam ever.
                 </p>
               </form>
@@ -350,10 +372,10 @@ const Greens = () => {
           </div>
         </section>
 
-        {/* 11 — FAQ */}
-        <section className="bg-secondary py-16 md:py-24 px-6 md:px-10">
+        {/* FAQ — light gray bg */}
+        <section className="bg-muted py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-2xl mx-auto">
-            <h2 className="font-heading text-3xl md:text-4xl text-foreground text-center mb-10">
+            <h2 className="font-heading text-2xl md:text-3xl text-foreground text-center mb-8">
               FAQ
             </h2>
             <Accordion type="single" collapsible className="w-full">
@@ -377,29 +399,24 @@ const Greens = () => {
           </div>
         </section>
 
-        {/* 12 — Closing */}
-        <section className="bg-background py-16 md:py-24 px-6 md:px-10">
-          <div className="max-w-xl mx-auto text-center space-y-5">
-            <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+        {/* Closing */}
+        <section className="bg-foreground py-12 md:py-16 px-6 md:px-10">
+          <div className="max-w-xl mx-auto text-center space-y-4">
+            <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
               I'm not going to tell you this will change your life.
             </p>
-            <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+            <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
               I'm going to tell you it changed mine.
             </p>
-            <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+            <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
               And I wouldn't share something with my community that I don't personally use every single day.
             </p>
-            <p className="font-heading text-2xl md:text-3xl text-foreground italic pt-2">
+            <p className="font-heading text-xl md:text-2xl text-background italic pt-1">
               This is my non-negotiable. Maybe it becomes yours too.
             </p>
-            <p className="font-script text-lg text-foreground/70">— Alyssa</p>
-            <div className="pt-8">
-              <button
-                onClick={() => setModalOpen(true)}
-                className="font-body text-base md:text-lg tracking-[0.14em] uppercase px-14 py-5 rounded-sm transition-all duration-300 bg-foreground text-background shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
-                Shop Now →
-              </button>
+            <p className="font-script text-lg text-background/70">— Alyssa</p>
+            <div className="pt-4">
+              <ShopButton />
             </div>
           </div>
         </section>
