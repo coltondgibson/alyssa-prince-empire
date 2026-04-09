@@ -113,12 +113,14 @@ const Greens = () => {
                 How a simple daily habit gave me back my energy, cleared my brain fog, and became the foundation everything else is built on.
               </p>
               <ShopButton />
-              <button
-                onClick={() => setStayModalOpen(true)}
-                className="w-full sm:w-auto font-body text-sm tracking-[0.12em] uppercase px-12 py-4 rounded-sm transition-all duration-300 border border-background/30 text-background/80 hover:bg-background/10 mt-3"
-              >
-                Not Ready Yet — Stay in Touch →
-              </button>
+              <div className="flex justify-center mt-3">
+                <button
+                  onClick={() => setStayModalOpen(true)}
+                  className="font-body text-xs tracking-[0.1em] uppercase px-8 py-3 rounded-sm transition-all duration-300 border border-background/30 text-background/70 hover:bg-background/10"
+                >
+                  Not Ready Yet — Stay in Touch →
+                </button>
+              </div>
             </div>
             <div className="flex justify-center">
               <img
