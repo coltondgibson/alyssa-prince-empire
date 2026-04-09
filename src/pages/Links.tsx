@@ -1,4 +1,5 @@
 import alyssaPhoto from "@/assets/alyssa-smiling2.jpg";
+import { Instagram, Facebook } from "lucide-react";
 
 const links = [
   {
@@ -51,6 +52,16 @@ const Links = () => {
             alt="Alyssa Prince"
             className="w-full h-full object-cover object-top"
           />
+        </div>
+
+        {/* Social icons */}
+        <div className="flex items-center gap-4 mb-4">
+          <a href="https://instagram.com/alyssam_prince" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors">
+            <Instagram size={20} />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors">
+            <Facebook size={20} />
+          </a>
         </div>
 
         {/* Name */}
