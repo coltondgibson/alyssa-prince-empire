@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { QuizProvider } from "@/components/QuizContext";
-import { useState } from "react";
 import QuizModal from "@/components/QuizModal";
+import ProductModal from "@/components/ProductModal";
 import greensPhoto from "@/assets/greens-product.png";
 import transformPhoto from "@/assets/transform-product.png";
 import proteinPhoto from "@/assets/clear-protein-product.png";
