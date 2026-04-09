@@ -1,4 +1,5 @@
 import alyssaPhoto from "@/assets/alyssa-smiling2.jpg";
+import { Instagram, Facebook } from "lucide-react";
 
 const links = [
   {
