@@ -9,6 +9,10 @@ import transformPhoto from "@/assets/transform-product.png";
 import proteinPhoto from "@/assets/clear-protein-product.png";
 import glowPhoto from "@/assets/glow-product.png";
 import enrichPhoto from "@/assets/enrich-product.png";
+import balancePhoto from "@/assets/balance-product.png";
+import activatePhoto from "@/assets/activate-product.png";
+import focusPhoto from "@/assets/focus-product.png";
+import zestPhoto from "@/assets/zest-product.png";
 
 interface Product {
   name: string;
@@ -46,6 +50,7 @@ const CATEGORIES: Category[] = [
         slug: "balance",
         shopUrl: "https://tranont.link/aObiHqE",
         description: "The one that replaced every other vitamin I was taking. Complete multi-vitamin, minerals, and antioxidants designed for real absorption.",
+        image: balancePhoto,
       },
     ],
   },
@@ -83,18 +88,21 @@ const CATEGORIES: Category[] = [
         slug: "activate",
         shopUrl: "https://tranont.link/XZzDqtR",
         description: "Pairs with Transform as the Daily Health System. Supports appetite control and metabolic function so your body works with you not against you.",
+        image: activatePhoto,
       },
       {
         name: "Focus",
         slug: "focus",
         shopUrl: "https://tranont.link/SsqAM9O",
         description: "Clean mental energy without the crash. B vitamins, Lion's Mane, and green tea extract. No jitters, no withdrawal.",
+        image: focusPhoto,
       },
       {
         name: "Zest",
         slug: "zest",
         shopUrl: "https://tranont.link/UHHwbeH",
         description: "My grab and go energy stick. Natural caffeine with amino acids, vitamins, and antioxidants. A smarter alternative to coffee or energy drinks.",
+        image: zestPhoto,
       },
     ],
   },
