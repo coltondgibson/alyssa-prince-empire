@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
+import Quiz from "./pages/Quiz.tsx";
 import Wellness from "./pages/Wellness.tsx";
 import Greens from "./pages/Greens.tsx";
 import Business from "./pages/Business.tsx";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/realestate" element={<RealEstate />} />
           <Route path="/travel" element={<Travel />} />
           <Route path="/links" element={<Links />} />
+          <Route path="/quiz" element={<Quiz />} />
           <Route path="/wellness/:slug" element={<ProductPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

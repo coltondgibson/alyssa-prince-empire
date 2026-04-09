@@ -3,7 +3,7 @@ import alyssaPhoto from "@/assets/alyssa-smiling2.jpg";
 const links = [
   {
     label: "Take the Quiz ✨",
-    href: "/#quiz",
+    href: "/quiz",
     sub: "Find your perfect path",
   },
   {
