@@ -457,6 +457,9 @@ const Greens = () => {
               setStayEmail("");
               setStayPhone("");
               toast.success("You're in! Alyssa will be in touch personally.");
+              setTimeout(() => {
+                window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
+              }, 1200);
             }}
             className="flex flex-col gap-4 mt-4"
           >
