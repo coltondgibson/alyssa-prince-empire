@@ -7,6 +7,9 @@ import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
 import kitchenPhoto from "@/assets/alyssa-kitchen.png";
 import teamCouchPhoto from "@/assets/alyssa-team-couch.png";
 import greensPhoto from "@/assets/greens-product.png";
+import transformPhoto from "@/assets/transform-product.png";
+import proteinPhoto from "@/assets/clear-protein-product.png";
+import glowPhoto from "@/assets/glow-product.png";
 
 const useFadeIn = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -96,35 +99,37 @@ const ThreeLanes = () => {
             {[
               {
                 name: "Transform",
-                emoji: "✦",
+                image: transformPhoto,
                 context: "transform",
                 description: "The supplement that changed how I think about eating. It converts sugars into fiber — reducing glucose spikes, curbing cravings, and supporting metabolism all day. Non-negotiable.",
               },
               {
                 name: "Clear Protein",
-                emoji: "✦",
+                image: proteinPhoto,
                 context: "protein",
                 description: "Clean protein without the bloat. 20g of clear whey protein that actually tastes good and digests clean. I use this daily.",
               },
               {
                 name: "Glow-M",
-                emoji: "✦",
+                image: glowPhoto,
                 context: "glow",
                 description: "Marine collagen for skin, hair, and nails. I noticed a difference within weeks.",
               },
             ].map((product) => (
               <div
                 key={product.name}
-                className="group relative bg-card p-10 rounded-md text-center transition-all duration-500 hover:-translate-y-1.5 shadow-[0_2px_20px_-6px_hsl(var(--primary)/0.15)] hover:shadow-[0_12px_40px_-10px_hsl(var(--primary)/0.3)] overflow-hidden"
+                className="group relative bg-card rounded-lg text-center transition-all duration-500 hover:-translate-y-2 shadow-[0_4px_24px_-6px_hsl(var(--primary)/0.12)] hover:shadow-[0_16px_48px_-12px_hsl(var(--primary)/0.3)] overflow-hidden"
               >
-                {/* Top accent bar */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/40 via-primary to-primary/40" />
-                <span className="inline-block text-primary text-2xl mb-4 group-hover:scale-110 transition-transform duration-300">{product.emoji}</span>
-                <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{product.name}</h4>
-                <p className="font-body text-base leading-relaxed text-foreground/80 mb-6">{product.description}</p>
-                <a href="#" onClick={openProductModal(product.context)} className="inline-block font-body text-sm tracking-[0.12em] text-primary hover:text-foreground transition-colors duration-300 group-hover:tracking-[0.18em]">
-                  Learn More →
-                </a>
+                <div className="bg-background/60 p-6 pb-4 flex items-center justify-center h-64 md:h-72">
+                  <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div className="p-8 pt-4">
+                  <h4 className="font-heading text-2xl md:text-3xl text-foreground mb-3">{product.name}</h4>
+                  <p className="font-body text-sm md:text-base leading-relaxed text-foreground/75 mb-6">{product.description}</p>
+                  <a href="#" onClick={openProductModal(product.context)} className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-3 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md">
+                    Learn More →
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -140,7 +145,7 @@ const ThreeLanes = () => {
               <p className="font-body text-base md:text-lg leading-relaxed text-foreground/80 mb-8 max-w-2xl mx-auto">
                 My daily non-negotiable. Packed with over 35 fruits and vegetables, prebiotics, probiotics, and digestive enzymes — it's the easiest way to start your day right. I never skip this one.
               </p>
-              <a href="#" onClick={openProductModal("greens")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5">
+              <a href="#" onClick={openProductModal("greens")} className="inline-block font-body text-xs tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md">
                 Learn More →
               </a>
             </div>
