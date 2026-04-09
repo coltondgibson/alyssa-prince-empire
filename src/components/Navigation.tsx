@@ -50,16 +50,20 @@ const Navigation = () => {
 
         {/* Desktop links */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8 ml-8 xl:ml-12">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="relative font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300 py-1 whitespace-nowrap text-foreground/80 hover:text-foreground group"
-            >
-              {link.label}
-              <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full rounded-full" />
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const className = "relative font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300 py-1 whitespace-nowrap text-foreground/80 hover:text-foreground group";
+            const inner = (
+              <>
+                {link.label}
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-primary transition-all duration-300 group-hover:w-full rounded-full" />
+              </>
+            );
+            return link.to ? (
+              <Link key={link.label} to={link.to} className={className}>{inner}</Link>
+            ) : (
+              <a key={link.label} href={link.href} className={className}>{inner}</a>
+            );
+          })}
         </div>
 
         <div className="flex items-center gap-3 ml-auto">
@@ -126,16 +130,14 @@ const Navigation = () => {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="lg:hidden bg-card/98 backdrop-blur-md px-6 pb-6 pt-2 animate-fade-in">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block py-3 font-body text-sm tracking-[0.15em] uppercase text-foreground/80 hover:text-foreground transition-colors border-b border-border/30 last:border-b-0"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const cls = "block py-3 font-body text-sm tracking-[0.15em] uppercase text-foreground/80 hover:text-foreground transition-colors border-b border-border/30 last:border-b-0";
+            return link.to ? (
+              <Link key={link.label} to={link.to} onClick={() => setMobileOpen(false)} className={cls}>{link.label}</Link>
+            ) : (
+              <a key={link.label} href={link.href} onClick={() => setMobileOpen(false)} className={cls}>{link.label}</a>
+            );
+          })}
 
           {/* Mobile social + CTA */}
           <div className="flex items-center gap-5 mt-5">
