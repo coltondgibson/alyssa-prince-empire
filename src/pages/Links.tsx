@@ -54,6 +54,16 @@ const Links = () => {
           />
         </div>
 
+        {/* Social icons */}
+        <div className="flex items-center gap-4 mb-4">
+          <a href="https://instagram.com/alyssam_prince" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors">
+            <Instagram size={20} />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors">
+            <Facebook size={20} />
+          </a>
+        </div>
+
         {/* Name */}
         <h1 className="font-heading text-3xl md:text-4xl text-foreground tracking-wide mb-1.5">
           Alyssa Prince
