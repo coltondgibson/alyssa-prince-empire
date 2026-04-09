@@ -8,7 +8,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ProductModal from "@/components/ProductModal";
-import alyssaPhoto from "@/assets/alyssa-smiling2.jpg";
+import alyssaPhoto from "@/assets/alyssa-greens-kitchen.png";
+import greensMixing from "@/assets/greens-mixing.png";
 
 const SHOP_URL = "https://tranont.link/QUGk7sp";
 
