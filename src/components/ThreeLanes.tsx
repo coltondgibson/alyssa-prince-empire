@@ -44,11 +44,8 @@ const ThreeLanes = () => {
           <div className="max-w-lg">
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">Wellness</p>
             <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-foreground mb-6">
-              Feel better from the inside out.
+              These are the four products I refuse to go a day without.
             </h3>
-            <p className="font-body text-base md:text-lg leading-relaxed text-foreground">
-              Products backed by science and real results — that I use every single day. From energy to metabolism to gut health, I've found what works and I want to share it with you.
-            </p>
           </div>
         </div>
       </div>
