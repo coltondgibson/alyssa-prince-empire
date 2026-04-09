@@ -8,24 +8,28 @@ const PRODUCTS = [
   {
     name: "Greens",
     slug: "greens",
+    shopUrl: "https://tranont.link/QUGk7sp",
     description: "My daily non-negotiable. 35+ fruits and vegetables, prebiotics, probiotics, and digestive enzymes all in one scoop. I start every single morning with this.",
     image: greensPhoto,
   },
   {
     name: "Transform",
     slug: "transform",
+    shopUrl: "https://tranont.link/2no6UIh",
     description: "This one changed how I think about food. It converts sugar into fiber before your body processes it — reducing cravings, regulating glucose, and supporting fat burning. I take it before every meal.",
     image: transformPhoto,
   },
   {
     name: "Clear Protein",
     slug: "clear-protein",
+    shopUrl: "https://tranont.link/oPFjEOY",
     description: "20g of clean whey protein with zero bloat. Light, refreshing, and actually tastes good. Built for women.",
     image: proteinPhoto,
   },
   {
     name: "Glow-M",
     slug: "glow-m",
+    shopUrl: "https://tranont.link/by4KlLt",
     description: "Marine collagen that actually works. Faster absorbing than regular collagen, packed with biotin and antioxidants for your hair, skin, and nails. I noticed a difference within weeks.",
     image: glowPhoto,
   },
@@ -56,12 +60,22 @@ const WellnessProducts = () => {
                 <p className="font-body text-sm md:text-base leading-relaxed text-foreground/75 mb-6 flex-1">
                   {product.description}
                 </p>
-                <Link
-                  to={`/wellness/${product.slug}`}
-                  className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-3 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
-                >
-                  Learn More →
-                </Link>
+                <div className="flex flex-col gap-2.5">
+                  <a
+                    href={product.shopUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-3 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
+                  >
+                    Shop Now →
+                  </a>
+                  <Link
+                    to={`/wellness/${product.slug}`}
+                    className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-2.5 rounded-sm transition-all duration-300 border border-foreground/20 text-foreground/70 hover:border-foreground/40 hover:text-foreground"
+                  >
+                    Learn More →
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
