@@ -8,7 +8,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ProductModal from "@/components/ProductModal";
-import alyssaPhoto from "@/assets/alyssa-smiling2.jpg";
+import alyssaPhoto from "@/assets/alyssa-greens-kitchen.png";
+import greensMixing from "@/assets/greens-mixing.png";
 
 const SHOP_URL = "https://tranont.link/QUGk7sp";
 
@@ -228,6 +229,17 @@ const Greens = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Lifestyle photo break */}
+        <section className="bg-background py-0">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 py-12 md:py-16">
+            <img
+              src={greensMixing}
+              alt="Mixing Tranont Greens"
+              className="w-full rounded-sm shadow-lg"
+            />
           </div>
         </section>
 
