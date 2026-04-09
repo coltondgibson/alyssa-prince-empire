@@ -22,28 +22,6 @@ const useFadeIn = () => {
   return ref;
 };
 
-const PRODUCT_MODALS: Record<string, { headline: string; subtext: string; submitUrl: string }> = {
-  greens: {
-    headline: "Start with what Alyssa drinks every morning.",
-    subtext: "Enter your info and she'll send you everything you need to know about Greens.",
-    submitUrl: "https://tranont.link/QUGk7sp",
-  },
-  transform: {
-    headline: "The supplement that changed how Alyssa thinks about eating.",
-    subtext: "Enter your info and she'll send you the full breakdown on Transform.",
-    submitUrl: "https://tranont.link/2no6UIh",
-  },
-  protein: {
-    headline: "Clean protein. No bloat. Actually tastes good.",
-    subtext: "Enter your info and Alyssa will send you everything about Clear Protein.",
-    submitUrl: "https://tranont.link/oPFjEOY",
-  },
-  glow: {
-    headline: "Marine collagen that actually works.",
-    subtext: "Enter your info and Alyssa will send you the full story on Glow-M.",
-    submitUrl: "https://tranont.link/by4KlLt",
-  },
-};
 
 const ThreeLanes = () => {
   const { openQuiz, setSelectedProduct } = useQuiz();
