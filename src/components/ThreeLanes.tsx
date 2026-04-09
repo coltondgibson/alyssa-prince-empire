@@ -5,11 +5,7 @@ import businessPhoto from "@/assets/alyssa-business.jpg";
 import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
 import kitchenPhoto from "@/assets/alyssa-kitchen.png";
-import teamCouchPhoto from "@/assets/alyssa-team-couch.png";
-import greensPhoto from "@/assets/greens-product.png";
-import transformPhoto from "@/assets/transform-product.png";
-import proteinPhoto from "@/assets/clear-protein-product.png";
-import glowPhoto from "@/assets/glow-product.png";
+import WellnessProducts from "@/components/WellnessProducts";
 
 const useFadeIn = () => {
   const ref = useRef<HTMLDivElement>(null);
