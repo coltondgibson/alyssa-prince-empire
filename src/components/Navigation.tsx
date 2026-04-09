@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
 import { Instagram, Facebook, Menu, X } from "lucide-react";
 import { useQuiz } from "@/components/QuizContext";
+import { Link } from "react-router-dom";
 
-const navLinks = [
+interface NavItem {
+  label: string;
+  href?: string;
+  to?: string;
+}
+
+const navLinks: NavItem[] = [
   { label: "Story", href: "#story" },
-  { label: "Wellness", href: "#wellness" },
+  { label: "Wellness", to: "/wellness" },
   { label: "Business", href: "#business" },
   { label: "Real Estate", href: "#realestate" },
   { label: "Travel", href: "#travel" },
