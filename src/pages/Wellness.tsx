@@ -9,6 +9,10 @@ import transformPhoto from "@/assets/transform-product.png";
 import proteinPhoto from "@/assets/clear-protein-product.png";
 import glowPhoto from "@/assets/glow-product.png";
 import enrichPhoto from "@/assets/enrich-product.png";
+import balancePhoto from "@/assets/balance-product.png";
+import activatePhoto from "@/assets/activate-product.png";
+import focusPhoto from "@/assets/focus-product.png";
+import zestPhoto from "@/assets/zest-product.png";
 
 interface Product {
   name: string;
