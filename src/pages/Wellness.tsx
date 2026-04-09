@@ -8,6 +8,7 @@ import greensPhoto from "@/assets/greens-product.png";
 import transformPhoto from "@/assets/transform-product.png";
 import proteinPhoto from "@/assets/clear-protein-product.png";
 import glowPhoto from "@/assets/glow-product.png";
+import enrichPhoto from "@/assets/enrich-product.png";
 
 interface Product {
   name: string;
@@ -38,6 +39,7 @@ const CATEGORIES: Category[] = [
         slug: "enrich",
         shopUrl: "https://tranont.link/VreN8i1",
         description: "Your gut will thank you. Full-spectrum digestive enzymes with stabilized probiotics for bloat relief, better digestion, and real nutrient absorption.",
+        image: enrichPhoto,
       },
       {
         name: "Balance",
