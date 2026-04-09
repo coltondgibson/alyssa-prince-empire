@@ -364,7 +364,7 @@ const Greens = () => {
             </h2>
             <Accordion type="single" collapsible className="w-full">
               {[
-                { q: "Is this just for women?", a: "No — but women love it most." },
+                
                 { q: "How does it taste?", a: "Clean and light. Not like drinking a lawn." },
                 { q: "When do I take it?", a: "Morning. Every morning. That's it." },
                 { q: "How soon will I notice a difference?", a: "Most people notice within 1–2 weeks." },
