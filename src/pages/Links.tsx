@@ -41,14 +41,11 @@ const links = [
 
 const Links = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center">
-      {/* Clean background */}
-      <div className="fixed inset-0 bg-cream" />
-
+    <div className="relative min-h-screen flex flex-col items-center bg-cream">
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-md mx-auto px-5 py-10 md:py-14">
         {/* Profile photo */}
-        <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-white/40 shadow-xl shadow-black/30 mb-5">
+        <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-primary/30 shadow-xl shadow-black/10 mb-5">
           <img
             src={alyssaPhoto}
             alt="Alyssa Prince"
@@ -57,17 +54,17 @@ const Links = () => {
         </div>
 
         {/* Name */}
-        <h1 className="font-heading text-3xl md:text-4xl text-white tracking-wide mb-1.5">
+        <h1 className="font-heading text-3xl md:text-4xl text-foreground tracking-wide mb-1.5">
           Alyssa Prince
         </h1>
 
         {/* Tagline */}
-        <p className="font-body text-sm md:text-base text-white/85 text-center leading-relaxed mb-2 max-w-xs">
+        <p className="font-body text-sm md:text-base text-foreground/75 text-center leading-relaxed mb-2 max-w-xs">
           Helping women build the life they actually want.
         </p>
 
         {/* Credentials */}
-        <p className="font-body text-[10px] md:text-xs tracking-[0.18em] uppercase text-white/55 text-center mb-10">
+        <p className="font-body text-[10px] md:text-xs tracking-[0.18em] uppercase text-muted-foreground text-center mb-10">
           Entrepreneur · Realtor · Empire Builder · World Traveler
         </p>
 
@@ -80,18 +77,18 @@ const Links = () => {
               {...(external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="group block w-full rounded-xl px-5 py-4 bg-white/12 backdrop-blur-md border border-white/15 transition-all duration-300 hover:bg-white/22 hover:border-white/30 hover:shadow-lg hover:shadow-white/5 hover:-translate-y-0.5"
+              className="group block w-full rounded-xl px-5 py-4 bg-foreground/[0.03] border border-foreground/10 transition-all duration-300 hover:bg-primary/10 hover:border-primary/25 hover:shadow-md hover:shadow-primary/10 hover:-translate-y-0.5"
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="block font-body text-sm md:text-base font-medium text-white tracking-wide">
+                  <span className="block font-body text-sm md:text-base font-medium text-foreground tracking-wide">
                     {label}
                   </span>
-                  <span className="block font-body text-[11px] md:text-xs text-white/55 mt-0.5">
+                  <span className="block font-body text-[11px] md:text-xs text-muted-foreground mt-0.5">
                     {sub}
                   </span>
                 </div>
-                <span className="text-white/40 group-hover:text-white/70 transition-colors text-sm ml-3">
+                <span className="text-foreground/30 group-hover:text-primary transition-colors text-sm ml-3">
                   ›
                 </span>
               </div>
@@ -100,7 +97,7 @@ const Links = () => {
         </div>
 
         {/* Footer */}
-        <p className="font-body text-[10px] tracking-wide text-white/35 mt-auto pt-12">
+        <p className="font-body text-[10px] tracking-wide text-muted-foreground/50 mt-auto pt-12">
           © 2026 Alyssa Prince
         </p>
       </div>
