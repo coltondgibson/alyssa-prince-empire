@@ -139,39 +139,23 @@ const Greens = () => {
               />
             </div>
             <div className="space-y-4">
-              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-                I'm not someone who struggles with weight. I never have. But energy? Focus? Showing up as my best self every single day? That's a different story.
-              </p>
-              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-                Running multiple businesses, managing a real estate portfolio, building a team, being present for my family — it takes everything. I needed something that worked as hard as I&nbsp;do.
-              </p>
-              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-                I tried everything. Vitamins. Powders. Routines. None of it moved the needle the way I needed.
-              </p>
               <p className="font-heading text-xl md:text-2xl text-background italic">
-                Then I found Greens.
+                I didn't just find this product. I helped create it.
               </p>
               <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-                35+ fruits and vegetables. Prebiotics. Probiotics. Digestive enzymes. All in one scoop. One scoop. Thirty seconds. Every single morning.
+                My partners and I spent over two years perfecting this formula before we ever let anyone try it. We hit dead ends. We almost quit. We kept going because we knew what it could do.
               </p>
               <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-                Within weeks I noticed:
+                We tested it. We lived it. We refined it until it was something we were genuinely proud of.
               </p>
-              <ul className="space-y-2">
-                {[
-                  "More consistent energy throughout the day",
-                  "Less bloating and digestive discomfort",
-                  "Mental clarity I hadn't felt in years",
-                  "A foundation that made everything else work better",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="text-primary mt-0.5 text-lg leading-none">→</span>
-                    <span className="font-body text-sm md:text-base text-background/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
+                When we finally found the right home for it at Tranont — and watched it start changing people's lives — that's when I knew it was real.
+              </p>
+              <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
+                This isn't just my daily non-negotiable. It's something I helped build from the ground up.
+              </p>
               <p className="font-heading text-lg md:text-xl text-background italic pt-1">
-                I've never missed a day since.
+                And I drink it every single morning without exception.
               </p>
             </div>
           </div>
@@ -403,16 +387,19 @@ const Greens = () => {
         <section className="bg-foreground py-12 md:py-16 px-6 md:px-10">
           <div className="max-w-xl mx-auto text-center space-y-4">
             <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-              I'm not going to tell you this will change your life.
+              Most people share products they love.
             </p>
             <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-              I'm going to tell you it changed mine.
+              I'm sharing something I helped build.
             </p>
             <p className="font-body text-sm md:text-base text-background/80 leading-relaxed">
-              And I wouldn't share something with my community that I don't personally use every single day.
+              Two years of work. Countless formulations. One product I genuinely believe in with everything I have.
             </p>
             <p className="font-heading text-xl md:text-2xl text-background italic pt-1">
-              This is my non-negotiable. Maybe it becomes yours too.
+              This is my non-negotiable. Every single morning. No exceptions.
+            </p>
+            <p className="font-heading text-lg md:text-xl text-background italic">
+              Maybe it becomes yours too.
             </p>
             <p className="font-script text-lg text-background/70">— Alyssa</p>
             <div className="pt-4">
