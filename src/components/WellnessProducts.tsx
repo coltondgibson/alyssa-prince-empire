@@ -61,14 +61,12 @@ const WellnessProducts = () => {
                   {product.description}
                 </p>
                 <div className="flex flex-col gap-2.5">
-                  <a
-                    href={product.shopUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => setModalUrl(product.shopUrl)}
                     className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-3 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
                   >
                     Shop Now →
-                  </a>
+                  </button>
                   <Link
                     to={`/wellness/${product.slug}`}
                     className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-2.5 rounded-sm transition-all duration-300 border border-foreground/20 text-foreground/70 hover:border-foreground/40 hover:text-foreground"
@@ -91,6 +89,15 @@ const WellnessProducts = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+      <ProductModal
+        open={!!modalUrl}
+        onClose={() => setModalUrl(null)}
+        shopUrl={modalUrl || ""}
+      />
+    </>
   );
 };
 
