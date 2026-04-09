@@ -99,6 +99,12 @@ const Greens = () => {
                 How a simple daily habit gave me back my energy, cleared my brain fog, and became the foundation everything else is built on.
               </p>
               <ShopButton />
+              <button
+                onClick={() => document.getElementById("opt-in-form")?.scrollIntoView({ behavior: "smooth" })}
+                className="w-full sm:w-auto font-body text-sm tracking-[0.12em] uppercase px-12 py-4 rounded-sm transition-all duration-300 border border-background/30 text-background/80 hover:bg-background/10 mt-3"
+              >
+                Not Ready Yet — Follow Up With Me →
+              </button>
             </div>
             <div className="flex justify-center">
               <img
@@ -294,7 +300,7 @@ const Greens = () => {
         </section>
 
         {/* Opt-in */}
-        <section className="bg-background py-10 md:py-14 px-6 md:px-10">
+        <section id="opt-in-form" className="bg-background py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-md mx-auto text-center">
             <p className="font-heading text-xl md:text-2xl text-foreground mb-1">Not ready to buy yet?</p>
             <p className="font-body text-sm text-foreground/55 mb-6">
