@@ -14,6 +14,7 @@ interface Product {
   slug: string;
   description: string;
   image?: string;
+  shopUrl: string;
 }
 
 interface Category {
@@ -28,17 +29,20 @@ const CATEGORIES: Category[] = [
       {
         name: "Greens",
         slug: "greens",
+        shopUrl: "https://tranont.link/QUGk7sp",
         description: "My daily non-negotiable. 35+ fruits and vegetables, prebiotics, probiotics, and digestive enzymes all in one scoop. I start every single morning with this.",
         image: greensPhoto,
       },
       {
         name: "Enrich",
         slug: "enrich",
+        shopUrl: "https://tranont.link/VreN8i1",
         description: "Your gut will thank you. Full-spectrum digestive enzymes with stabilized probiotics for bloat relief, better digestion, and real nutrient absorption.",
       },
       {
         name: "Balance",
         slug: "balance",
+        shopUrl: "https://tranont.link/aObiHqE",
         description: "The one that replaced every other vitamin I was taking. Complete multi-vitamin, minerals, and antioxidants designed for real absorption.",
       },
     ],
@@ -49,12 +53,14 @@ const CATEGORIES: Category[] = [
       {
         name: "Glow-M",
         slug: "glow-m",
+        shopUrl: "https://tranont.link/by4KlLt",
         description: "Marine collagen that actually works. Faster absorbing, packed with biotin and antioxidants for your hair, skin, and nails. I noticed a difference within weeks.",
         image: glowPhoto,
       },
       {
         name: "Clear Protein",
         slug: "clear-protein",
+        shopUrl: "https://tranont.link/oPFjEOY",
         description: "20g of clean whey protein with zero bloat. Light, refreshing, and actually tastes good. Built for women.",
         image: proteinPhoto,
       },
@@ -66,22 +72,26 @@ const CATEGORIES: Category[] = [
       {
         name: "Transform",
         slug: "transform",
+        shopUrl: "https://tranont.link/2no6UIh",
         description: "This one changed how I think about food. Converts sugar into fiber before your body processes it — reducing cravings, regulating glucose, and supporting fat burning.",
         image: transformPhoto,
       },
       {
         name: "Activate",
         slug: "activate",
+        shopUrl: "https://tranont.link/XZzDqtR",
         description: "Pairs with Transform as the Daily Health System. Supports appetite control and metabolic function so your body works with you not against you.",
       },
       {
         name: "Focus",
         slug: "focus",
+        shopUrl: "https://tranont.link/SsqAM9O",
         description: "Clean mental energy without the crash. B vitamins, Lion's Mane, and green tea extract. No jitters, no withdrawal.",
       },
       {
         name: "Zest",
         slug: "zest",
+        shopUrl: "https://tranont.link/UHHwbeH",
         description: "My grab and go energy stick. Natural caffeine with amino acids, vitamins, and antioxidants. A smarter alternative to coffee or energy drinks.",
       },
     ],
@@ -152,12 +162,22 @@ const Wellness = () => {
                         <p className="font-body text-sm md:text-base leading-relaxed text-foreground/75 mb-6 flex-1">
                           {product.description}
                         </p>
-                        <Link
-                          to={`/wellness/${product.slug}`}
-                          className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-3 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
-                        >
-                          Learn More →
-                        </Link>
+                        <div className="flex flex-col gap-2.5">
+                          <a
+                            href={product.shopUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-3 rounded-sm transition-all duration-300 bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5 shadow-sm hover:shadow-md"
+                          >
+                            Shop Now →
+                          </a>
+                          <Link
+                            to={`/wellness/${product.slug}`}
+                            className="inline-block font-body text-xs tracking-[0.15em] uppercase px-6 py-2.5 rounded-sm transition-all duration-300 border border-foreground/20 text-foreground/70 hover:border-foreground/40 hover:text-foreground"
+                          >
+                            Learn More →
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   ))}
