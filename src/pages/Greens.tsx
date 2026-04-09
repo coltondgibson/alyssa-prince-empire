@@ -99,6 +99,12 @@ const Greens = () => {
                 How a simple daily habit gave me back my energy, cleared my brain fog, and became the foundation everything else is built on.
               </p>
               <ShopButton />
+              <button
+                onClick={() => document.getElementById("opt-in-form")?.scrollIntoView({ behavior: "smooth" })}
+                className="w-full sm:w-auto font-body text-sm tracking-[0.12em] uppercase px-12 py-4 rounded-sm transition-all duration-300 border border-background/30 text-background/80 hover:bg-background/10 mt-3"
+              >
+                Not Ready Yet — Follow Up With Me →
+              </button>
             </div>
             <div className="flex justify-center">
               <img
