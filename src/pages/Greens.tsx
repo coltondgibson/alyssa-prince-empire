@@ -12,10 +12,24 @@ import alyssaPhoto from "@/assets/alyssa-greens-kitchen.png";
 import greensMixing from "@/assets/greens-mixing.png";
 import greensProduct from "@/assets/greens-product.png";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { toast } from "sonner";
+
 const SHOP_URL = "https://tranont.link/QUGk7sp";
 
 const Greens = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [stayModalOpen, setStayModalOpen] = useState(false);
+  const [stayFirst, setStayFirst] = useState("");
+  const [stayLast, setStayLast] = useState("");
+  const [stayEmail, setStayEmail] = useState("");
+  const [stayPhone, setStayPhone] = useState("");
   const [optFirstName, setOptFirstName] = useState("");
   const [optLastName, setOptLastName] = useState("");
   const [optEmail, setOptEmail] = useState("");
