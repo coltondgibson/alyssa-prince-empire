@@ -300,7 +300,7 @@ const Greens = () => {
         </section>
 
         {/* Opt-in */}
-        <section className="bg-background py-10 md:py-14 px-6 md:px-10">
+        <section id="opt-in-form" className="bg-background py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-md mx-auto text-center">
             <p className="font-heading text-xl md:text-2xl text-foreground mb-1">Not ready to buy yet?</p>
             <p className="font-body text-sm text-foreground/55 mb-6">
