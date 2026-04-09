@@ -232,6 +232,17 @@ const Greens = () => {
           </div>
         </section>
 
+        {/* Lifestyle photo break */}
+        <section className="bg-background py-0">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 py-12 md:py-16">
+            <img
+              src={greensMixing}
+              alt="Mixing Tranont Greens"
+              className="w-full rounded-sm shadow-lg"
+            />
+          </div>
+        </section>
+
         {/* 7 — Testimonials — 3 cards in a row */}
         <section className="bg-background py-16 md:py-24 px-6 md:px-10">
           <div className="max-w-5xl mx-auto">
