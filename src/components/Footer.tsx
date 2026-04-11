@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
           <span className="font-heading italic text-2xl text-card/90">AP</span>
           <p className="font-body text-sm md:text-base tracking-[0.12em] text-card/75 text-center">
-            Alyssa Prince — Entrepreneur · Realtor · Tranont Partner
+            Alyssa Prince — Entrepreneur · Health Coach · Tranont Partner
           </p>
           <div className="flex items-center gap-4">
              <a href="https://instagram.com/alyssam_prince" target="_blank" rel="noopener noreferrer" className="font-body text-xs tracking-wide text-card/75 hover:text-blush transition-colors">

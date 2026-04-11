@@ -13,7 +13,7 @@ const navLinks: NavItem[] = [
   { label: "Story", href: "#story" },
   { label: "Wellness", to: "/wellness" },
   { label: "Business", href: "#business" },
-  { label: "Real Estate", href: "#realestate" },
+  { label: "Health Coach", href: "#healthcoach" },
   { label: "Travel", href: "#travel" },
   { label: "Connect", href: "#connect" },
 ];
@@ -44,7 +44,7 @@ const Navigation = () => {
             Alyssa Prince
           </span>
           <span className="font-body text-[0.55rem] font-medium tracking-[0.3em] uppercase text-foreground/70 mt-0.5 whitespace-nowrap">
-            entrepreneur · realtor · empire builder
+            entrepreneur · health coach · empire builder
           </span>
         </a>
 
