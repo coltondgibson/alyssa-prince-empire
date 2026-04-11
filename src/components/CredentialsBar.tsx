@@ -2,7 +2,7 @@ const credentials = [
   "15+ Years in Business",
   "7-Figure Earner",
   "Top Rank Achiever",
-  "Licensed Realtor",
+  "Certified Health Coach",
   "World Traveler",
   "Empire Builder",
   "Keynote Speaker",

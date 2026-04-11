@@ -18,9 +18,9 @@ const links = [
     sub: "Build something real with me",
   },
   {
-    label: "Real Estate",
-    href: "/realestate",
-    sub: "Licensed realtor serving Florida",
+    label: "Health Coaching",
+    href: "#",
+    sub: "Let's build your healthiest life",
   },
   {
     label: "Travel — Coming Soon ✈️",
@@ -76,7 +76,7 @@ const Links = () => {
 
         {/* Credentials */}
         <p className="font-body text-[10px] md:text-xs tracking-[0.18em] uppercase text-muted-foreground text-center mb-10">
-          Entrepreneur · Realtor · Empire Builder · World Traveler
+          Entrepreneur · Health Coach · Empire Builder · World Traveler
         </p>
 
         {/* Buttons */}

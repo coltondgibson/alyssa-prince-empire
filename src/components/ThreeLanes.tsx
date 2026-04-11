@@ -91,18 +91,18 @@ const ThreeLanes = () => {
         </div>
       </div>
 
-      {/* Lane 3 — Real Estate */}
+      {/* Lane 3 — Health Coach */}
       <div ref={ref3} className="opacity-0 w-full bg-primary flex items-center justify-center px-8 py-20" style={{ minHeight: 380 }}>
         <div className="max-w-xl text-center">
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary-foreground/85 mb-4">Real Estate</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary-foreground/85 mb-4">Health Coach</p>
           <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-primary-foreground mb-6">
-            Let's find your home.
+            Let's build your healthiest life.
           </h3>
           <p className="font-body text-base md:text-lg leading-relaxed text-primary-foreground mb-8">
-            Licensed realtor serving Florida. I bring the same energy to real estate that I bring to everything — all in, every time.
+            I bring the same energy to coaching that I bring to everything — all in, every time. Let me help you feel your best from the inside out.
           </p>
-          <a href="#connect" onClick={scrollToConnect("realestate")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:-translate-y-0.5">
-            Let's Talk Real Estate
+          <a href="#connect" onClick={scrollToConnect("healthcoach")} className="inline-block font-body text-sm tracking-[0.12em] uppercase px-8 py-3.5 rounded-sm transition-all duration-300 bg-gradient-to-b from-foreground to-foreground/85 text-background shadow-md hover:shadow-lg hover:-translate-y-0.5">
+            Work With Me
           </a>
         </div>
       </div>
