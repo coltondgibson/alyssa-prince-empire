@@ -4,7 +4,7 @@ import { Instagram, Facebook } from "lucide-react";
 const links = [
   {
     label: "Take the Quiz ✨",
-    href: "/quiz",
+    href: "/start",
     sub: "Find your perfect path",
   },
   {
@@ -18,8 +18,8 @@ const links = [
     sub: "Build something real with me",
   },
   {
-    label: "Health Coaching",
-    href: "#",
+    label: "Work With Me 1 on 1 →",
+    href: "/healthcoach",
     sub: "Let's build your healthiest life",
   },
   {
@@ -43,9 +43,7 @@ const links = [
 const Links = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center bg-cream">
-      {/* Content */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-md mx-auto px-5 py-10 md:py-14">
-        {/* Profile photo */}
         <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-[3px] border-primary/30 shadow-xl shadow-black/10 mb-5">
           <img
             src={alyssaPhoto}
@@ -54,7 +52,6 @@ const Links = () => {
           />
         </div>
 
-        {/* Social icons */}
         <div className="flex items-center gap-4 mb-4">
           <a href="https://instagram.com/alyssam_prince" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors">
             <Instagram size={20} />
@@ -64,22 +61,18 @@ const Links = () => {
           </a>
         </div>
 
-        {/* Name */}
         <h1 className="font-heading text-3xl md:text-4xl text-foreground tracking-wide mb-1.5">
           Alyssa Prince
         </h1>
 
-        {/* Tagline */}
         <p className="font-body text-sm md:text-base text-foreground/75 text-center leading-relaxed mb-2 max-w-xs">
           Helping women build the life they actually want.
         </p>
 
-        {/* Credentials */}
         <p className="font-body text-[10px] md:text-xs tracking-[0.18em] uppercase text-muted-foreground text-center mb-10">
           Entrepreneur · Health Coach · Empire Builder · World Traveler
         </p>
 
-        {/* Buttons */}
         <div className="w-full flex flex-col gap-3">
           {links.map(({ label, href, external, sub }) => (
             <a
@@ -107,7 +100,6 @@ const Links = () => {
           ))}
         </div>
 
-        {/* Footer */}
         <p className="font-body text-[10px] tracking-wide text-muted-foreground/50 mt-auto pt-12">
           © 2026 Alyssa Prince
         </p>
