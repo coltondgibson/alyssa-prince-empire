@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useQuiz } from "@/components/QuizContext";
-import teamPhoto from "@/assets/tranont-team-hq.png";
+import teamPhoto from "@/assets/tranont-team-hq.jpg";
 
 const TeamSection = () => {
   const { openQuiz } = useQuiz();

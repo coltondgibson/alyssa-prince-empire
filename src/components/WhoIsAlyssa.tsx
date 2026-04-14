@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import familyImage from "@/assets/alyssa-family.jpg";
-import selfieImage from "@/assets/alyssa-selfie.png";
+import selfieImage from "@/assets/alyssa-selfie.jpg";
 
 const WhoIsAlyssa = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

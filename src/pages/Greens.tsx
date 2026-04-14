@@ -8,8 +8,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ProductModal from "@/components/ProductModal";
-import alyssaPhoto from "@/assets/alyssa-greens-kitchen.png";
-import greensMixing from "@/assets/greens-mixing.png";
+import alyssaPhoto from "@/assets/alyssa-greens-kitchen.jpg";
+import greensMixing from "@/assets/greens-mixing.jpg";
 import greensProduct from "@/assets/greens-product.png";
 
 import {

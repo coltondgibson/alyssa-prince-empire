@@ -3,7 +3,7 @@ import { useQuiz } from "@/components/QuizContext";
 import businessPhoto from "@/assets/alyssa-business.jpg";
 import tranontPhoto from "@/assets/alyssa-tranont.jpg";
 import nashvillePhoto from "@/assets/alyssa-nashville.jpg";
-import kitchenPhoto from "@/assets/alyssa-kitchen.png";
+import kitchenPhoto from "@/assets/alyssa-kitchen.jpg";
 import WellnessProducts from "@/components/WellnessProducts";
 
 const useFadeIn = () => {

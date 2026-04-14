@@ -3,7 +3,7 @@ import { useQuiz } from "@/components/QuizContext";
 import { Heart, Quote } from "lucide-react";
 import glamPortrait from "@/assets/alyssa-glam-portrait.jpg";
 import confidentAlyssa from "@/assets/Confident_Alyssa.jpg";
-import carSelfiePhoto from "@/assets/alyssa-car-selfie.png";
+import carSelfiePhoto from "@/assets/alyssa-car-selfie.jpg";
 
 const OriginStory = () => {
   const { openQuiz } = useQuiz();

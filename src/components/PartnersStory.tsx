@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import teamPhoto from "@/assets/alyssa-team-couch.png";
+import teamPhoto from "@/assets/alyssa-team-couch.jpg";
 
 const PartnersStory = () => {
   const ref = useRef<HTMLDivElement>(null);
