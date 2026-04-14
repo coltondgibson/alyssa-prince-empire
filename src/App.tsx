@@ -8,7 +8,7 @@ import Quiz from "./pages/Quiz.tsx";
 import Wellness from "./pages/Wellness.tsx";
 import Greens from "./pages/Greens.tsx";
 import Business from "./pages/Business.tsx";
-import HealthCoach from "./pages/RealEstate.tsx";
+import HealthCoach from "./pages/HealthCoach.tsx";
 import Travel from "./pages/Travel.tsx";
 import Links from "./pages/Links.tsx";
 import ProductPage from "./pages/ProductPage.tsx";

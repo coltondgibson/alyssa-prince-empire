@@ -7,14 +7,14 @@ const CONTEXT_URLS: Record<string, string | null> = {
   transform: "https://tranont.link/2no6UIh",
   protein: "https://tranont.link/oPFjEOY",
   glow: "https://tranont.link/by4KlLt",
-  realestate: null,
+  healthcoach: null,
   travel: "https://tranont.link/srCSRIX",
 };
 
 const RADIO_URLS: Record<string, string | null> = {
   wellness: "https://www.tranont.com/amp",
   business: "https://tranont.link/sAs4KVu",
-  realestate: null,
+  healthcoach: null,
   travel: "https://tranont.link/srCSRIX",
 };
 
@@ -25,7 +25,7 @@ const EmailOptIn = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [isRealEstateOnly, setIsRealEstateOnly] = useState(false);
+  const [isHealthCoachOnly, setIsHealthCoachOnly] = useState(false);
   const [radioSelection, setRadioSelection] = useState<string | null>(null);
 
   useEffect(() => {
@@ -43,28 +43,25 @@ const EmailOptIn = () => {
     const context = selectedProduct;
     setSelectedProduct(null);
 
-    // Button context takes priority
     if (context && context in CONTEXT_URLS) {
       const url = CONTEXT_URLS[context];
       if (url) {
         window.open(url, "_blank", "noopener,noreferrer");
       } else {
-        setIsRealEstateOnly(true);
+        setIsHealthCoachOnly(true);
         setSubmitted(true);
         return;
       }
     } else if (radioSelection && radioSelection in RADIO_URLS) {
-      // Radio selection is secondary
       const url = RADIO_URLS[radioSelection];
       if (url) {
         window.open(url, "_blank", "noopener,noreferrer");
       } else {
-        setIsRealEstateOnly(true);
+        setIsHealthCoachOnly(true);
         setSubmitted(true);
         return;
       }
     } else {
-      // Default fallback
       window.open("https://www.tranont.com/amp", "_blank", "noopener,noreferrer");
     }
     setSubmitted(true);
@@ -75,11 +72,11 @@ const EmailOptIn = () => {
       <section id="connect" className="bg-primary py-14 md:py-20">
         <div className="max-w-xl mx-auto px-6 text-center">
           <p className="font-script text-3xl md:text-4xl text-foreground mb-4">
-            {isRealEstateOnly ? "Thank you! 🏡" : "You're in! 🎉"}
+            {isHealthCoachOnly ? "Thank you! 💛" : "You're in! 🎉"}
           </p>
           <p className="font-body text-foreground/85 text-base">
-            {isRealEstateOnly
-              ? "Alyssa will be in touch with you shortly about real estate opportunities in Florida."
+            {isHealthCoachOnly
+              ? "Amazing! Alyssa will be in touch with you personally within 24 hours."
               : "Check your phone — I just sent you something 📱"}
           </p>
         </div>
@@ -125,7 +122,7 @@ const EmailOptIn = () => {
               {[
                 { value: "wellness", label: "I want to feel better" },
                 { value: "business", label: "I want to build a business" },
-                { value: "realestate", label: "I'm curious about real estate" },
+                { value: "healthcoach", label: "I'm looking for a health coach" },
                 { value: "travel", label: "I'm curious about travel" },
               ].map((opt) => (
                 <label key={opt.value} className="flex items-center gap-3 cursor-pointer group">

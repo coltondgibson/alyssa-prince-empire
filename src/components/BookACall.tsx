@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 const BookACall = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const [tooltipOpen, setTooltipOpen] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -24,12 +26,19 @@ const BookACall = () => {
         <p className="font-body text-base md:text-lg text-foreground/85 mb-10 leading-relaxed max-w-xl mx-auto">
           Book a free 15-minute call with Alyssa. No pressure — just a real conversation about where you are and where you want to go.
         </p>
-        <a
-          href="#"
-          className="inline-block font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
-        >
-          Book a Call with Alyssa →
-        </a>
+        <Tooltip open={tooltipOpen} onOpenChange={setTooltipOpen}>
+          <TooltipTrigger asChild>
+            <button
+              onClick={() => setTooltipOpen(true)}
+              className="inline-block font-body text-sm tracking-[0.15em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
+            >
+              Book a Call with Alyssa →
+            </button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Coming Soon</p>
+          </TooltipContent>
+        </Tooltip>
       </div>
     </section>
   );

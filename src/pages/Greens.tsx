@@ -136,7 +136,7 @@ const Greens = () => {
         <section className="bg-background py-10 md:py-14 px-6 md:px-10">
           <div className="max-w-xl mx-auto text-center space-y-4">
             <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
-              I've built businesses, closed real estate deals, raised kids, and earned 7&nbsp;figures.
+              I've built businesses, coached hundreds of women, raised kids, and earned 7&nbsp;figures.
             </p>
             <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
               And I'll be honest with you — none of it would be possible without showing up every single day feeling like myself.
