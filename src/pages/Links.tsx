@@ -30,7 +30,7 @@ const links = [
   {
     label: "Book a Call With Me",
     href: "#",
-    sub: "Free 15 minute conversation",
+    sub: "Coming Soon",
   },
   {
     label: "Instagram",

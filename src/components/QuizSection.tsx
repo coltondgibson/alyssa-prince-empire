@@ -33,7 +33,7 @@ const QuizSection = () => {
           Take the 2-Minute Quiz →
         </button>
         <p className="font-body text-xs tracking-[0.2em] uppercase text-navy-foreground/70">
-          Health · Business · Real Estate · Travel
+          Health · Business · Coaching · Travel
         </p>
       </div>
     </section>

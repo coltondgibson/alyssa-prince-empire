@@ -42,7 +42,7 @@ const WhoIsAlyssa = () => {
             The real deal.
           </h2>
           <p className="font-body text-lg md:text-xl leading-relaxed text-foreground/80 max-w-xl mb-6">
-            I've spent 15 years building businesses, closing real estate deals, earning 7 figures,
+            I've spent 15 years building businesses, helping women feel better and build income on their terms, earning 7 figures,
             and winning top ranks in an industry I love. I've also burned out and walked away — and
             came back when something real finally pulled me in again. My passion for helping women
             win has never been stronger. And I want to bring you with me.

@@ -201,7 +201,7 @@ const Wellness = () => {
                 Not sure where to start? Answer 3 quick questions and I'll point you in the right direction.
               </p>
               <Link
-                to="/quiz"
+                to="/start"
                 className="inline-block font-body text-sm tracking-[0.12em] uppercase px-10 py-4 rounded-sm transition-all duration-300 bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5"
               >
                 Take the Quiz →
