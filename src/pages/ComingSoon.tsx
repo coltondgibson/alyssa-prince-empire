@@ -17,8 +17,8 @@ const ComingSoon = () => (
 
       <div className="w-16 h-[2px] bg-primary/60 mx-auto mb-6" />
 
-      <p className="font-body text-lg md:text-xl text-foreground/80 italic mb-3">
-        Something beautiful is coming.
+      <p className="font-script text-3xl md:text-4xl text-primary mb-4">
+        coming soon
       </p>
       <p className="font-body text-sm md:text-base text-muted-foreground mb-10 leading-relaxed">
         Entrepreneur · Health Coach · Empire Builder
