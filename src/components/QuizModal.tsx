@@ -41,7 +41,7 @@ const results: Record<Category, { headline: string; body: string; button: string
     headline: "Sounds like wellness is your starting point.",
     body: "Alyssa has a few things she personally uses every day that could change how you feel — fast. Let her show you exactly where she'd begin.",
     button: "Show Me Where To Start →",
-    href: "/start",
+    href: "/wellness",
   },
   business: {
     headline: "Sounds like you're ready to build something real.",
